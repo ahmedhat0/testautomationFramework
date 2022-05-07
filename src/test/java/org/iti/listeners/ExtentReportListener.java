@@ -35,6 +35,7 @@ public class ExtentReportListener implements IReporter {
 
         extent.flush();
         extent.close();
+        System.out.println("Creating test Report .... ");
     }
 
     private void buildTestNodes(IResultMap tests, LogStatus status) {

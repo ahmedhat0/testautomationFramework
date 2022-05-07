@@ -18,6 +18,9 @@ import org.testng.asserts.SoftAssert;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class BaseTest {
     public static WebDriver driver;
@@ -31,17 +34,16 @@ public class BaseTest {
     @Parameters({"browser"})
     public void setUp(@Optional String browser) {
 
-        /**
-         *! IMPORTANT !
-         *? Parametrization of the browser is not working here
-         *? it only works if run from the testng.xml file.
-         *! if the program fetch for the browser from here will get null
-         *! so if its null use default @param chrome passed on the IF statement
-         **/
+        /*
+         ! IMPORTANT !
+         ? Parametrization of the browser is not working here
+         ? it only works if run from the testng.xml file.
+         ! if the program fetch for the browser from here will get null
+         ! so if its null use default @param chrome passed on the IF statement
+         */
 
         if (browser == null) browser = "chrome";
-        else browser = browser;
-
+        
         switch (browser.toLowerCase()) {
             case "chrome":
                 WebDriverManager.chromedriver().setup();
@@ -77,9 +79,12 @@ public class BaseTest {
 
         System.out.println("Taking Screenshot ... ");
 
+
         File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
-            FileUtils.copyFile(scrFile, new File("screenshots/" + testMethodName + System.currentTimeMillis() + ".png"));
+            DateFormat obj = new SimpleDateFormat("ddMMMyyyy-HH:mm:ss");
+            String date = obj.format(new Date(System.currentTimeMillis()));
+            FileUtils.copyFile(scrFile, new File("screenshots/" + testMethodName + ".png"));
         } catch (IOException e) {
             e.getCause();
         }

@@ -2,6 +2,7 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+!**/screenshots
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
@@ -35,4 +36,6 @@ build/
 .vscode/
 
 ### Mac OS ###
-.DS_Store
+.DS_Store!/screenshots/
+!/screenshots/
+!/screenshots/testRegistration.png
