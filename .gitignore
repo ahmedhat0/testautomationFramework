@@ -38,4 +38,4 @@ build/
 ### Mac OS ###
 .DS_Store!/screenshots/
 !/screenshots/
-!/screenshots/testRegistration.png
+/screenshots/

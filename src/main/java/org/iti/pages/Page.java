@@ -8,7 +8,9 @@ import org.openqa.selenium.WebElement;
 public abstract class Page {
     WebDriver driver;
 
-    // ! Page Constructor
+    // ! ********************************************************************************************************* ! //
+    // !                                             Page Constructor
+    // ! ********************************************************************************************************* ! //
     public Page(WebDriver driver) {
         this.driver = driver;
     }

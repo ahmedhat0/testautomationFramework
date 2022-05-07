@@ -7,31 +7,30 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 public class TestListener extends BaseTest implements ITestListener {
-    // result.getMethod().getMethodName()
     @Override
     public void onTestStart(ITestResult result) {
-        System.out.println("Test Started");
+        System.out.println((result.getTestName()).toUpperCase() + "Test Started");
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        System.out.println("Test Passed");
+        System.out.println((result.getTestName()).toUpperCase() +"Test Passed");
     }
 
     @Override
-    public void onTestFailure(@NotNull ITestResult result) {
-        System.out.println("Test Failed");
+    public void onTestFailure(ITestResult result) {
+        System.out.println((result.getTestName()).toUpperCase() +"Test Failed");
         takeScreenshot(result.getMethod().getMethodName());
     }
 
     @Override
     public void onTestSkipped(ITestResult result) {
-        System.out.println("Test Skipped");
+        System.out.println((result.getTestName()).toUpperCase() +"Test Skipped");
     }
 
     @Override
     public void onFinish(ITestContext context) {
-        System.out.println("Test Finished");
+        System.out.println("Test Finished on : "+ context.getEndDate());
     }
 
 }
