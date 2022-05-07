@@ -1,4 +1,4 @@
-package org.iti;
+package org.iti.pages;
 
 import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.By;

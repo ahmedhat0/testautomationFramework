@@ -1,4 +1,4 @@
-package org.iti;
+package org.iti.pages;
 
 import org.jetbrains.annotations.Nullable;
 import org.openqa.selenium.By;
@@ -46,7 +46,7 @@ public abstract class Page {
      * @return a constructor of the new Instance of the Page.
      */
 
-    public <NeededPage extends BasePage> @Nullable NeededPage getInstance(Class<NeededPage> pageNeeded) {
+    public <NeededPage extends BasePage> NeededPage getInstance(Class<NeededPage> pageNeeded) {
         try {
             return pageNeeded.getDeclaredConstructor(WebDriver.class).newInstance(this.driver);
         } catch (Exception e) {
@@ -54,5 +54,4 @@ public abstract class Page {
         }
         return null;
     }
-
 }
