@@ -1,20 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-
 <suite name="My Test Suite" parallel="methods" thread-count="3">
 
-
-    <test verbose="5" preserve-order="true" name="MyFrameworkProject">
-        <parameter name="browser" value="Firefox"/>
-        <classes>
-            <class name="org.iti.pages.tests.RegistrationTest"/>
-<!--
-                <methods>
-                    <include name="testRegistration"/>
-                </methods>
+    <!--
+    < Execution From maven ? >
+        1 . go to project folder
+        2 . open cmd
+        3 . mvn clean install
+        4 .
+-->
+    <!--
+        To Retry Failed TCs automatically  on run Time we should
+        implement which on org.iti.analyzer
+        then add <listeners> tag on xml contains
+        <listener class-name = "package.MyTransformer"/>
+-->
+    <!--
+        ● In xml file write.
+        ○ parallel=”tests”thread-count=” 4 ”
+        ● Thread-count is how many browsers you want to open same time
 -->
 
-<!--            </class>-->
+    <listeners>
+        <listener class-name="org.iti.analyzer.MyTransformer"/>
+        <listener class-name="org.iti.listeners.TestListener"/>
+        <listener class-name="org.iti.listeners.ExtentReportListener"/>
+    </listeners>
+
+
+    <parameter name="browser" value="Firefox"/>
+    <test name="MyFrameworkProject">
+        <classes>
+            <class name="org.iti.tests.RegistrationTest"/>
+            <!--
+                            <methods>
+                                <include name="testRegistration"/>
+                            </methods>
+            -->
+            <!--            </class>-->
         </classes>
     </test>
 

@@ -1,27 +1,48 @@
-package org.iti.pages.tests;
+package org.iti.tests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.commons.io.FileUtils;
 import org.iti.pages.BasePage;
 import org.iti.pages.Page;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.asserts.SoftAssert;
 
+import java.io.File;
+import java.io.IOException;
+
 public class BaseTest {
+    public static WebDriver driver;
     protected Page page;
     protected SoftAssert softAssert;
-    WebDriver driver;
 
+    /**
+     * IMPORTANT:
+     */
     @BeforeMethod
     @Parameters({"browser"})
-    public void setUp(String browser) {
-        browser = browser.toLowerCase();
-        switch (browser) {
+    public void setUp(@Optional String browser) {
+
+        /**
+         *! IMPORTANT !
+         *? Parametrization of the browser is not working here
+         *? it only works if run from the testng.xml file.
+         *! if the program fetch for the browser from here will get null
+         *! so if its null use default @param chrome passed on the IF statement
+         **/
+
+        if (browser == null) browser = "chrome";
+        else browser = browser;
+
+        switch (browser.toLowerCase()) {
             case "chrome":
                 WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
@@ -50,5 +71,17 @@ public class BaseTest {
     @AfterMethod
     public void tearDown() {
         driver.quit();
+    }
+
+    public void takeScreenshot(String testMethodName) {
+
+        System.out.println("Taking Screenshot ... ");
+
+        File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        try {
+            FileUtils.copyFile(scrFile, new File("screenshots/" + testMethodName + System.currentTimeMillis() + ".png"));
+        } catch (IOException e) {
+            e.getCause();
+        }
     }
 }
