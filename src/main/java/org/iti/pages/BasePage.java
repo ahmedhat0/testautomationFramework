@@ -65,13 +65,13 @@ public class BasePage extends Page {
         Actions actions = new Actions(driver);
         switch (actionNeeded.toLowerCase()) {
             case "hover":
-                actions.moveToElement(driver.findElement(ByElement)).perform();
+                actions.moveToElement(driver.findElement(ByElement)).build().perform();
                 break;
             case "doubleclick":
-                actions.doubleClick(driver.findElement(ByElement)).perform();
+                actions.doubleClick(driver.findElement(ByElement)).build().perform();
                 break;
             case "rightclick":
-                actions.contextClick(driver.findElement(ByElement)).perform();
+                actions.contextClick(driver.findElement(ByElement)).build().perform();
                 break;
         }
     }

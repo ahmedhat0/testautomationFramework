@@ -8,7 +8,7 @@ public class RegistrationTest extends BaseTest {
 
     @Test
     public void testRegistration() {
-        page.getInstance(HomePage.class).goToRegisterPage().registerUser("male", "ahmed", "medhat","1","10","1985", "ahmedrd@yyy.com", "159951");
+        page.getInstance(HomePage.class).goToRegisterPage().registerUser("male", "ahmed", "medhat", "1", "10", "1985", "ahmedrd@yyy.com", "159951");
         Assert.assertEquals(1, 1, "OK");
 
         /*
@@ -16,5 +16,6 @@ public class RegistrationTest extends BaseTest {
         registerPage.registerUser("male", "ahmed", "medhat","1","10","1985", "ahmedrd@yyy.com", "159951");
         */
     }
+
 
 }
