@@ -4,16 +4,15 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.iti.pages.BasePage;
 import org.iti.pages.Page;
+import org.iti.utils.EventReporter;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 
 import java.io.File;
@@ -23,14 +22,14 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class BaseTest {
-    public static WebDriver driver;
+    public static EventFiringWebDriver driver;
     protected Page page;
     protected SoftAssert softAssert;
 
     /**
      * IMPORTANT:
      */
-    @BeforeMethod
+    @BeforeSuite
     @Parameters({"browser"})
     public void setUp(@Optional String browser) {
 
@@ -49,30 +48,30 @@ public class BaseTest {
         switch (browser.toLowerCase()) {
             case "chrome":
                 WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver();
+                driver = new EventFiringWebDriver(new ChromeDriver());
                 break;
             case "firefox":
                 WebDriverManager.firefoxdriver().setup();
-                driver = new FirefoxDriver();
+                driver = new EventFiringWebDriver(new FirefoxDriver());
                 break;
             case "edge":
                 WebDriverManager.edgedriver().setup();
-                driver = new EdgeDriver();
+                driver = new EventFiringWebDriver(new EdgeDriver());
                 break;
             default:
                 System.out.println("Browser " + browser + " is not found ,Chrome is used");
                 WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver();
+                driver = new EventFiringWebDriver(new ChromeDriver());
                 break;
         }
-
+        driver.register(new EventReporter());
         driver.get("https://demo.nopcommerce.com/");
         driver.manage().window().maximize();
 
         page = new BasePage(driver);
     }
 
-    @AfterMethod
+    @AfterSuite
     public void tearDown() {
         driver.quit();
     }

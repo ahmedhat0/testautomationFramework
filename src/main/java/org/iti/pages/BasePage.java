@@ -8,6 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import static org.iti.utils.Highlighter.highlightElement;
 
 import java.time.Duration;
 
@@ -25,43 +26,51 @@ public class BasePage extends Page {
 
     @Override
     protected void selectItemInDropdown(By ByElement, int index) {
+        highlightElement(driver, ByElement);
         Select select = new Select(driver.findElement(ByElement));
         select.selectByIndex(index);
     }
 
     @Override
     protected void selectItemInDropdown(By ByElement, String value) {
+        highlightElement(driver, ByElement);
         Select select = new Select(driver.findElement(ByElement));
         select.selectByValue(value);
     }
 
     @Override
     protected void clickOn(By ByElement) {
+        highlightElement(driver, ByElement);
         driver.findElement(ByElement).click();
     }
 
     @Override
     protected void sendKeys(By ByElement, String text) {
+        highlightElement(driver, ByElement);
         driver.findElement(ByElement).sendKeys(text);
     }
 
     @Override
     protected void clear(By ByElement) {
+        highlightElement(driver, ByElement);
         driver.findElement(ByElement).clear();
     }
 
     @Override
     protected String getText(By ByElement) {
+        highlightElement(driver, ByElement);
         return driver.findElement(ByElement).getText();
     }
 
     @Override
     protected WebElement getWebElement(By ByElement) {
+        highlightElement(driver, ByElement);
         return driver.findElement(ByElement);
     }
 
     @Override
     protected void mouseActions(@NotNull String actionNeeded, By ByElement) {
+        highlightElement(driver, ByElement);
         Actions actions = new Actions(driver);
         switch (actionNeeded.toLowerCase()) {
             case "hover":

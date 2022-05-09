@@ -31,7 +31,7 @@ public class RegisterPage extends BasePage {
 
 
     // ! ********************************************************************************************************* ! //
-    // !                                          Registration Page Constructor
+    // !                                        Registration Page Constructor
     // ! ********************************************************************************************************* ! //
 
     public RegisterPage(WebDriver driver) {
@@ -39,17 +39,17 @@ public class RegisterPage extends BasePage {
     }
 
     // ? ********************************************************************************************************* ? //
-    // ?                                          Registration Page Methods
+    // ?                                        Registration Page Methods
     // ? ********************************************************************************************************* ? //
 
-    public void registerUser(@NotNull String gender,
+    public void registerUser(String gender,
                              String firstname,
                              String lastname,
                              String day,
                              String month,
                              String year,
-                             String email,
-                             String password) {
+                             String email
+                             ,String password) {
 
         if (gender.equals("male")) clickOn(maleRdBtn);
         else clickOn(femaleRdBtn);
@@ -57,13 +57,16 @@ public class RegisterPage extends BasePage {
         sendKeys(firstNameBx, firstname);
         sendKeys(lastNameBx, lastname);
 
-        selectItemInDropdown(dayOfBirth, day);
+        selectItemInDropdown(dayOfBirth,day );
         selectItemInDropdown(monthOfBirth, month);
         selectItemInDropdown(yearOfBirth, year);
 
         sendKeys(emailBx, email);
-        sendKeys(passwordBx, password);
-        sendKeys(confirmPasswordBx, password);
+
+        String s = String.valueOf(Integer.parseInt(password.replace(".0", "")));
+        sendKeys(passwordBx, s);
+        sendKeys(confirmPasswordBx, s);
+
         clickOn(registerBtn);
     }
 
