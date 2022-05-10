@@ -18,7 +18,7 @@ public class TestUtilities extends BaseTest {
     public static int FAILED_COUNTER_FROM = 0;
     public static int NUM_OF_FAILED_RETRIES = 1;
 
-    public static String TESTDATA_SHEET_PATH = "src/test/java/org/iti/testData/testdata.xlsx";
+    public static String TESTDATA_SHEET_PATH =  "src/test/java/org/iti/testData/testdata.xlsx";
 
     static FileInputStream sourceExcelIs = null;
 
