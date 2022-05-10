@@ -19,7 +19,7 @@ public class ExtentReportListener implements IReporter {
 
     public void generateReport(List<XmlSuite> xmlSuites, @NotNull List<ISuite> suites, String outputDirectory) {
 
-        extent = new ExtentReports(outputDirectory + File.separator + "ExtentReport.html", true);
+        extent = new ExtentReports(outputDirectory + File.separator + "Extent.html", true);
 
         for (ISuite suite : suites) {
             Map<String, ISuiteResult> result = suite.getResults();
@@ -35,7 +35,7 @@ public class ExtentReportListener implements IReporter {
 
         extent.flush();
         extent.close();
-        System.out.println("Creating test Report .... ");
+        System.out.println("Creating test Report , using Extent Report  .... ");
     }
 
     private void buildTestNodes(IResultMap tests, LogStatus status) {

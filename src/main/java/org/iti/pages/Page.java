@@ -1,20 +1,20 @@
 package org.iti.pages;
 
-import org.jetbrains.annotations.Nullable;
+import org.apache.log4j.Logger;
+import org.iti.utils.EventReporter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public abstract class Page {
     WebDriver driver;
-
     // ! ********************************************************************************************************* ! //
     // !                                             Page Constructor
     // ! ********************************************************************************************************* ! //
     public Page(WebDriver driver) {
         this.driver = driver;
     }
-
+    // ! ********************************************************************************************************* ! //
     /**
     ! Abstract Methods
      */
