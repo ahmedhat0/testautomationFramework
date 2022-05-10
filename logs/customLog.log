@@ -1,353 +1,129 @@
-05-10 08:04:45 DEBUG - Using Log4J as the default logging framework
-05-10 08:04:45 DEBUG - -Dio.netty.leakDetection.level: simple
-05-10 08:04:45 DEBUG - -Dio.netty.leakDetection.targetRecords: 4
-05-10 08:04:45 DEBUG - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@28e8dde3
-05-10 08:04:45 DEBUG - -Dio.netty.noUnsafe: false
-05-10 08:04:45 DEBUG - Java version: 8
-05-10 08:04:45 DEBUG - sun.misc.Unsafe.theUnsafe: available
-05-10 08:04:45 DEBUG - sun.misc.Unsafe.copyMemory: available
-05-10 08:04:45 DEBUG - java.nio.Buffer.address: available
-05-10 08:04:45 DEBUG - direct buffer constructor: available
-05-10 08:04:45 DEBUG - java.nio.Bits.unaligned: available, true
-05-10 08:04:45 DEBUG - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
-05-10 08:04:45 DEBUG - java.nio.DirectByteBuffer.<init>(long, int): available
-05-10 08:04:45 DEBUG - sun.misc.Unsafe: available
-05-10 08:04:45 DEBUG - -Dio.netty.tmpdir: C:\Users\Ahmed Medhat\AppData\Local\Temp (java.io.tmpdir)
-05-10 08:04:45 DEBUG - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-05-10 08:04:45 DEBUG - Platform: Windows
-05-10 08:04:45 DEBUG - -Dio.netty.maxDirectMemory: 3763863552 bytes
-05-10 08:04:45 DEBUG - -Dio.netty.uninitializedArrayAllocationThreshold: -1
-05-10 08:04:45 DEBUG - java.nio.ByteBuffer.cleaner(): available
-05-10 08:04:45 DEBUG - -Dio.netty.noPreferDirect: false
-05-10 08:04:45 DEBUG - org.jctools-core.MpscChunkedArrayQueue: available
-05-10 08:04:45 DEBUG - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-05-10 08:04:45 DEBUG - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-05-10 08:04:45 DEBUG - Default protocols (JDK): [TLSv1.2] 
-05-10 08:04:45 DEBUG - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
-05-10 08:04:45 DEBUG - -Dio.netty.eventLoopThreads: 24
-05-10 08:04:45 DEBUG - -Dio.netty.noKeySetOptimization: false
-05-10 08:04:45 DEBUG - -Dio.netty.selectorAutoRebuildThreshold: 512
-05-10 08:04:45 DEBUG - -Dio.netty.allocator.numHeapArenas: 24
-05-10 08:04:45 DEBUG - -Dio.netty.allocator.numDirectArenas: 24
-05-10 08:04:45 DEBUG - -Dio.netty.allocator.pageSize: 8192
-05-10 08:04:45 DEBUG - -Dio.netty.allocator.maxOrder: 9
-05-10 08:04:45 DEBUG - -Dio.netty.allocator.chunkSize: 4194304
-05-10 08:04:45 DEBUG - -Dio.netty.allocator.smallCacheSize: 256
-05-10 08:04:45 DEBUG - -Dio.netty.allocator.normalCacheSize: 64
-05-10 08:04:45 DEBUG - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-05-10 08:04:45 DEBUG - -Dio.netty.allocator.cacheTrimInterval: 8192
-05-10 08:04:45 DEBUG - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
-05-10 08:04:45 DEBUG - -Dio.netty.allocator.useCacheForAllThreads: false
-05-10 08:04:45 DEBUG - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
-05-10 08:04:45 DEBUG - -Dio.netty.allocator.type: pooled
-05-10 08:04:45 DEBUG - -Dio.netty.threadLocalDirectBufferSize: 0
-05-10 08:04:45 DEBUG - -Dio.netty.maxThreadLocalCharBufferSize: 16384
-05-10 08:04:46 DEBUG - -Dio.netty.processId: 27784 (auto-detected)
-05-10 08:04:46 DEBUG - -Djava.net.preferIPv4Stack: false
-05-10 08:04:46 DEBUG - -Djava.net.preferIPv6Addresses: false
-05-10 08:04:46 DEBUG - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
-05-10 08:04:46 DEBUG - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
-05-10 08:04:46 DEBUG - -Dio.netty.machineId: 2c:db:07:ff:fe:31:de:a4 (auto-detected)
-05-10 08:04:46 DEBUG - -Dio.netty.buffer.checkAccessible: true
-05-10 08:04:46 DEBUG - -Dio.netty.buffer.checkBounds: true
-05-10 08:04:46 DEBUG - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4430b51a
-05-10 08:04:46 DEBUG - -Dio.netty.recycler.maxCapacityPerThread: 4096
-05-10 08:04:46 DEBUG - -Dio.netty.recycler.ratio: 8
-05-10 08:04:46 DEBUG - -Dio.netty.recycler.chunkSize: 32
-05-10 08:04:46 DEBUG - -Dio.netty.recycler.blocking: false
-05-10 08:04:50 DEBUG - brotli4j not in the classpath; Brotli support will be unavailable.
-05-10 08:04:50  INFO - Trying to Navigating to:'https://demo.nopcommerce.com/'
-05-10 08:04:52  INFO - Navigating to:'https://demo.nopcommerce.com/'
-05-10 08:04:53 DEBUG - Browser is opened
-05-10 08:04:53  WARN - Trying to find element:'By.xpath: //*[contains(@class,'register')]'
-05-10 08:04:53  INFO - Found Element :'By.xpath: //*[contains(@class,'register')]'
-05-10 08:04:53  WARN - Trying to find element:'By.xpath: //*[contains(@class,'register')]'
-05-10 08:04:53  INFO - Found Element :'By.xpath: //*[contains(@class,'register')]'
-05-10 08:04:53  WARN - Trying to find element:'By.xpath: //*[contains(@class,'register')]'
-05-10 08:04:53  INFO - Found Element :'By.xpath: //*[contains(@class,'register')]'
-05-10 08:04:53  INFO - Trying to click on:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> xpath: //*[contains(@class,'register')]]'
-05-10 08:04:54  INFO - Clicked on:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> xpath: //*[contains(@class,'register')]]'
-05-10 08:04:54  WARN - Trying to find element:'By.id: gender-male'
-05-10 08:04:54  INFO - Found Element :'By.id: gender-male'
-05-10 08:04:54  WARN - Trying to find element:'By.id: gender-male'
-05-10 08:04:54  INFO - Found Element :'By.id: gender-male'
-05-10 08:04:54  WARN - Trying to find element:'By.id: gender-male'
-05-10 08:04:54  INFO - Found Element :'By.id: gender-male'
-05-10 08:04:54  INFO - Trying to click on:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: gender-male]'
-05-10 08:04:55  INFO - Clicked on:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: gender-male]'
-05-10 08:04:55  WARN - Trying to find element:'By.id: FirstName'
-05-10 08:04:55  INFO - Found Element :'By.id: FirstName'
-05-10 08:04:55  WARN - Trying to find element:'By.id: FirstName'
-05-10 08:04:55  INFO - Found Element :'By.id: FirstName'
-05-10 08:04:55  WARN - Trying to find element:'By.id: FirstName'
-05-10 08:04:55  INFO - Found Element :'By.id: FirstName'
-05-10 08:04:55  INFO - Trying to change value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: FirstName]'
-05-10 08:04:55  INFO - Changed value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: FirstName]' to:'[ahmed]'
-05-10 08:04:55  WARN - Trying to find element:'By.id: LastName'
-05-10 08:04:55  INFO - Found Element :'By.id: LastName'
-05-10 08:04:55  WARN - Trying to find element:'By.id: LastName'
-05-10 08:04:55  INFO - Found Element :'By.id: LastName'
-05-10 08:04:55  WARN - Trying to find element:'By.id: LastName'
-05-10 08:04:55  INFO - Found Element :'By.id: LastName'
-05-10 08:04:55  INFO - Trying to change value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: LastName]'
-05-10 08:04:55  INFO - Changed value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: LastName]' to:'[medhat]'
-05-10 08:04:55  WARN - Trying to find element:'By.name: DateOfBirthDay'
-05-10 08:04:55  INFO - Found Element :'By.name: DateOfBirthDay'
-05-10 08:04:55  WARN - Trying to find element:'By.name: DateOfBirthDay'
-05-10 08:04:55  INFO - Found Element :'By.name: DateOfBirthDay'
-05-10 08:04:55  WARN - Trying to find element:'By.name: DateOfBirthDay'
-05-10 08:04:55  INFO - Found Element :'By.name: DateOfBirthDay'
-05-10 08:04:55  WARN - Trying to find element:'By.xpath: .//option[@value = "1"]'
-05-10 08:04:55  INFO - Found Element :'By.xpath: .//option[@value = "1"]'
-05-10 08:04:55  INFO - Trying to click on:'[[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthDay]] -> xpath: .//option[@value = "1"]]'
-05-10 08:04:56  INFO - Clicked on:'[[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthDay]] -> xpath: .//option[@value = "1"]]'
-05-10 08:04:56  WARN - Trying to find element:'By.name: DateOfBirthMonth'
-05-10 08:04:56  INFO - Found Element :'By.name: DateOfBirthMonth'
-05-10 08:04:56  WARN - Trying to find element:'By.name: DateOfBirthMonth'
-05-10 08:04:56  INFO - Found Element :'By.name: DateOfBirthMonth'
-05-10 08:04:56  WARN - Trying to find element:'By.name: DateOfBirthMonth'
-05-10 08:04:56  INFO - Found Element :'By.name: DateOfBirthMonth'
-05-10 08:04:56  WARN - Trying to find element:'By.xpath: .//option[@value = "5"]'
-05-10 08:04:56  INFO - Found Element :'By.xpath: .//option[@value = "5"]'
-05-10 08:04:56  INFO - Trying to click on:'[[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthMonth]] -> xpath: .//option[@value = "5"]]'
-05-10 08:04:56  INFO - Clicked on:'[[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthMonth]] -> xpath: .//option[@value = "5"]]'
-05-10 08:04:56  WARN - Trying to find element:'By.name: DateOfBirthYear'
-05-10 08:04:56  INFO - Found Element :'By.name: DateOfBirthYear'
-05-10 08:04:56  WARN - Trying to find element:'By.name: DateOfBirthYear'
-05-10 08:04:56  INFO - Found Element :'By.name: DateOfBirthYear'
-05-10 08:04:56  WARN - Trying to find element:'By.name: DateOfBirthYear'
-05-10 08:04:57  INFO - Found Element :'By.name: DateOfBirthYear'
-05-10 08:04:57  WARN - Trying to find element:'By.xpath: .//option[@value = "1985"]'
-05-10 08:04:57  INFO - Found Element :'By.xpath: .//option[@value = "1985"]'
-05-10 08:04:57  INFO - Trying to click on:'[[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthYear]] -> xpath: .//option[@value = "1985"]]'
-05-10 08:04:57  INFO - Clicked on:'[[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthYear]] -> xpath: .//option[@value = "1985"]]'
-05-10 08:04:57  WARN - Trying to find element:'By.id: Email'
-05-10 08:04:57  INFO - Found Element :'By.id: Email'
-05-10 08:04:57  WARN - Trying to find element:'By.id: Email'
-05-10 08:04:57  INFO - Found Element :'By.id: Email'
-05-10 08:04:57  WARN - Trying to find element:'By.id: Email'
-05-10 08:04:57  INFO - Found Element :'By.id: Email'
-05-10 08:04:57  INFO - Trying to change value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: Email]'
-05-10 08:04:57  INFO - Changed value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: Email]' to:'[ah0sdfffff0159med@yyyy.com]'
-05-10 08:04:57  WARN - Trying to find element:'By.id: Password'
-05-10 08:04:57  INFO - Found Element :'By.id: Password'
-05-10 08:04:57  WARN - Trying to find element:'By.id: Password'
-05-10 08:04:57  INFO - Found Element :'By.id: Password'
-05-10 08:04:57  WARN - Trying to find element:'By.id: Password'
-05-10 08:04:57  INFO - Found Element :'By.id: Password'
-05-10 08:04:57  INFO - Trying to change value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: Password]'
-05-10 08:04:57  INFO - Changed value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: Password]' to:'[5489920]'
-05-10 08:04:57  WARN - Trying to find element:'By.id: ConfirmPassword'
-05-10 08:04:57  INFO - Found Element :'By.id: ConfirmPassword'
-05-10 08:04:58  WARN - Trying to find element:'By.id: ConfirmPassword'
-05-10 08:04:58  INFO - Found Element :'By.id: ConfirmPassword'
-05-10 08:04:58  WARN - Trying to find element:'By.id: ConfirmPassword'
-05-10 08:04:58  INFO - Found Element :'By.id: ConfirmPassword'
-05-10 08:04:58  INFO - Trying to change value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: ConfirmPassword]'
-05-10 08:04:58  INFO - Changed value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: ConfirmPassword]' to:'[5489920]'
-05-10 08:04:58  WARN - Trying to find element:'By.xpath: //button[contains(@class,'register')]'
-05-10 08:04:58  INFO - Found Element :'By.xpath: //button[contains(@class,'register')]'
-05-10 08:04:58  WARN - Trying to find element:'By.xpath: //button[contains(@class,'register')]'
-05-10 08:04:58  INFO - Found Element :'By.xpath: //button[contains(@class,'register')]'
-05-10 08:04:58  WARN - Trying to find element:'By.xpath: //button[contains(@class,'register')]'
-05-10 08:04:58  INFO - Found Element :'By.xpath: //button[contains(@class,'register')]'
-05-10 08:04:58  INFO - Trying to click on:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> xpath: //button[contains(@class,'register')]]'
-05-10 08:04:58  INFO - Clicked on:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> xpath: //button[contains(@class,'register')]]'
-05-10 08:04:58  WARN - Trying to find element:'By.xpath: //*[contains(@class,'register')]'
-05-10 08:04:58  INFO - Found Element :'By.xpath: //*[contains(@class,'register')]'
-05-10 08:04:59  WARN - Trying to find element:'By.xpath: //*[contains(@class,'register')]'
-05-10 08:04:59  INFO - Found Element :'By.xpath: //*[contains(@class,'register')]'
-05-10 08:04:59  WARN - Trying to find element:'By.xpath: //*[contains(@class,'register')]'
-05-10 08:04:59  INFO - Found Element :'By.xpath: //*[contains(@class,'register')]'
-05-10 08:04:59  INFO - Trying to click on:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> xpath: //*[contains(@class,'register')]]'
-05-10 08:04:59  INFO - Clicked on:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> xpath: //*[contains(@class,'register')]]'
-05-10 08:04:59  WARN - Trying to find element:'By.id: gender-male'
-05-10 08:04:59  INFO - Found Element :'By.id: gender-male'
-05-10 08:04:59  WARN - Trying to find element:'By.id: gender-male'
-05-10 08:04:59  INFO - Found Element :'By.id: gender-male'
-05-10 08:05:00  WARN - Trying to find element:'By.id: gender-male'
-05-10 08:05:00  INFO - Found Element :'By.id: gender-male'
-05-10 08:05:00  INFO - Trying to click on:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: gender-male]'
-05-10 08:05:00  INFO - Clicked on:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: gender-male]'
-05-10 08:05:00  WARN - Trying to find element:'By.id: FirstName'
-05-10 08:05:00  INFO - Found Element :'By.id: FirstName'
-05-10 08:05:00  WARN - Trying to find element:'By.id: FirstName'
-05-10 08:05:00  INFO - Found Element :'By.id: FirstName'
-05-10 08:05:00  WARN - Trying to find element:'By.id: FirstName'
-05-10 08:05:00  INFO - Found Element :'By.id: FirstName'
-05-10 08:05:00  INFO - Trying to change value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: FirstName]'
-05-10 08:05:00  INFO - Changed value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: FirstName]' to:'[ahmed]'
-05-10 08:05:00  WARN - Trying to find element:'By.id: LastName'
-05-10 08:05:00  INFO - Found Element :'By.id: LastName'
-05-10 08:05:00  WARN - Trying to find element:'By.id: LastName'
-05-10 08:05:00  INFO - Found Element :'By.id: LastName'
-05-10 08:05:00  WARN - Trying to find element:'By.id: LastName'
-05-10 08:05:00  INFO - Found Element :'By.id: LastName'
-05-10 08:05:00  INFO - Trying to change value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: LastName]'
-05-10 08:05:00  INFO - Changed value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: LastName]' to:'[medhat]'
-05-10 08:05:00  WARN - Trying to find element:'By.name: DateOfBirthDay'
-05-10 08:05:00  INFO - Found Element :'By.name: DateOfBirthDay'
-05-10 08:05:01  WARN - Trying to find element:'By.name: DateOfBirthDay'
-05-10 08:05:01  INFO - Found Element :'By.name: DateOfBirthDay'
-05-10 08:05:01  WARN - Trying to find element:'By.name: DateOfBirthDay'
-05-10 08:05:01  INFO - Found Element :'By.name: DateOfBirthDay'
-05-10 08:05:01  WARN - Trying to find element:'By.xpath: .//option[@value = "1"]'
-05-10 08:05:01  INFO - Found Element :'By.xpath: .//option[@value = "1"]'
-05-10 08:05:01  INFO - Trying to click on:'[[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthDay]] -> xpath: .//option[@value = "1"]]'
-05-10 08:05:01  INFO - Clicked on:'[[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthDay]] -> xpath: .//option[@value = "1"]]'
-05-10 08:05:01  WARN - Trying to find element:'By.name: DateOfBirthMonth'
-05-10 08:05:01  INFO - Found Element :'By.name: DateOfBirthMonth'
-05-10 08:05:01  WARN - Trying to find element:'By.name: DateOfBirthMonth'
-05-10 08:05:01  INFO - Found Element :'By.name: DateOfBirthMonth'
-05-10 08:05:01  WARN - Trying to find element:'By.name: DateOfBirthMonth'
-05-10 08:05:01  INFO - Found Element :'By.name: DateOfBirthMonth'
-05-10 08:05:01  WARN - Trying to find element:'By.xpath: .//option[@value = "5"]'
-05-10 08:05:01  INFO - Found Element :'By.xpath: .//option[@value = "5"]'
-05-10 08:05:01  INFO - Trying to click on:'[[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthMonth]] -> xpath: .//option[@value = "5"]]'
-05-10 08:05:01  INFO - Clicked on:'[[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthMonth]] -> xpath: .//option[@value = "5"]]'
-05-10 08:05:01  WARN - Trying to find element:'By.name: DateOfBirthYear'
-05-10 08:05:01  INFO - Found Element :'By.name: DateOfBirthYear'
-05-10 08:05:02  WARN - Trying to find element:'By.name: DateOfBirthYear'
-05-10 08:05:02  INFO - Found Element :'By.name: DateOfBirthYear'
-05-10 08:05:02  WARN - Trying to find element:'By.name: DateOfBirthYear'
-05-10 08:05:02  INFO - Found Element :'By.name: DateOfBirthYear'
-05-10 08:05:02  WARN - Trying to find element:'By.xpath: .//option[@value = "1985"]'
-05-10 08:05:02  INFO - Found Element :'By.xpath: .//option[@value = "1985"]'
-05-10 08:05:02  INFO - Trying to click on:'[[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthYear]] -> xpath: .//option[@value = "1985"]]'
-05-10 08:05:02  INFO - Clicked on:'[[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthYear]] -> xpath: .//option[@value = "1985"]]'
-05-10 08:05:02  WARN - Trying to find element:'By.id: Email'
-05-10 08:05:02  INFO - Found Element :'By.id: Email'
-05-10 08:05:02  WARN - Trying to find element:'By.id: Email'
-05-10 08:05:02  INFO - Found Element :'By.id: Email'
-05-10 08:05:02  WARN - Trying to find element:'By.id: Email'
-05-10 08:05:02  INFO - Found Element :'By.id: Email'
-05-10 08:05:02  INFO - Trying to change value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: Email]'
-05-10 08:05:02  INFO - Changed value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: Email]' to:'[ah0sdfffff0159med@yyyy.com]'
-05-10 08:05:02  WARN - Trying to find element:'By.id: Password'
-05-10 08:05:02  INFO - Found Element :'By.id: Password'
-05-10 08:05:02  WARN - Trying to find element:'By.id: Password'
-05-10 08:05:02  INFO - Found Element :'By.id: Password'
-05-10 08:05:02  WARN - Trying to find element:'By.id: Password'
-05-10 08:05:02  INFO - Found Element :'By.id: Password'
-05-10 08:05:02  INFO - Trying to change value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: Password]'
-05-10 08:05:02  INFO - Changed value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: Password]' to:'[5489920]'
-05-10 08:05:02  WARN - Trying to find element:'By.id: ConfirmPassword'
-05-10 08:05:02  INFO - Found Element :'By.id: ConfirmPassword'
-05-10 08:05:03  WARN - Trying to find element:'By.id: ConfirmPassword'
-05-10 08:05:03  INFO - Found Element :'By.id: ConfirmPassword'
-05-10 08:05:03  WARN - Trying to find element:'By.id: ConfirmPassword'
-05-10 08:05:03  INFO - Found Element :'By.id: ConfirmPassword'
-05-10 08:05:03  INFO - Trying to change value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: ConfirmPassword]'
-05-10 08:05:03  INFO - Changed value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: ConfirmPassword]' to:'[5489920]'
-05-10 08:05:03  WARN - Trying to find element:'By.xpath: //button[contains(@class,'register')]'
-05-10 08:05:03  INFO - Found Element :'By.xpath: //button[contains(@class,'register')]'
-05-10 08:05:03  WARN - Trying to find element:'By.xpath: //button[contains(@class,'register')]'
-05-10 08:05:03  INFO - Found Element :'By.xpath: //button[contains(@class,'register')]'
-05-10 08:05:03  WARN - Trying to find element:'By.xpath: //button[contains(@class,'register')]'
-05-10 08:05:03  INFO - Found Element :'By.xpath: //button[contains(@class,'register')]'
-05-10 08:05:03  INFO - Trying to click on:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> xpath: //button[contains(@class,'register')]]'
-05-10 08:05:03  INFO - Clicked on:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> xpath: //button[contains(@class,'register')]]'
-05-10 08:05:03  WARN - Trying to find element:'By.xpath: //*[contains(@class,'register')]'
-05-10 08:05:04  INFO - Found Element :'By.xpath: //*[contains(@class,'register')]'
-05-10 08:05:04  WARN - Trying to find element:'By.xpath: //*[contains(@class,'register')]'
-05-10 08:05:04  INFO - Found Element :'By.xpath: //*[contains(@class,'register')]'
-05-10 08:05:04  WARN - Trying to find element:'By.xpath: //*[contains(@class,'register')]'
-05-10 08:05:04  INFO - Found Element :'By.xpath: //*[contains(@class,'register')]'
-05-10 08:05:04  INFO - Trying to click on:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> xpath: //*[contains(@class,'register')]]'
-05-10 08:05:04  INFO - Clicked on:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> xpath: //*[contains(@class,'register')]]'
-05-10 08:05:04  WARN - Trying to find element:'By.id: gender-male'
-05-10 08:05:04  INFO - Found Element :'By.id: gender-male'
-05-10 08:05:05  WARN - Trying to find element:'By.id: gender-male'
-05-10 08:05:05  INFO - Found Element :'By.id: gender-male'
-05-10 08:05:05  WARN - Trying to find element:'By.id: gender-male'
-05-10 08:05:05  INFO - Found Element :'By.id: gender-male'
-05-10 08:05:05  INFO - Trying to click on:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: gender-male]'
-05-10 08:05:05  INFO - Clicked on:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: gender-male]'
-05-10 08:05:05  WARN - Trying to find element:'By.id: FirstName'
-05-10 08:05:05  INFO - Found Element :'By.id: FirstName'
-05-10 08:05:05  WARN - Trying to find element:'By.id: FirstName'
-05-10 08:05:05  INFO - Found Element :'By.id: FirstName'
-05-10 08:05:05  WARN - Trying to find element:'By.id: FirstName'
-05-10 08:05:05  INFO - Found Element :'By.id: FirstName'
-05-10 08:05:05  INFO - Trying to change value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: FirstName]'
-05-10 08:05:05  INFO - Changed value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: FirstName]' to:'[ahmed]'
-05-10 08:05:05  WARN - Trying to find element:'By.id: LastName'
-05-10 08:05:05  INFO - Found Element :'By.id: LastName'
-05-10 08:05:05  WARN - Trying to find element:'By.id: LastName'
-05-10 08:05:05  INFO - Found Element :'By.id: LastName'
-05-10 08:05:05  WARN - Trying to find element:'By.id: LastName'
-05-10 08:05:05  INFO - Found Element :'By.id: LastName'
-05-10 08:05:05  INFO - Trying to change value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: LastName]'
-05-10 08:05:05  INFO - Changed value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: LastName]' to:'[medhat]'
-05-10 08:05:05  WARN - Trying to find element:'By.name: DateOfBirthDay'
-05-10 08:05:05  INFO - Found Element :'By.name: DateOfBirthDay'
-05-10 08:05:06  WARN - Trying to find element:'By.name: DateOfBirthDay'
-05-10 08:05:06  INFO - Found Element :'By.name: DateOfBirthDay'
-05-10 08:05:06  WARN - Trying to find element:'By.name: DateOfBirthDay'
-05-10 08:05:06  INFO - Found Element :'By.name: DateOfBirthDay'
-05-10 08:05:06  WARN - Trying to find element:'By.xpath: .//option[@value = "1"]'
-05-10 08:05:06  INFO - Found Element :'By.xpath: .//option[@value = "1"]'
-05-10 08:05:06  INFO - Trying to click on:'[[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthDay]] -> xpath: .//option[@value = "1"]]'
-05-10 08:05:06  INFO - Clicked on:'[[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthDay]] -> xpath: .//option[@value = "1"]]'
-05-10 08:05:06  WARN - Trying to find element:'By.name: DateOfBirthMonth'
-05-10 08:05:06  INFO - Found Element :'By.name: DateOfBirthMonth'
-05-10 08:05:06  WARN - Trying to find element:'By.name: DateOfBirthMonth'
-05-10 08:05:06  INFO - Found Element :'By.name: DateOfBirthMonth'
-05-10 08:05:06  WARN - Trying to find element:'By.name: DateOfBirthMonth'
-05-10 08:05:06  INFO - Found Element :'By.name: DateOfBirthMonth'
-05-10 08:05:06  WARN - Trying to find element:'By.xpath: .//option[@value = "5"]'
-05-10 08:05:06  INFO - Found Element :'By.xpath: .//option[@value = "5"]'
-05-10 08:05:06  INFO - Trying to click on:'[[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthMonth]] -> xpath: .//option[@value = "5"]]'
-05-10 08:05:06  INFO - Clicked on:'[[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthMonth]] -> xpath: .//option[@value = "5"]]'
-05-10 08:05:06  WARN - Trying to find element:'By.name: DateOfBirthYear'
-05-10 08:05:06  INFO - Found Element :'By.name: DateOfBirthYear'
-05-10 08:05:07  WARN - Trying to find element:'By.name: DateOfBirthYear'
-05-10 08:05:07  INFO - Found Element :'By.name: DateOfBirthYear'
-05-10 08:05:07  WARN - Trying to find element:'By.name: DateOfBirthYear'
-05-10 08:05:07  INFO - Found Element :'By.name: DateOfBirthYear'
-05-10 08:05:07  WARN - Trying to find element:'By.xpath: .//option[@value = "1985"]'
-05-10 08:05:07  INFO - Found Element :'By.xpath: .//option[@value = "1985"]'
-05-10 08:05:07  INFO - Trying to click on:'[[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthYear]] -> xpath: .//option[@value = "1985"]]'
-05-10 08:05:07  INFO - Clicked on:'[[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthYear]] -> xpath: .//option[@value = "1985"]]'
-05-10 08:05:07  WARN - Trying to find element:'By.id: Email'
-05-10 08:05:07  INFO - Found Element :'By.id: Email'
-05-10 08:05:07  WARN - Trying to find element:'By.id: Email'
-05-10 08:05:07  INFO - Found Element :'By.id: Email'
-05-10 08:05:07  WARN - Trying to find element:'By.id: Email'
-05-10 08:05:07  INFO - Found Element :'By.id: Email'
-05-10 08:05:07  INFO - Trying to change value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: Email]'
-05-10 08:05:07  INFO - Changed value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: Email]' to:'[ah0sdfffff0159med@yyyy.com]'
-05-10 08:05:07  WARN - Trying to find element:'By.id: Password'
-05-10 08:05:07  INFO - Found Element :'By.id: Password'
-05-10 08:05:07  WARN - Trying to find element:'By.id: Password'
-05-10 08:05:07  INFO - Found Element :'By.id: Password'
-05-10 08:05:07  WARN - Trying to find element:'By.id: Password'
-05-10 08:05:07  INFO - Found Element :'By.id: Password'
-05-10 08:05:07  INFO - Trying to change value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: Password]'
-05-10 08:05:07  INFO - Changed value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: Password]' to:'[5489920]'
-05-10 08:05:07  WARN - Trying to find element:'By.id: ConfirmPassword'
-05-10 08:05:07  INFO - Found Element :'By.id: ConfirmPassword'
-05-10 08:05:08  WARN - Trying to find element:'By.id: ConfirmPassword'
-05-10 08:05:08  INFO - Found Element :'By.id: ConfirmPassword'
-05-10 08:05:08  WARN - Trying to find element:'By.id: ConfirmPassword'
-05-10 08:05:08  INFO - Found Element :'By.id: ConfirmPassword'
-05-10 08:05:08  INFO - Trying to change value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: ConfirmPassword]'
-05-10 08:05:08  INFO - Changed value of:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: ConfirmPassword]' to:'[5489920]'
-05-10 08:05:08  WARN - Trying to find element:'By.xpath: //button[contains(@class,'register')]'
-05-10 08:05:08  INFO - Found Element :'By.xpath: //button[contains(@class,'register')]'
-05-10 08:05:08  WARN - Trying to find element:'By.xpath: //button[contains(@class,'register')]'
-05-10 08:05:08  INFO - Found Element :'By.xpath: //button[contains(@class,'register')]'
-05-10 08:05:08  WARN - Trying to find element:'By.xpath: //button[contains(@class,'register')]'
-05-10 08:05:08  INFO - Found Element :'By.xpath: //button[contains(@class,'register')]'
-05-10 08:05:08  INFO - Trying to click on:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> xpath: //button[contains(@class,'register')]]'
-05-10 08:05:09  INFO - Clicked on:'[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> xpath: //button[contains(@class,'register')]]'
-05-10 08:05:10 DEBUG - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-05-10 08:05:10 DEBUG - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-05-10 08:05:10 DEBUG - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-05-10 08:05:10 DEBUG - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-05-10 08:05:10 DEBUG - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Ahmed%20Medhat/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-05-10 08:05:11 DEBUG - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-05-10 08:05:11 DEBUG - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-05-10 08:05:11 DEBUG - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-05-10 08:05:11 DEBUG - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-05-10 08:05:11 DEBUG - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Ahmed%20Medhat/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+05-10 10:17:41 DEBUG - Using Log4J as the default logging framework
+05-10 10:17:41 DEBUG - -Dio.netty.leakDetection.level: simple
+05-10 10:17:41 DEBUG - -Dio.netty.leakDetection.targetRecords: 4
+05-10 10:17:41 DEBUG - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@42f8285e
+05-10 10:17:41 DEBUG - -Dio.netty.noUnsafe: false
+05-10 10:17:41 DEBUG - Java version: 8
+05-10 10:17:41 DEBUG - sun.misc.Unsafe.theUnsafe: available
+05-10 10:17:41 DEBUG - sun.misc.Unsafe.copyMemory: available
+05-10 10:17:41 DEBUG - java.nio.Buffer.address: available
+05-10 10:17:41 DEBUG - direct buffer constructor: available
+05-10 10:17:41 DEBUG - java.nio.Bits.unaligned: available, true
+05-10 10:17:41 DEBUG - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+05-10 10:17:41 DEBUG - java.nio.DirectByteBuffer.<init>(long, int): available
+05-10 10:17:41 DEBUG - sun.misc.Unsafe: available
+05-10 10:17:41 DEBUG - -Dio.netty.tmpdir: C:\Users\Ahmed Medhat\AppData\Local\Temp (java.io.tmpdir)
+05-10 10:17:41 DEBUG - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+05-10 10:17:41 DEBUG - Platform: Windows
+05-10 10:17:41 DEBUG - -Dio.netty.maxDirectMemory: 3763863552 bytes
+05-10 10:17:41 DEBUG - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+05-10 10:17:41 DEBUG - java.nio.ByteBuffer.cleaner(): available
+05-10 10:17:41 DEBUG - -Dio.netty.noPreferDirect: false
+05-10 10:17:41 DEBUG - org.jctools-core.MpscChunkedArrayQueue: available
+05-10 10:17:41 DEBUG - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+05-10 10:17:41 DEBUG - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+05-10 10:17:41 DEBUG - Default protocols (JDK): [TLSv1.2] 
+05-10 10:17:41 DEBUG - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+05-10 10:17:41 DEBUG - -Dio.netty.eventLoopThreads: 24
+05-10 10:17:41 DEBUG - -Dio.netty.noKeySetOptimization: false
+05-10 10:17:41 DEBUG - -Dio.netty.selectorAutoRebuildThreshold: 512
+05-10 10:17:41 DEBUG - -Dio.netty.allocator.numHeapArenas: 24
+05-10 10:17:41 DEBUG - -Dio.netty.allocator.numDirectArenas: 24
+05-10 10:17:41 DEBUG - -Dio.netty.allocator.pageSize: 8192
+05-10 10:17:41 DEBUG - -Dio.netty.allocator.maxOrder: 9
+05-10 10:17:41 DEBUG - -Dio.netty.allocator.chunkSize: 4194304
+05-10 10:17:41 DEBUG - -Dio.netty.allocator.smallCacheSize: 256
+05-10 10:17:41 DEBUG - -Dio.netty.allocator.normalCacheSize: 64
+05-10 10:17:41 DEBUG - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+05-10 10:17:41 DEBUG - -Dio.netty.allocator.cacheTrimInterval: 8192
+05-10 10:17:41 DEBUG - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+05-10 10:17:41 DEBUG - -Dio.netty.allocator.useCacheForAllThreads: false
+05-10 10:17:41 DEBUG - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+05-10 10:17:41 DEBUG - -Dio.netty.allocator.type: pooled
+05-10 10:17:41 DEBUG - -Dio.netty.threadLocalDirectBufferSize: 0
+05-10 10:17:41 DEBUG - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+05-10 10:17:42 DEBUG - -Dio.netty.processId: 29300 (auto-detected)
+05-10 10:17:42 DEBUG - -Djava.net.preferIPv4Stack: false
+05-10 10:17:42 DEBUG - -Djava.net.preferIPv6Addresses: false
+05-10 10:17:43 DEBUG - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+05-10 10:17:43 DEBUG - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+05-10 10:17:43 DEBUG - -Dio.netty.machineId: 2c:db:07:ff:fe:31:de:a4 (auto-detected)
+05-10 10:17:43 DEBUG - -Dio.netty.buffer.checkAccessible: true
+05-10 10:17:43 DEBUG - -Dio.netty.buffer.checkBounds: true
+05-10 10:17:43 DEBUG - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6a661c5c
+05-10 10:17:43 DEBUG - -Dio.netty.recycler.maxCapacityPerThread: 4096
+05-10 10:17:43 DEBUG - -Dio.netty.recycler.ratio: 8
+05-10 10:17:43 DEBUG - -Dio.netty.recycler.chunkSize: 32
+05-10 10:17:43 DEBUG - -Dio.netty.recycler.blocking: false
+05-10 10:17:49 DEBUG - brotli4j not in the classpath; Brotli support will be unavailable.
+05-10 10:17:50  INFO - Trying to Navigating to:'https://demo.nopcommerce.com/'
+05-10 10:17:51  INFO - Navigating to:'https://demo.nopcommerce.com/'
+05-10 10:17:51 DEBUG - Browser is opened
+05-10 10:17:52  WARN - Trying to find element:'By.xpath: //*[contains(@class,'register')]'
+05-10 10:17:53  INFO - Found Element :'By.xpath: //*[contains(@class,'register')]'
+05-10 10:17:53  WARN - Trying to find element:'By.xpath: //*[contains(@class,'register')]'
+05-10 10:17:53  INFO - Found Element :'By.xpath: //*[contains(@class,'register')]'
+05-10 10:17:53  WARN - Trying to find element:'By.xpath: //*[contains(@class,'register')]'
+05-10 10:17:53  INFO - Found Element :'By.xpath: //*[contains(@class,'register')]'
+05-10 10:17:53  INFO - Trying to click on:'[[FirefoxDriver: firefox on WINDOWS (d6e38661-7c36-4ab2-b08c-6c00e0442831)] -> xpath: //*[contains(@class,'register')]]'
+05-10 10:17:54  INFO - Clicked on:'[[FirefoxDriver: firefox on WINDOWS (d6e38661-7c36-4ab2-b08c-6c00e0442831)] -> xpath: //*[contains(@class,'register')]]'
+05-10 10:17:54  WARN - Trying to find element:'By.id: gender-male'
+05-10 10:17:54  INFO - Found Element :'By.id: gender-male'
+05-10 10:17:54  WARN - Trying to find element:'By.id: gender-male'
+05-10 10:17:54  INFO - Found Element :'By.id: gender-male'
+05-10 10:17:54  WARN - Trying to find element:'By.id: gender-male'
+05-10 10:17:54  INFO - Found Element :'By.id: gender-male'
+05-10 10:17:54  INFO - Trying to click on:'[[FirefoxDriver: firefox on WINDOWS (d6e38661-7c36-4ab2-b08c-6c00e0442831)] -> id: gender-male]'
+05-10 10:17:54  INFO - Clicked on:'[[FirefoxDriver: firefox on WINDOWS (d6e38661-7c36-4ab2-b08c-6c00e0442831)] -> id: gender-male]'
+05-10 10:17:54  WARN - Trying to find element:'By.id: FirstName'
+05-10 10:17:54  INFO - Found Element :'By.id: FirstName'
+05-10 10:17:55  WARN - Trying to find element:'By.id: FirstName'
+05-10 10:17:55  INFO - Found Element :'By.id: FirstName'
+05-10 10:17:55  WARN - Trying to find element:'By.id: FirstName'
+05-10 10:17:55  INFO - Found Element :'By.id: FirstName'
+05-10 10:17:55  INFO - Trying to change value of:'[[FirefoxDriver: firefox on WINDOWS (d6e38661-7c36-4ab2-b08c-6c00e0442831)] -> id: FirstName]'
+05-10 10:17:55  INFO - Changed value of:'[[FirefoxDriver: firefox on WINDOWS (d6e38661-7c36-4ab2-b08c-6c00e0442831)] -> id: FirstName]' to:'[ahmed]'
+05-10 10:17:55  WARN - Trying to find element:'By.id: LastName'
+05-10 10:17:55  INFO - Found Element :'By.id: LastName'
+05-10 10:17:55  WARN - Trying to find element:'By.id: LastName'
+05-10 10:17:55  INFO - Found Element :'By.id: LastName'
+05-10 10:17:55  WARN - Trying to find element:'By.id: LastName'
+05-10 10:17:55  INFO - Found Element :'By.id: LastName'
+05-10 10:17:55  INFO - Trying to change value of:'[[FirefoxDriver: firefox on WINDOWS (d6e38661-7c36-4ab2-b08c-6c00e0442831)] -> id: LastName]'
+05-10 10:17:55  INFO - Changed value of:'[[FirefoxDriver: firefox on WINDOWS (d6e38661-7c36-4ab2-b08c-6c00e0442831)] -> id: LastName]' to:'[medhat]'
+05-10 10:17:55  WARN - Trying to find element:'By.name: DateOfBirthDay'
+05-10 10:17:55  INFO - Found Element :'By.name: DateOfBirthDay'
+05-10 10:17:55  WARN - Trying to find element:'By.name: DateOfBirthDay'
+05-10 10:17:55  INFO - Found Element :'By.name: DateOfBirthDay'
+05-10 10:17:55  WARN - Trying to find element:'By.name: DateOfBirthDay'
+05-10 10:17:55  INFO - Found Element :'By.name: DateOfBirthDay'
+05-10 10:17:55  WARN - Trying to find element:'By.xpath: .//option[@value = "1"]'
+05-10 10:17:55  INFO - Found Element :'By.xpath: .//option[@value = "1"]'
+05-10 10:17:55  INFO - Trying to click on:'[[[[FirefoxDriver: firefox on WINDOWS (d6e38661-7c36-4ab2-b08c-6c00e0442831)] -> name: DateOfBirthDay]] -> xpath: .//option[@value = "1"]]'
+05-10 10:17:56  INFO - Clicked on:'[[[[FirefoxDriver: firefox on WINDOWS (d6e38661-7c36-4ab2-b08c-6c00e0442831)] -> name: DateOfBirthDay]] -> xpath: .//option[@value = "1"]]'
+05-10 10:17:56  WARN - Trying to find element:'By.name: DateOfBirthMonth'
+05-10 10:17:56  INFO - Found Element :'By.name: DateOfBirthMonth'
+05-10 10:17:56  WARN - Trying to find element:'By.name: DateOfBirthMonth'
+05-10 10:17:56  INFO - Found Element :'By.name: DateOfBirthMonth'
+05-10 10:17:56  WARN - Trying to find element:'By.name: DateOfBirthMonth'
+05-10 10:17:56  INFO - Found Element :'By.name: DateOfBirthMonth'
+05-10 10:17:56  WARN - Trying to find element:'By.xpath: .//option[@value = "5"]'
+05-10 10:17:56  INFO - Found Element :'By.xpath: .//option[@value = "5"]'
+05-10 10:17:56  INFO - Trying to click on:'[[[[FirefoxDriver: firefox on WINDOWS (d6e38661-7c36-4ab2-b08c-6c00e0442831)] -> name: DateOfBirthMonth]] -> xpath: .//option[@value = "5"]]'
+05-10 10:17:56  INFO - Clicked on:'[[[[FirefoxDriver: firefox on WINDOWS (d6e38661-7c36-4ab2-b08c-6c00e0442831)] -> name: DateOfBirthMonth]] -> xpath: .//option[@value = "5"]]'
+05-10 10:17:56  WARN - Trying to find element:'By.name: DateOfBirthYear'
+05-10 10:17:56  WARN - Trying to find element:'By.xpath: //*[contains(@class,'register')]'
+05-10 10:17:57  WARN - Trying to find element:'By.xpath: //*[contains(@class,'register')]'
+05-10 10:17:57  WARN - Trying to find element:'By.xpath: //*[contains(@class,'register')]'
+05-10 10:17:57  WARN - Trying to find element:'By.xpath: //*[contains(@class,'register')]'
+05-10 10:17:57  WARN - Trying to find element:'By.xpath: //*[contains(@class,'register')]'
+05-10 10:17:58 DEBUG - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+05-10 10:17:58 DEBUG - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+05-10 10:17:58 DEBUG - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+05-10 10:17:58 DEBUG - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+05-10 10:17:58 DEBUG - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Ahmed%20Medhat/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+05-10 10:17:58 DEBUG - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+05-10 10:17:58 DEBUG - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+05-10 10:17:58 DEBUG - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+05-10 10:17:58 DEBUG - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+05-10 10:17:58 DEBUG - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Ahmed%20Medhat/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

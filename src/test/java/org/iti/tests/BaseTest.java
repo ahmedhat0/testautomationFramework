@@ -20,15 +20,22 @@ import org.testng.asserts.SoftAssert;
 
 import java.io.File;
 import java.io.IOException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class BaseTest {
     public static EventFiringWebDriver driver;
-    Logger logger = Logger.getLogger(BaseTest.class);
     protected Page page;
     protected SoftAssert softAssert;
+    Logger logger = Logger.getLogger(BaseTest.class);
+
+    public static void takeScreenshot(String testMethodName) {
+        System.out.println("Taking Screenshot ... ");
+        File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        try {
+            FileUtils.copyFile(scrFile, new File("screenshots/" + testMethodName + ".png"));
+        } catch (IOException e) {
+            e.getCause();
+        }
+    }
 
     /**
      * IMPORTANT:
@@ -78,15 +85,5 @@ public class BaseTest {
     @AfterSuite
     public void tearDown() {
         driver.quit();
-    }
-
-    public static void takeScreenshot(String testMethodName) {
-        System.out.println("Taking Screenshot ... ");
-        File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        try {
-            FileUtils.copyFile(scrFile, new File("screenshots/" + testMethodName + ".png"));
-        } catch (IOException e) {
-            e.getCause();
-        }
     }
 }

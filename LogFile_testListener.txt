@@ -1,106 +1,295 @@
 testRegistration -> Test Started
 Trying to find Element  By.xpath: //*[contains(@class,'register')]
-Found Element  By.xpath: //*[contains(@class,'register')]
-Trying to find Element  By.xpath: //*[contains(@class,'register')]
-Found Element  By.xpath: //*[contains(@class,'register')]
-Trying to find Element  By.xpath: //*[contains(@class,'register')]
-Found Element  By.xpath: //*[contains(@class,'register')]
-Trying to click on: [[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> xpath: //*[contains(@class,'register')]]
-Clicked on: [[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> xpath: //*[contains(@class,'register')]]
-Trying to find Element  By.id: gender-male
-Found Element  By.id: gender-male
-Trying to find Element  By.id: gender-male
-Found Element  By.id: gender-male
-Trying to find Element  By.id: gender-male
-Found Element  By.id: gender-male
-Trying to click on: [[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: gender-male]
-Clicked on: [[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: gender-male]
-Trying to find Element  By.id: FirstName
-Found Element  By.id: FirstName
-Trying to find Element  By.id: FirstName
-Found Element  By.id: FirstName
-Trying to find Element  By.id: FirstName
-Found Element  By.id: FirstName
-Value of the:[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: FirstName] before any changes made
-Element value changed to: [[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: FirstName]
-Trying to find Element  By.id: LastName
-Found Element  By.id: LastName
-Trying to find Element  By.id: LastName
-Found Element  By.id: LastName
-Trying to find Element  By.id: LastName
-Found Element  By.id: LastName
-Value of the:[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: LastName] before any changes made
-Element value changed to: [[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: LastName]
-Trying to find Element  By.name: DateOfBirthDay
-Found Element  By.name: DateOfBirthDay
-Trying to find Element  By.name: DateOfBirthDay
-Found Element  By.name: DateOfBirthDay
-Trying to find Element  By.name: DateOfBirthDay
-Found Element  By.name: DateOfBirthDay
-Trying to find Element  By.xpath: .//option[@value = "1"]
-Found Element  By.xpath: .//option[@value = "1"]
-Trying to click on: [[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthDay]] -> xpath: .//option[@value = "1"]]
-Clicked on: [[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthDay]] -> xpath: .//option[@value = "1"]]
-Trying to find Element  By.name: DateOfBirthMonth
-Found Element  By.name: DateOfBirthMonth
-Trying to find Element  By.name: DateOfBirthMonth
-Found Element  By.name: DateOfBirthMonth
-Trying to find Element  By.name: DateOfBirthMonth
-Found Element  By.name: DateOfBirthMonth
-Trying to find Element  By.xpath: .//option[@value = "5"]
-Found Element  By.xpath: .//option[@value = "5"]
-Trying to click on: [[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthMonth]] -> xpath: .//option[@value = "5"]]
-Clicked on: [[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthMonth]] -> xpath: .//option[@value = "5"]]
-Trying to find Element  By.name: DateOfBirthYear
-Found Element  By.name: DateOfBirthYear
-Trying to find Element  By.name: DateOfBirthYear
-Found Element  By.name: DateOfBirthYear
-Trying to find Element  By.name: DateOfBirthYear
-Found Element  By.name: DateOfBirthYear
-Trying to find Element  By.xpath: .//option[@value = "1985"]
-Found Element  By.xpath: .//option[@value = "1985"]
-Trying to click on: [[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthYear]] -> xpath: .//option[@value = "1985"]]
-Clicked on: [[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthYear]] -> xpath: .//option[@value = "1985"]]
-Trying to find Element  By.id: Email
-Found Element  By.id: Email
-Trying to find Element  By.id: Email
-Found Element  By.id: Email
-Trying to find Element  By.id: Email
-Found Element  By.id: Email
-Value of the:[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: Email] before any changes made
-Element value changed to: [[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: Email]
-Trying to find Element  By.id: Password
-Found Element  By.id: Password
-Trying to find Element  By.id: Password
-Found Element  By.id: Password
-Trying to find Element  By.id: Password
-Found Element  By.id: Password
-Value of the:[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: Password] before any changes made
-Element value changed to: [[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: Password]
-Trying to find Element  By.id: ConfirmPassword
-Found Element  By.id: ConfirmPassword
-Trying to find Element  By.id: ConfirmPassword
-Found Element  By.id: ConfirmPassword
-Trying to find Element  By.id: ConfirmPassword
-Found Element  By.id: ConfirmPassword
-Value of the:[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: ConfirmPassword] before any changes made
-Element value changed to: [[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: ConfirmPassword]
-Trying to find Element  By.xpath: //button[contains(@class,'register')]
-Found Element  By.xpath: //button[contains(@class,'register')]
-Trying to find Element  By.xpath: //button[contains(@class,'register')]
-Found Element  By.xpath: //button[contains(@class,'register')]
-Trying to find Element  By.xpath: //button[contains(@class,'register')]
-Found Element  By.xpath: //button[contains(@class,'register')]
-Trying to click on: [[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> xpath: //button[contains(@class,'register')]]
-Clicked on: [[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> xpath: //button[contains(@class,'register')]]
-testRegistration -> Test Passed
+testRegistration -> Test Failed
 ======================================================
-|| Test Finished on : Tue May 10 08:05:09 EET 2022  ||
+|| Test Finished on : Tue May 10 10:17:57 EET 2022  ||
 ======================================================
+org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-4OFQGQ7', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d6e38661-7c36-4ab2-b08c-6c00e0442831, findElement {using=xpath, value=//*[contains(@class,'register')]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 100.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220428192727, moz:debuggerAddress: localhost:55515, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 30580, moz:profile: C:\Users\Ahmed Medhat\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:55515/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d6e38661-7c36-4ab2-b08c-6c00e0442831
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:115)
+	at com.sun.proxy.$Proxy12.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:204)
+	at org.iti.utils.Highlighter.highlightElement(Highlighter.java:14)
+	at org.iti.pages.BasePage.clickOn(BasePage.java:45)
+	at org.iti.pages.HomePage.goToRegisterPage(HomePage.java:40)
+	at org.iti.tests.RegistrationTest.testRegistration(RegistrationTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:262)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
 
-===============================================
-My Test Suite
-Total tests run: 3, Passes: 3, Failures: 0, Skips: 0
-===============================================
+org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-4OFQGQ7', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d6e38661-7c36-4ab2-b08c-6c00e0442831, findElement {using=xpath, value=//*[contains(@class,'register')]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 100.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220428192727, moz:debuggerAddress: localhost:55515, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 30580, moz:profile: C:\Users\Ahmed Medhat\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:55515/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d6e38661-7c36-4ab2-b08c-6c00e0442831
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:115)
+	at com.sun.proxy.$Proxy12.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:204)
+	at org.iti.utils.Highlighter.highlightElement(Highlighter.java:14)
+	at org.iti.pages.BasePage.clickOn(BasePage.java:45)
+	at org.iti.pages.HomePage.goToRegisterPage(HomePage.java:40)
+	at org.iti.tests.RegistrationTest.testRegistration(RegistrationTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:262)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-4OFQGQ7', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d6e38661-7c36-4ab2-b08c-6c00e0442831, findElement {using=xpath, value=//*[contains(@class,'register')]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 100.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220428192727, moz:debuggerAddress: localhost:55515, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 30580, moz:profile: C:\Users\Ahmed Medhat\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:55515/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d6e38661-7c36-4ab2-b08c-6c00e0442831
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:115)
+	at com.sun.proxy.$Proxy12.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:204)
+	at org.iti.utils.Highlighter.highlightElement(Highlighter.java:14)
+	at org.iti.pages.BasePage.clickOn(BasePage.java:45)
+	at org.iti.pages.HomePage.goToRegisterPage(HomePage.java:40)
+	at org.iti.tests.RegistrationTest.testRegistration(RegistrationTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:262)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-4OFQGQ7', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d6e38661-7c36-4ab2-b08c-6c00e0442831, findElement {using=name, value=DateOfBirthYear}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 100.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220428192727, moz:debuggerAddress: localhost:55515, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 30580, moz:profile: C:\Users\Ahmed Medhat\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:55515/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d6e38661-7c36-4ab2-b08c-6c00e0442831
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:115)
+	at com.sun.proxy.$Proxy12.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:204)
+	at org.iti.utils.Highlighter.highlightElement(Highlighter.java:14)
+	at org.iti.pages.BasePage.selectItemInDropdown(BasePage.java:38)
+	at org.iti.pages.RegisterPage.registerUser(RegisterPage.java:62)
+	at org.iti.tests.RegistrationTest.testRegistration(RegistrationTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-4OFQGQ7', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d6e38661-7c36-4ab2-b08c-6c00e0442831, findElement {using=xpath, value=//*[contains(@class,'register')]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 100.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220428192727, moz:debuggerAddress: localhost:55515, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 30580, moz:profile: C:\Users\Ahmed Medhat\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:55515/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d6e38661-7c36-4ab2-b08c-6c00e0442831
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:115)
+	at com.sun.proxy.$Proxy12.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:204)
+	at org.iti.utils.Highlighter.highlightElement(Highlighter.java:14)
+	at org.iti.pages.BasePage.clickOn(BasePage.java:45)
+	at org.iti.pages.HomePage.goToRegisterPage(HomePage.java:40)
+	at org.iti.tests.RegistrationTest.testRegistration(RegistrationTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-4OFQGQ7', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d6e38661-7c36-4ab2-b08c-6c00e0442831, findElement {using=xpath, value=//*[contains(@class,'register')]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 100.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220428192727, moz:debuggerAddress: localhost:55515, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 30580, moz:profile: C:\Users\Ahmed Medhat\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:55515/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d6e38661-7c36-4ab2-b08c-6c00e0442831
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:115)
+	at com.sun.proxy.$Proxy12.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:204)
+	at org.iti.utils.Highlighter.highlightElement(Highlighter.java:14)
+	at org.iti.pages.BasePage.clickOn(BasePage.java:45)
+	at org.iti.pages.HomePage.goToRegisterPage(HomePage.java:40)
+	at org.iti.tests.RegistrationTest.testRegistration(RegistrationTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
 
 Creating test Report , using Extent Report  .... 
