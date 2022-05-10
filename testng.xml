@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="My Test Suite" parallel="methods" thread-count="3">
-    <parameter name="browser" value="Firefox"/>
+<!--     <parameter name="browser" value="Firefox"/> -->
     <!---
         < Execution From maven ? >
             1 . go to project folder
