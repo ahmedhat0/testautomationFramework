@@ -71,10 +71,7 @@ public class BaseTest {
         driver.register(new EventReporter());
         driver.get("https://demo.nopcommerce.com/");
         driver.manage().window().maximize();
-        logger.debug("Browser is00000000000000000000000000000000000000000000000000000000000000000000000 opened");
-        logger.error("Browser is00000000000000000000000000000000000000000000000000000000000000000000000 opened");
-        logger.fatal("Browser is00000000000000000000000000000000000000000000000000000000000000000000000 opened");
-        logger.info("Browser is00000000000000000000000000000000000000000000000000000000000000000000000 opened");
+        logger.debug("Browser is opened");
         page = new BasePage(driver);
     }
 
@@ -87,8 +84,6 @@ public class BaseTest {
         System.out.println("Taking Screenshot ... ");
         File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
-            DateFormat obj = new SimpleDateFormat("ddMMMyyyy-HH:mm:ss");
-            String date = obj.format(new Date(System.currentTimeMillis()));
             FileUtils.copyFile(scrFile, new File("screenshots/" + testMethodName + ".png"));
         } catch (IOException e) {
             e.getCause();

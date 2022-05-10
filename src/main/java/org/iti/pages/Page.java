@@ -1,23 +1,27 @@
 package org.iti.pages;
 
-import org.apache.log4j.Logger;
-import org.iti.utils.EventReporter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public abstract class Page {
     WebDriver driver;
+
     // ! ********************************************************************************************************* ! //
-    // !                                             Page Constructor
+    // !                                         Page Constructor
     // ! ********************************************************************************************************* ! //
+
     public Page(WebDriver driver) {
         this.driver = driver;
     }
-    // ! ********************************************************************************************************* ! //
+
+    // ? ********************************************************************************************************* ? //
+    // ?                                          Page Methods
+    // ? ********************************************************************************************************* ? //
+
     /**
-    ! Abstract Methods
-     */
+     * ! Abstract Methods
+     **/
 
     protected abstract void selectItemInDropdownByVisibleText(By ByElement, String visibleText);
 
@@ -41,9 +45,12 @@ public abstract class Page {
 
     protected abstract void waitForElement(By ByElement, String toBe, long timeOutInSeconds);
 
+    protected abstract void perssKey(By ByElement, String key);
+
     /**
      * <h4>This is a generic type.</h4>
      * is used to create new Instance of any Page.
+     *
      * @param pageNeeded This is the name of the Page we want to create.
      * @return a constructor of the new Instance of the Page.
      */
@@ -57,3 +64,18 @@ public abstract class Page {
         return null;
     }
 }
+
+    // ************************************************************************************************************* //
+    // *                                          Page Elements
+    // ************************************************************************************************************* //
+
+    // ************************************************************************************************************* //
+
+    // ! ********************************************************************************************************* ! //
+    // !                                          Page Constructor
+    // ! ********************************************************************************************************* ! //
+
+    // ? ********************************************************************************************************* ? //
+    // ?                                          Page Methods
+    // ? ********************************************************************************************************* ? //
+

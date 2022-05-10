@@ -16,7 +16,7 @@ public class TestListener extends BaseTest implements ITestListener {
     public void onTestStart(ITestResult iTestResult) {
         PrintStream consoleFile;
         try {
-            consoleFile = new PrintStream(new File("./LogFile_fromEventListener.txt"));
+            consoleFile = new PrintStream(new File("./LogFile_testListener.txt"));
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }

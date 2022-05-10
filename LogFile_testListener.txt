@@ -1,0 +1,106 @@
+testRegistration -> Test Started
+Trying to find Element  By.xpath: //*[contains(@class,'register')]
+Found Element  By.xpath: //*[contains(@class,'register')]
+Trying to find Element  By.xpath: //*[contains(@class,'register')]
+Found Element  By.xpath: //*[contains(@class,'register')]
+Trying to find Element  By.xpath: //*[contains(@class,'register')]
+Found Element  By.xpath: //*[contains(@class,'register')]
+Trying to click on: [[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> xpath: //*[contains(@class,'register')]]
+Clicked on: [[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> xpath: //*[contains(@class,'register')]]
+Trying to find Element  By.id: gender-male
+Found Element  By.id: gender-male
+Trying to find Element  By.id: gender-male
+Found Element  By.id: gender-male
+Trying to find Element  By.id: gender-male
+Found Element  By.id: gender-male
+Trying to click on: [[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: gender-male]
+Clicked on: [[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: gender-male]
+Trying to find Element  By.id: FirstName
+Found Element  By.id: FirstName
+Trying to find Element  By.id: FirstName
+Found Element  By.id: FirstName
+Trying to find Element  By.id: FirstName
+Found Element  By.id: FirstName
+Value of the:[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: FirstName] before any changes made
+Element value changed to: [[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: FirstName]
+Trying to find Element  By.id: LastName
+Found Element  By.id: LastName
+Trying to find Element  By.id: LastName
+Found Element  By.id: LastName
+Trying to find Element  By.id: LastName
+Found Element  By.id: LastName
+Value of the:[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: LastName] before any changes made
+Element value changed to: [[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: LastName]
+Trying to find Element  By.name: DateOfBirthDay
+Found Element  By.name: DateOfBirthDay
+Trying to find Element  By.name: DateOfBirthDay
+Found Element  By.name: DateOfBirthDay
+Trying to find Element  By.name: DateOfBirthDay
+Found Element  By.name: DateOfBirthDay
+Trying to find Element  By.xpath: .//option[@value = "1"]
+Found Element  By.xpath: .//option[@value = "1"]
+Trying to click on: [[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthDay]] -> xpath: .//option[@value = "1"]]
+Clicked on: [[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthDay]] -> xpath: .//option[@value = "1"]]
+Trying to find Element  By.name: DateOfBirthMonth
+Found Element  By.name: DateOfBirthMonth
+Trying to find Element  By.name: DateOfBirthMonth
+Found Element  By.name: DateOfBirthMonth
+Trying to find Element  By.name: DateOfBirthMonth
+Found Element  By.name: DateOfBirthMonth
+Trying to find Element  By.xpath: .//option[@value = "5"]
+Found Element  By.xpath: .//option[@value = "5"]
+Trying to click on: [[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthMonth]] -> xpath: .//option[@value = "5"]]
+Clicked on: [[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthMonth]] -> xpath: .//option[@value = "5"]]
+Trying to find Element  By.name: DateOfBirthYear
+Found Element  By.name: DateOfBirthYear
+Trying to find Element  By.name: DateOfBirthYear
+Found Element  By.name: DateOfBirthYear
+Trying to find Element  By.name: DateOfBirthYear
+Found Element  By.name: DateOfBirthYear
+Trying to find Element  By.xpath: .//option[@value = "1985"]
+Found Element  By.xpath: .//option[@value = "1985"]
+Trying to click on: [[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthYear]] -> xpath: .//option[@value = "1985"]]
+Clicked on: [[[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> name: DateOfBirthYear]] -> xpath: .//option[@value = "1985"]]
+Trying to find Element  By.id: Email
+Found Element  By.id: Email
+Trying to find Element  By.id: Email
+Found Element  By.id: Email
+Trying to find Element  By.id: Email
+Found Element  By.id: Email
+Value of the:[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: Email] before any changes made
+Element value changed to: [[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: Email]
+Trying to find Element  By.id: Password
+Found Element  By.id: Password
+Trying to find Element  By.id: Password
+Found Element  By.id: Password
+Trying to find Element  By.id: Password
+Found Element  By.id: Password
+Value of the:[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: Password] before any changes made
+Element value changed to: [[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: Password]
+Trying to find Element  By.id: ConfirmPassword
+Found Element  By.id: ConfirmPassword
+Trying to find Element  By.id: ConfirmPassword
+Found Element  By.id: ConfirmPassword
+Trying to find Element  By.id: ConfirmPassword
+Found Element  By.id: ConfirmPassword
+Value of the:[[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: ConfirmPassword] before any changes made
+Element value changed to: [[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> id: ConfirmPassword]
+Trying to find Element  By.xpath: //button[contains(@class,'register')]
+Found Element  By.xpath: //button[contains(@class,'register')]
+Trying to find Element  By.xpath: //button[contains(@class,'register')]
+Found Element  By.xpath: //button[contains(@class,'register')]
+Trying to find Element  By.xpath: //button[contains(@class,'register')]
+Found Element  By.xpath: //button[contains(@class,'register')]
+Trying to click on: [[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> xpath: //button[contains(@class,'register')]]
+Clicked on: [[FirefoxDriver: firefox on WINDOWS (3ea06fa8-1041-46ab-8ef0-80d6ada589e5)] -> xpath: //button[contains(@class,'register')]]
+testRegistration -> Test Passed
+======================================================
+|| Test Finished on : Tue May 10 08:05:09 EET 2022  ||
+======================================================
+
+===============================================
+My Test Suite
+Total tests run: 3, Passes: 3, Failures: 0, Skips: 0
+===============================================
+
+Creating test Report , using Extent Report  .... 

@@ -3,6 +3,7 @@ package org.iti.pages;
 import org.apache.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -14,7 +15,6 @@ import static org.iti.utils.Highlighter.highlightElement;
 import java.time.Duration;
 
 public class BasePage extends Page {
-
 
     public BasePage(WebDriver driver) {
         super(driver);
@@ -112,6 +112,12 @@ public class BasePage extends Page {
                         .elementToBeClickable(ByElement));
                 break;
         }
+    }
+
+    @Override
+    protected void perssKey(By ByElement, String key) {
+        highlightElement(driver, ByElement);
+        driver.findElement(ByElement).sendKeys(Keys.valueOf(key));
     }
 
 }

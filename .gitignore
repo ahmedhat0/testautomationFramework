@@ -39,3 +39,4 @@ build/
 .DS_Store!/screenshots/
 !/screenshots/
 /screenshots/
+/src/main/java/org/iti/pages/pageex.java
