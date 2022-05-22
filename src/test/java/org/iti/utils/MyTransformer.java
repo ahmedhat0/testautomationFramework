@@ -1,4 +1,4 @@
-package org.iti.analyzer;
+package org.iti.utils;
 
 import org.jetbrains.annotations.NotNull;
 import org.testng.IAnnotationTransformer;

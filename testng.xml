@@ -25,7 +25,7 @@
 
     -->
     <listeners>
-        <listener class-name="org.iti.analyzer.MyTransformer"/>
+        <listener class-name="org.iti.utils.MyTransformer"/>
         <listener class-name="org.iti.listeners.ExtentReportListener"/>
         <listener class-name="org.iti.listeners.TestListener"/>
     </listeners>

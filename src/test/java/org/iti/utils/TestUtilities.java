@@ -15,7 +15,7 @@ public class TestUtilities extends BaseTest {
     public static long PAGE_LOAD_TIMEOUT = 20;
     public static long IMPLICIT_WAIT = 10;
 
-    public static String TESTDATA_SHEET_PATH =  "src/test/java/org/iti/testData/testdata.xlsx";
+    public static String TESTDATA_SHEET_PATH =  "src/test/resources/testData/testdata.xlsx";
 
     static FileInputStream sourceExcelIs = null;
 
