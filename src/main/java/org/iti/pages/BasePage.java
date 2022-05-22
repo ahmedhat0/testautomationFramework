@@ -1,6 +1,5 @@
 package org.iti.pages;
 
-import org.apache.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -10,9 +9,10 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import static org.iti.utils.Highlighter.highlightElement;
 
 import java.time.Duration;
+
+import static org.iti.utils.Highlighter.highlightElement;
 
 public class BasePage extends Page {
 
@@ -94,9 +94,10 @@ public class BasePage extends Page {
                 return driver.findElement(ByElement).isEnabled();
             case "selected":
                 return driver.findElement(ByElement).isSelected();
-            default:
+            case "displayed":
                 return driver.findElement(ByElement).isDisplayed();
         }
+        return false;
     }
 
     @Override
@@ -104,20 +105,19 @@ public class BasePage extends Page {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(timeOUTinMilliseconds));
         switch (toBe.toLowerCase()) {
             case "visible":
-                wait.until(ExpectedConditions
-                        .visibilityOfElementLocated(ByElement));
+                wait.until(ExpectedConditions.visibilityOfElementLocated(ByElement));
                 break;
             case "clickable":
-                wait.until(ExpectedConditions
-                        .elementToBeClickable(ByElement));
+                wait.until(ExpectedConditions.elementToBeClickable(ByElement));
                 break;
         }
     }
 
     @Override
-    protected void perssKey(By ByElement, String key) {
+    protected void pressKey(By ByElement, String key) {
         highlightElement(driver, ByElement);
         driver.findElement(ByElement).sendKeys(Keys.valueOf(key));
     }
+
 
 }

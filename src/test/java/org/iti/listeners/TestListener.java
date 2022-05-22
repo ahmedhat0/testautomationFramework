@@ -40,20 +40,6 @@ public class TestListener extends BaseTest implements ITestListener {
         System.out.println(iTestResult.getName() + " -> Test Skipped");
     }
 
-/*
-    @Override
-    public void onTestFailedButWithinSuccessPercentage(ITestResult iTestResult) {
-        System.out.println("onTestFailedButWithinSuccessPercentage");
-    }
-*/
-
-/*
-    @Override
-    public void onStart(ITestContext iTestContext) {
-        System.out.println("onTestFailedButWithinSuccessPercentage");
-    }
-*/
-
     @Override
     public void onFinish(ITestContext iTestContext) {
         System.out.println("======================================================");

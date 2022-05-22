@@ -1,6 +1,5 @@
 package org.iti.pages;
 
-import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -29,7 +28,6 @@ public class RegisterPage extends BasePage {
     // * ********************************************************************************************************* * //
     // * ********************************************************************************************************* * //
 
-
     // ! ********************************************************************************************************* ! //
     // !                                        Registration Page Constructor
     // ! ********************************************************************************************************* ! //
@@ -48,8 +46,8 @@ public class RegisterPage extends BasePage {
                              String day,
                              String month,
                              String year,
-                             String email
-                             ,String password) {
+                             String email,
+                             String password) {
 
         if (gender.equals("male")) clickOn(maleRdBtn);
         else clickOn(femaleRdBtn);
@@ -57,18 +55,20 @@ public class RegisterPage extends BasePage {
         sendKeys(firstNameBx, firstname);
         sendKeys(lastNameBx, lastname);
 
-        selectItemInDropdown(dayOfBirth,day );
+        selectItemInDropdown(dayOfBirth, day);
         selectItemInDropdown(monthOfBirth, month);
         selectItemInDropdown(yearOfBirth, year);
 
         sendKeys(emailBx, email);
 
-        String s = String.valueOf(Integer.parseInt(password.replace(".0", "")));
-        sendKeys(passwordBx, s);
-        sendKeys(confirmPasswordBx, s);
+        sendKeys(passwordBx, password);
+        sendKeys(confirmPasswordBx, password);
 
         clickOn(registerBtn);
     }
 
+    public String getRegistrationStatus() {
+        return getText(successMsg);
+    }
 
 }

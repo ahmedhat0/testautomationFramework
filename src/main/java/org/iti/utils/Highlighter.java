@@ -6,11 +6,11 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 public class Highlighter {
-    static  String backgroundColor = "yellow";
+    static String backgroundColor = "yellow";
 
     public static void highlightElement(@NotNull WebDriver driver, By element) {
         JavascriptExecutor javascript = (JavascriptExecutor) driver;
-        javascript.executeScript("arguments[0].setAttribute('style','background:"+ backgroundColor +";font-weight: bold;border: 2px solid black;');"
+        javascript.executeScript("arguments[0].setAttribute('style','background:" + backgroundColor + ";font-weight: bold;border: 2px solid black;');"
                 , driver.findElement(element));
         try {
             Thread.sleep(250);

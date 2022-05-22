@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="My Test Suite" parallel="methods" thread-count="3">
-<!--     <parameter name="browser" value="Firefox"/> -->
+
+<suite name="My Test Suite" parallel="tests" thread-count="3">
     <!---
         < Execution From maven ? >
             1 . go to project folder
@@ -30,9 +30,19 @@
         <listener class-name="org.iti.listeners.TestListener"/>
     </listeners>
 
-    <test name="MyFrameworkProject" preserve-order="false">
+
+    <test name="OnChrome" preserve-order="false">
+        <parameter name="browser" value="chrome"/>
         <classes>
             <class name="org.iti.tests.RegistrationTest"/>
         </classes>
     </test>
+
+    <test name="OnFireFox" preserve-order="false">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="org.iti.tests.RegistrationTest"/>
+        </classes>
+    </test>
+
 </suite>

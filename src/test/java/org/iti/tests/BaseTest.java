@@ -7,27 +7,27 @@ import org.iti.pages.BasePage;
 import org.iti.pages.Page;
 import org.iti.utils.EventReporter;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 
 import java.io.File;
 import java.io.IOException;
 
 public class BaseTest {
-    public static EventFiringWebDriver driver;
+
+
+    public  EventFiringWebDriver driver;
     protected Page page;
     protected SoftAssert softAssert;
     Logger logger = Logger.getLogger(BaseTest.class);
 
-    public static void takeScreenshot(String testMethodName) {
+    public void takeScreenshot(String testMethodName) {
         System.out.println("Taking Screenshot ... ");
         File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
@@ -40,9 +40,9 @@ public class BaseTest {
     /**
      * IMPORTANT:
      */
-    @BeforeSuite
+    @BeforeTest
     @Parameters({"browser"})
-    public void setUp(@Optional String browser) {
+    public void setUp(@Optional("chrome") String browser) {
 
         /*
          ! ********************************************************************* !
@@ -54,7 +54,9 @@ public class BaseTest {
          ! ********************************************************************* !
          */
 
+/*
         if (browser == null) browser = "chrome";
+*/
 
         switch (browser.toLowerCase()) {
             case "chrome":
@@ -77,12 +79,18 @@ public class BaseTest {
         }
         driver.register(new EventReporter());
         driver.get("https://demo.nopcommerce.com/");
-        driver.manage().window().maximize();
+        driver.manage().window().setPosition(new Point(900,0));
+
+
+        /*using IN tests*/
+        // TODO: 05/17/2022 htttttttttt
+
         logger.debug("Browser is opened");
+
         page = new BasePage(driver);
     }
 
-    @AfterSuite
+    @AfterTest
     public void tearDown() {
         driver.quit();
     }

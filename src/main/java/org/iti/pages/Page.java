@@ -8,7 +8,7 @@ public abstract class Page {
     WebDriver driver;
 
     // ! ********************************************************************************************************* ! //
-    // !                                         Page Constructor
+    // !                                                  Page Constructor
     // ! ********************************************************************************************************* ! //
 
     public Page(WebDriver driver) {
@@ -16,7 +16,7 @@ public abstract class Page {
     }
 
     // ? ********************************************************************************************************* ? //
-    // ?                                          Page Methods
+    // ?                                                  Page Methods
     // ? ********************************************************************************************************* ? //
 
     /**
@@ -45,7 +45,7 @@ public abstract class Page {
 
     protected abstract void waitForElement(By ByElement, String toBe, long timeOutInSeconds);
 
-    protected abstract void perssKey(By ByElement, String key);
+    protected abstract void pressKey(By ByElement, String key);
 
     /**
      * <h4>This is a generic type.</h4>
@@ -64,6 +64,9 @@ public abstract class Page {
         return null;
     }
 }
+
+
+
 
     // ************************************************************************************************************* //
     // *                                          Page Elements
