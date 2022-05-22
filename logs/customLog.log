@@ -1,162 +1,172 @@
-05-22 12:14:22 DEBUG - Using Log4J as the default logging framework
-05-22 12:14:22 DEBUG - -Dio.netty.leakDetection.level: simple
-05-22 12:14:22 DEBUG - -Dio.netty.leakDetection.targetRecords: 4
-05-22 12:14:22 DEBUG - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@55493582
-05-22 12:14:22 DEBUG - -Dio.netty.noUnsafe: false
-05-22 12:14:22 DEBUG - Java version: 8
-05-22 12:14:22 DEBUG - sun.misc.Unsafe.theUnsafe: available
-05-22 12:14:22 DEBUG - sun.misc.Unsafe.copyMemory: available
-05-22 12:14:22 DEBUG - java.nio.Buffer.address: available
-05-22 12:14:22 DEBUG - direct buffer constructor: available
-05-22 12:14:22 DEBUG - java.nio.Bits.unaligned: available, true
-05-22 12:14:22 DEBUG - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
-05-22 12:14:22 DEBUG - java.nio.DirectByteBuffer.<init>(long, int): available
-05-22 12:14:22 DEBUG - sun.misc.Unsafe: available
-05-22 12:14:22 DEBUG - -Dio.netty.tmpdir: C:\Users\Ahmed Medhat\AppData\Local\Temp (java.io.tmpdir)
-05-22 12:14:22 DEBUG - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-05-22 12:14:22 DEBUG - Platform: Windows
-05-22 12:14:22 DEBUG - -Dio.netty.maxDirectMemory: 3763863552 bytes
-05-22 12:14:22 DEBUG - -Dio.netty.uninitializedArrayAllocationThreshold: -1
-05-22 12:14:22 DEBUG - java.nio.ByteBuffer.cleaner(): available
-05-22 12:14:22 DEBUG - -Dio.netty.noPreferDirect: false
-05-22 12:14:22 DEBUG - org.jctools-core.MpscChunkedArrayQueue: available
-05-22 12:14:22 DEBUG - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-05-22 12:14:22 DEBUG - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-05-22 12:14:23 DEBUG - Default protocols (JDK): [TLSv1.2] 
-05-22 12:14:23 DEBUG - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
-05-22 12:14:23 DEBUG - -Dio.netty.eventLoopThreads: 24
-05-22 12:14:23 DEBUG - -Dio.netty.noKeySetOptimization: false
-05-22 12:14:23 DEBUG - -Dio.netty.selectorAutoRebuildThreshold: 512
-05-22 12:14:23 DEBUG - -Dio.netty.allocator.numHeapArenas: 24
-05-22 12:14:23 DEBUG - -Dio.netty.allocator.numDirectArenas: 24
-05-22 12:14:23 DEBUG - -Dio.netty.allocator.pageSize: 8192
-05-22 12:14:23 DEBUG - -Dio.netty.allocator.maxOrder: 9
-05-22 12:14:23 DEBUG - -Dio.netty.allocator.chunkSize: 4194304
-05-22 12:14:23 DEBUG - -Dio.netty.allocator.smallCacheSize: 256
-05-22 12:14:23 DEBUG - -Dio.netty.allocator.normalCacheSize: 64
-05-22 12:14:23 DEBUG - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-05-22 12:14:23 DEBUG - -Dio.netty.allocator.cacheTrimInterval: 8192
-05-22 12:14:23 DEBUG - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
-05-22 12:14:23 DEBUG - -Dio.netty.allocator.useCacheForAllThreads: false
-05-22 12:14:23 DEBUG - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
-05-22 12:14:23 DEBUG - -Dio.netty.allocator.type: pooled
-05-22 12:14:23 DEBUG - -Dio.netty.threadLocalDirectBufferSize: 0
-05-22 12:14:23 DEBUG - -Dio.netty.maxThreadLocalCharBufferSize: 16384
-05-22 12:14:24 DEBUG - -Dio.netty.processId: 54504 (auto-detected)
-05-22 12:14:24 DEBUG - -Djava.net.preferIPv4Stack: false
-05-22 12:14:24 DEBUG - -Djava.net.preferIPv6Addresses: false
-05-22 12:14:24 DEBUG - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
-05-22 12:14:24 DEBUG - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
-05-22 12:14:24 DEBUG - -Dio.netty.machineId: 2c:db:07:ff:fe:31:de:a4 (auto-detected)
-05-22 12:14:24 DEBUG - -Dio.netty.buffer.checkAccessible: true
-05-22 12:14:24 DEBUG - -Dio.netty.buffer.checkBounds: true
-05-22 12:14:24 DEBUG - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@76a0d7ea
-05-22 12:14:24 DEBUG - -Dio.netty.recycler.maxCapacityPerThread: 4096
-05-22 12:14:24 DEBUG - -Dio.netty.recycler.ratio: 8
-05-22 12:14:24 DEBUG - -Dio.netty.recycler.chunkSize: 32
-05-22 12:14:24 DEBUG - -Dio.netty.recycler.blocking: false
-05-22 12:14:25 DEBUG - brotli4j not in the classpath; Brotli support will be unavailable.
-05-22 12:14:25 DEBUG - -Dio.netty.initialSeedUniquifier: 0x36d0b03ea783cc62
-05-22 12:14:26  INFO - Trying to Navigating to:'https://demo.nopcommerce.com/'
-05-22 12:14:28  INFO - Navigating to:'https://demo.nopcommerce.com/'
-05-22 12:14:28 DEBUG - Browser is opened
-05-22 12:14:28  WARN - Trying to find element:'By.xpath: //*[contains(@class,'register')]'
-05-22 12:14:28  INFO - Found Element :'By.xpath: //*[contains(@class,'register')]'
-05-22 12:14:29  WARN - Trying to find element:'By.xpath: //*[contains(@class,'register')]'
-05-22 12:14:29  INFO - Found Element :'By.xpath: //*[contains(@class,'register')]'
-05-22 12:14:29  WARN - Trying to find element:'By.xpath: //*[contains(@class,'register')]'
-05-22 12:14:29  INFO - Found Element :'By.xpath: //*[contains(@class,'register')]'
-05-22 12:14:29  INFO - Trying to click on:'[[ChromeDriver: chrome on WINDOWS (3a914725c6fa9bbc06033c5de859efdc)] -> xpath: //*[contains(@class,'register')]]'
-05-22 12:14:29  INFO - Clicked on:'[[ChromeDriver: chrome on WINDOWS (3a914725c6fa9bbc06033c5de859efdc)] -> xpath: //*[contains(@class,'register')]]'
-05-22 12:14:29  WARN - Trying to find element:'By.id: gender-male'
-05-22 12:14:29  INFO - Found Element :'By.id: gender-male'
-05-22 12:14:30  WARN - Trying to find element:'By.id: gender-male'
-05-22 12:14:30  INFO - Found Element :'By.id: gender-male'
-05-22 12:14:30  WARN - Trying to find element:'By.id: gender-male'
-05-22 12:14:30  INFO - Found Element :'By.id: gender-male'
-05-22 12:14:30  INFO - Trying to click on:'[[ChromeDriver: chrome on WINDOWS (3a914725c6fa9bbc06033c5de859efdc)] -> id: gender-male]'
-05-22 12:14:30  INFO - Clicked on:'[[ChromeDriver: chrome on WINDOWS (3a914725c6fa9bbc06033c5de859efdc)] -> id: gender-male]'
-05-22 12:14:30  WARN - Trying to find element:'By.id: FirstName'
-05-22 12:14:30  INFO - Found Element :'By.id: FirstName'
-05-22 12:14:30  WARN - Trying to find element:'By.id: FirstName'
-05-22 12:14:30  INFO - Found Element :'By.id: FirstName'
-05-22 12:14:30  WARN - Trying to find element:'By.id: FirstName'
-05-22 12:14:30  INFO - Found Element :'By.id: FirstName'
-05-22 12:14:30  INFO - Trying to change value of:'[[ChromeDriver: chrome on WINDOWS (3a914725c6fa9bbc06033c5de859efdc)] -> id: FirstName]'
-05-22 12:14:30  INFO - Changed value of:'[[ChromeDriver: chrome on WINDOWS (3a914725c6fa9bbc06033c5de859efdc)] -> id: FirstName]' to:'[ahmed]'
-05-22 12:14:30  WARN - Trying to find element:'By.id: LastName'
-05-22 12:14:30  INFO - Found Element :'By.id: LastName'
-05-22 12:14:30  WARN - Trying to find element:'By.id: LastName'
-05-22 12:14:30  INFO - Found Element :'By.id: LastName'
-05-22 12:14:30  WARN - Trying to find element:'By.id: LastName'
-05-22 12:14:30  INFO - Found Element :'By.id: LastName'
-05-22 12:14:30  INFO - Trying to change value of:'[[ChromeDriver: chrome on WINDOWS (3a914725c6fa9bbc06033c5de859efdc)] -> id: LastName]'
-05-22 12:14:30  INFO - Changed value of:'[[ChromeDriver: chrome on WINDOWS (3a914725c6fa9bbc06033c5de859efdc)] -> id: LastName]' to:'[medhat]'
-05-22 12:14:30  WARN - Trying to find element:'By.name: DateOfBirthDay'
-05-22 12:14:30  INFO - Found Element :'By.name: DateOfBirthDay'
-05-22 12:14:31  WARN - Trying to find element:'By.name: DateOfBirthDay'
-05-22 12:14:31  INFO - Found Element :'By.name: DateOfBirthDay'
-05-22 12:14:31  WARN - Trying to find element:'By.name: DateOfBirthDay'
-05-22 12:14:31  INFO - Found Element :'By.name: DateOfBirthDay'
-05-22 12:14:31  WARN - Trying to find element:'By.xpath: .//option[@value = "1"]'
-05-22 12:14:31  INFO - Found Element :'By.xpath: .//option[@value = "1"]'
-05-22 12:14:31  INFO - Trying to click on:'[[[[ChromeDriver: chrome on WINDOWS (3a914725c6fa9bbc06033c5de859efdc)] -> name: DateOfBirthDay]] -> xpath: .//option[@value = "1"]]'
-05-22 12:14:31  INFO - Clicked on:'[[[[ChromeDriver: chrome on WINDOWS (3a914725c6fa9bbc06033c5de859efdc)] -> name: DateOfBirthDay]] -> xpath: .//option[@value = "1"]]'
-05-22 12:14:31  WARN - Trying to find element:'By.name: DateOfBirthMonth'
-05-22 12:14:31  INFO - Found Element :'By.name: DateOfBirthMonth'
-05-22 12:14:31  WARN - Trying to find element:'By.name: DateOfBirthMonth'
-05-22 12:14:31  INFO - Found Element :'By.name: DateOfBirthMonth'
-05-22 12:14:31  WARN - Trying to find element:'By.name: DateOfBirthMonth'
-05-22 12:14:31  INFO - Found Element :'By.name: DateOfBirthMonth'
-05-22 12:14:31  WARN - Trying to find element:'By.xpath: .//option[@value = "5"]'
-05-22 12:14:31  INFO - Found Element :'By.xpath: .//option[@value = "5"]'
-05-22 12:14:31  INFO - Trying to click on:'[[[[ChromeDriver: chrome on WINDOWS (3a914725c6fa9bbc06033c5de859efdc)] -> name: DateOfBirthMonth]] -> xpath: .//option[@value = "5"]]'
-05-22 12:14:31  INFO - Clicked on:'[[[[ChromeDriver: chrome on WINDOWS (3a914725c6fa9bbc06033c5de859efdc)] -> name: DateOfBirthMonth]] -> xpath: .//option[@value = "5"]]'
-05-22 12:14:31  WARN - Trying to find element:'By.name: DateOfBirthYear'
-05-22 12:14:31  INFO - Found Element :'By.name: DateOfBirthYear'
-05-22 12:14:31  WARN - Trying to find element:'By.name: DateOfBirthYear'
-05-22 12:14:31  INFO - Found Element :'By.name: DateOfBirthYear'
-05-22 12:14:31  WARN - Trying to find element:'By.name: DateOfBirthYear'
-05-22 12:14:31  INFO - Found Element :'By.name: DateOfBirthYear'
-05-22 12:14:31  WARN - Trying to find element:'By.xpath: .//option[@value = "1985"]'
-05-22 12:14:31  INFO - Found Element :'By.xpath: .//option[@value = "1985"]'
-05-22 12:14:31  INFO - Trying to click on:'[[[[ChromeDriver: chrome on WINDOWS (3a914725c6fa9bbc06033c5de859efdc)] -> name: DateOfBirthYear]] -> xpath: .//option[@value = "1985"]]'
-05-22 12:14:31  INFO - Clicked on:'[[[[ChromeDriver: chrome on WINDOWS (3a914725c6fa9bbc06033c5de859efdc)] -> name: DateOfBirthYear]] -> xpath: .//option[@value = "1985"]]'
-05-22 12:14:31  WARN - Trying to find element:'By.id: Email'
-05-22 12:14:31  INFO - Found Element :'By.id: Email'
-05-22 12:14:32  WARN - Trying to find element:'By.id: Email'
-05-22 12:14:32  INFO - Found Element :'By.id: Email'
-05-22 12:14:32  WARN - Trying to find element:'By.id: Email'
-05-22 12:14:32  INFO - Found Element :'By.id: Email'
-05-22 12:14:32  INFO - Trying to change value of:'[[ChromeDriver: chrome on WINDOWS (3a914725c6fa9bbc06033c5de859efdc)] -> id: Email]'
-05-22 12:14:32  INFO - Changed value of:'[[ChromeDriver: chrome on WINDOWS (3a914725c6fa9bbc06033c5de859efdc)] -> id: Email]' to:'[asd1d59@gmail.com]'
-05-22 12:14:32  WARN - Trying to find element:'By.id: Password'
-05-22 12:14:32  INFO - Found Element :'By.id: Password'
-05-22 12:14:32  WARN - Trying to find element:'By.id: Password'
-05-22 12:14:32  INFO - Found Element :'By.id: Password'
-05-22 12:14:32  WARN - Trying to find element:'By.id: Password'
-05-22 12:14:32  INFO - Found Element :'By.id: Password'
-05-22 12:14:32  INFO - Trying to change value of:'[[ChromeDriver: chrome on WINDOWS (3a914725c6fa9bbc06033c5de859efdc)] -> id: Password]'
-05-22 12:14:32  INFO - Changed value of:'[[ChromeDriver: chrome on WINDOWS (3a914725c6fa9bbc06033c5de859efdc)] -> id: Password]' to:'[5489920]'
-05-22 12:14:32  WARN - Trying to find element:'By.id: ConfirmPassword'
-05-22 12:14:32  INFO - Found Element :'By.id: ConfirmPassword'
-05-22 12:14:32  WARN - Trying to find element:'By.id: ConfirmPassword'
-05-22 12:14:32  INFO - Found Element :'By.id: ConfirmPassword'
-05-22 12:14:32  WARN - Trying to find element:'By.id: ConfirmPassword'
-05-22 12:14:32  INFO - Found Element :'By.id: ConfirmPassword'
-05-22 12:14:32  INFO - Trying to change value of:'[[ChromeDriver: chrome on WINDOWS (3a914725c6fa9bbc06033c5de859efdc)] -> id: ConfirmPassword]'
-05-22 12:14:33  INFO - Changed value of:'[[ChromeDriver: chrome on WINDOWS (3a914725c6fa9bbc06033c5de859efdc)] -> id: ConfirmPassword]' to:'[5489920]'
-05-22 12:14:33  WARN - Trying to find element:'By.xpath: //button[contains(@class,'register')]'
-05-22 12:14:33  INFO - Found Element :'By.xpath: //button[contains(@class,'register')]'
-05-22 12:14:33  WARN - Trying to find element:'By.xpath: //button[contains(@class,'register')]'
-05-22 12:14:33  INFO - Found Element :'By.xpath: //button[contains(@class,'register')]'
-05-22 12:14:33  WARN - Trying to find element:'By.xpath: //button[contains(@class,'register')]'
-05-22 12:14:33  INFO - Found Element :'By.xpath: //button[contains(@class,'register')]'
-05-22 12:14:33  INFO - Trying to click on:'[[ChromeDriver: chrome on WINDOWS (3a914725c6fa9bbc06033c5de859efdc)] -> xpath: //button[contains(@class,'register')]]'
-05-22 12:14:34  INFO - Clicked on:'[[ChromeDriver: chrome on WINDOWS (3a914725c6fa9bbc06033c5de859efdc)] -> xpath: //button[contains(@class,'register')]]'
-05-22 12:14:34  WARN - Trying to find element:'By.xpath: //*[contains(@class,'result')][contains(text(),'completed')]'
-05-22 12:14:34  INFO - Found Element :'By.xpath: //*[contains(@class,'result')][contains(text(),'completed')]'
-05-22 12:14:34  WARN - Trying to find element:'By.xpath: //*[contains(@class,'result')][contains(text(),'completed')]'
-05-22 12:14:34  INFO - Found Element :'By.xpath: //*[contains(@class,'result')][contains(text(),'completed')]'
-05-22 12:14:34  WARN - Trying to find element:'By.xpath: //*[contains(@class,'result')][contains(text(),'completed')]'
-05-22 12:14:34  INFO - Found Element :'By.xpath: //*[contains(@class,'result')][contains(text(),'completed')]'
+05-22 15:46:08 DEBUG - Using Log4J as the default logging framework
+05-22 15:46:08 DEBUG - -Dio.netty.leakDetection.level: simple
+05-22 15:46:08 DEBUG - -Dio.netty.leakDetection.targetRecords: 4
+05-22 15:46:08 DEBUG - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@7f3349fd
+05-22 15:46:08 DEBUG - -Dio.netty.noUnsafe: false
+05-22 15:46:08 DEBUG - Java version: 8
+05-22 15:46:08 DEBUG - sun.misc.Unsafe.theUnsafe: available
+05-22 15:46:08 DEBUG - sun.misc.Unsafe.copyMemory: available
+05-22 15:46:08 DEBUG - java.nio.Buffer.address: available
+05-22 15:46:08 DEBUG - direct buffer constructor: available
+05-22 15:46:08 DEBUG - java.nio.Bits.unaligned: available, true
+05-22 15:46:08 DEBUG - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+05-22 15:46:08 DEBUG - java.nio.DirectByteBuffer.<init>(long, int): available
+05-22 15:46:08 DEBUG - sun.misc.Unsafe: available
+05-22 15:46:08 DEBUG - -Dio.netty.tmpdir: C:\Users\Ahmed Medhat\AppData\Local\Temp (java.io.tmpdir)
+05-22 15:46:08 DEBUG - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+05-22 15:46:08 DEBUG - Platform: Windows
+05-22 15:46:08 DEBUG - -Dio.netty.maxDirectMemory: 3763863552 bytes
+05-22 15:46:08 DEBUG - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+05-22 15:46:08 DEBUG - java.nio.ByteBuffer.cleaner(): available
+05-22 15:46:08 DEBUG - -Dio.netty.noPreferDirect: false
+05-22 15:46:08 DEBUG - org.jctools-core.MpscChunkedArrayQueue: available
+05-22 15:46:08 DEBUG - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+05-22 15:46:08 DEBUG - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+05-22 15:46:08 DEBUG - Default protocols (JDK): [TLSv1.2] 
+05-22 15:46:08 DEBUG - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+05-22 15:46:08 DEBUG - -Dio.netty.eventLoopThreads: 24
+05-22 15:46:08 DEBUG - -Dio.netty.noKeySetOptimization: false
+05-22 15:46:08 DEBUG - -Dio.netty.selectorAutoRebuildThreshold: 512
+05-22 15:46:08 DEBUG - -Dio.netty.allocator.numHeapArenas: 24
+05-22 15:46:08 DEBUG - -Dio.netty.allocator.numDirectArenas: 24
+05-22 15:46:08 DEBUG - -Dio.netty.allocator.pageSize: 8192
+05-22 15:46:08 DEBUG - -Dio.netty.allocator.maxOrder: 9
+05-22 15:46:08 DEBUG - -Dio.netty.allocator.chunkSize: 4194304
+05-22 15:46:08 DEBUG - -Dio.netty.allocator.smallCacheSize: 256
+05-22 15:46:08 DEBUG - -Dio.netty.allocator.normalCacheSize: 64
+05-22 15:46:08 DEBUG - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+05-22 15:46:08 DEBUG - -Dio.netty.allocator.cacheTrimInterval: 8192
+05-22 15:46:08 DEBUG - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+05-22 15:46:08 DEBUG - -Dio.netty.allocator.useCacheForAllThreads: false
+05-22 15:46:08 DEBUG - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+05-22 15:46:08 DEBUG - -Dio.netty.allocator.type: pooled
+05-22 15:46:08 DEBUG - -Dio.netty.threadLocalDirectBufferSize: 0
+05-22 15:46:08 DEBUG - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+05-22 15:46:09 DEBUG - -Dio.netty.processId: 26948 (auto-detected)
+05-22 15:46:09 DEBUG - -Djava.net.preferIPv4Stack: false
+05-22 15:46:09 DEBUG - -Djava.net.preferIPv6Addresses: false
+05-22 15:46:09 DEBUG - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+05-22 15:46:09 DEBUG - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+05-22 15:46:10 DEBUG - -Dio.netty.machineId: 2c:db:07:ff:fe:31:de:a4 (auto-detected)
+05-22 15:46:10 DEBUG - -Dio.netty.buffer.checkAccessible: true
+05-22 15:46:10 DEBUG - -Dio.netty.buffer.checkBounds: true
+05-22 15:46:10 DEBUG - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5cfad1be
+05-22 15:46:10 DEBUG - -Dio.netty.recycler.maxCapacityPerThread: 4096
+05-22 15:46:10 DEBUG - -Dio.netty.recycler.ratio: 8
+05-22 15:46:10 DEBUG - -Dio.netty.recycler.chunkSize: 32
+05-22 15:46:10 DEBUG - -Dio.netty.recycler.blocking: false
+05-22 15:46:11 DEBUG - brotli4j not in the classpath; Brotli support will be unavailable.
+05-22 15:46:11 DEBUG - -Dio.netty.initialSeedUniquifier: 0x84e2de4d2546b679
+05-22 15:46:11  INFO - Trying to Navigating to:'https://demo.nopcommerce.com/'
+05-22 15:46:13  INFO - Navigating to:'https://demo.nopcommerce.com/'
+05-22 15:46:13 DEBUG - Browser is opened
+05-22 15:46:14  WARN - Trying to find element:'By.xpath: //*[contains(@class,'register')]'
+05-22 15:46:14  INFO - Found Element :'By.xpath: //*[contains(@class,'register')]'
+05-22 15:46:14  WARN - Trying to find element:'By.xpath: //*[contains(@class,'register')]'
+05-22 15:46:14  INFO - Found Element :'By.xpath: //*[contains(@class,'register')]'
+05-22 15:46:14  WARN - Trying to find element:'By.xpath: //*[contains(@class,'register')]'
+05-22 15:46:14  INFO - Found Element :'By.xpath: //*[contains(@class,'register')]'
+05-22 15:46:14  INFO - Trying to click on:'[[ChromeDriver: chrome on WINDOWS (f482e8d3f420be540d2cdc5b36416006)] -> xpath: //*[contains(@class,'register')]]'
+05-22 15:46:15  INFO - Clicked on:'[[ChromeDriver: chrome on WINDOWS (f482e8d3f420be540d2cdc5b36416006)] -> xpath: //*[contains(@class,'register')]]'
+05-22 15:46:15  WARN - Trying to find element:'By.id: gender-male'
+05-22 15:46:15  INFO - Found Element :'By.id: gender-male'
+05-22 15:46:16  WARN - Trying to find element:'By.id: gender-male'
+05-22 15:46:16  INFO - Found Element :'By.id: gender-male'
+05-22 15:46:16  WARN - Trying to find element:'By.id: gender-male'
+05-22 15:46:16  INFO - Found Element :'By.id: gender-male'
+05-22 15:46:16  INFO - Trying to click on:'[[ChromeDriver: chrome on WINDOWS (f482e8d3f420be540d2cdc5b36416006)] -> id: gender-male]'
+05-22 15:46:16  INFO - Clicked on:'[[ChromeDriver: chrome on WINDOWS (f482e8d3f420be540d2cdc5b36416006)] -> id: gender-male]'
+05-22 15:46:16  WARN - Trying to find element:'By.id: FirstName'
+05-22 15:46:16  INFO - Found Element :'By.id: FirstName'
+05-22 15:46:16  WARN - Trying to find element:'By.id: FirstName'
+05-22 15:46:16  INFO - Found Element :'By.id: FirstName'
+05-22 15:46:16  WARN - Trying to find element:'By.id: FirstName'
+05-22 15:46:16  INFO - Found Element :'By.id: FirstName'
+05-22 15:46:16  INFO - Trying to change value of:'[[ChromeDriver: chrome on WINDOWS (f482e8d3f420be540d2cdc5b36416006)] -> id: FirstName]'
+05-22 15:46:16  INFO - Changed value of:'[[ChromeDriver: chrome on WINDOWS (f482e8d3f420be540d2cdc5b36416006)] -> id: FirstName]' to:'[ahmed]'
+05-22 15:46:16  WARN - Trying to find element:'By.id: LastName'
+05-22 15:46:16  INFO - Found Element :'By.id: LastName'
+05-22 15:46:16  WARN - Trying to find element:'By.id: LastName'
+05-22 15:46:16  INFO - Found Element :'By.id: LastName'
+05-22 15:46:16  WARN - Trying to find element:'By.id: LastName'
+05-22 15:46:16  INFO - Found Element :'By.id: LastName'
+05-22 15:46:16  INFO - Trying to change value of:'[[ChromeDriver: chrome on WINDOWS (f482e8d3f420be540d2cdc5b36416006)] -> id: LastName]'
+05-22 15:46:16  INFO - Changed value of:'[[ChromeDriver: chrome on WINDOWS (f482e8d3f420be540d2cdc5b36416006)] -> id: LastName]' to:'[medhat]'
+05-22 15:46:16  WARN - Trying to find element:'By.name: DateOfBirthDay'
+05-22 15:46:16  INFO - Found Element :'By.name: DateOfBirthDay'
+05-22 15:46:17  WARN - Trying to find element:'By.name: DateOfBirthDay'
+05-22 15:46:17  INFO - Found Element :'By.name: DateOfBirthDay'
+05-22 15:46:17  WARN - Trying to find element:'By.name: DateOfBirthDay'
+05-22 15:46:17  INFO - Found Element :'By.name: DateOfBirthDay'
+05-22 15:46:17  WARN - Trying to find element:'By.xpath: .//option[@value = "1"]'
+05-22 15:46:17  INFO - Found Element :'By.xpath: .//option[@value = "1"]'
+05-22 15:46:17  INFO - Trying to click on:'[[[[ChromeDriver: chrome on WINDOWS (f482e8d3f420be540d2cdc5b36416006)] -> name: DateOfBirthDay]] -> xpath: .//option[@value = "1"]]'
+05-22 15:46:17  INFO - Clicked on:'[[[[ChromeDriver: chrome on WINDOWS (f482e8d3f420be540d2cdc5b36416006)] -> name: DateOfBirthDay]] -> xpath: .//option[@value = "1"]]'
+05-22 15:46:17  WARN - Trying to find element:'By.name: DateOfBirthMonth'
+05-22 15:46:17  INFO - Found Element :'By.name: DateOfBirthMonth'
+05-22 15:46:17  WARN - Trying to find element:'By.name: DateOfBirthMonth'
+05-22 15:46:17  INFO - Found Element :'By.name: DateOfBirthMonth'
+05-22 15:46:17  WARN - Trying to find element:'By.name: DateOfBirthMonth'
+05-22 15:46:17  INFO - Found Element :'By.name: DateOfBirthMonth'
+05-22 15:46:17  WARN - Trying to find element:'By.xpath: .//option[@value = "5"]'
+05-22 15:46:17  INFO - Found Element :'By.xpath: .//option[@value = "5"]'
+05-22 15:46:17  INFO - Trying to click on:'[[[[ChromeDriver: chrome on WINDOWS (f482e8d3f420be540d2cdc5b36416006)] -> name: DateOfBirthMonth]] -> xpath: .//option[@value = "5"]]'
+05-22 15:46:17  INFO - Clicked on:'[[[[ChromeDriver: chrome on WINDOWS (f482e8d3f420be540d2cdc5b36416006)] -> name: DateOfBirthMonth]] -> xpath: .//option[@value = "5"]]'
+05-22 15:46:17  WARN - Trying to find element:'By.name: DateOfBirthYear'
+05-22 15:46:17  INFO - Found Element :'By.name: DateOfBirthYear'
+05-22 15:46:18  WARN - Trying to find element:'By.name: DateOfBirthYear'
+05-22 15:46:18  INFO - Found Element :'By.name: DateOfBirthYear'
+05-22 15:46:18  WARN - Trying to find element:'By.name: DateOfBirthYear'
+05-22 15:46:18  INFO - Found Element :'By.name: DateOfBirthYear'
+05-22 15:46:18  WARN - Trying to find element:'By.xpath: .//option[@value = "1985"]'
+05-22 15:46:18  INFO - Found Element :'By.xpath: .//option[@value = "1985"]'
+05-22 15:46:18  INFO - Trying to click on:'[[[[ChromeDriver: chrome on WINDOWS (f482e8d3f420be540d2cdc5b36416006)] -> name: DateOfBirthYear]] -> xpath: .//option[@value = "1985"]]'
+05-22 15:46:18  INFO - Clicked on:'[[[[ChromeDriver: chrome on WINDOWS (f482e8d3f420be540d2cdc5b36416006)] -> name: DateOfBirthYear]] -> xpath: .//option[@value = "1985"]]'
+05-22 15:46:18  WARN - Trying to find element:'By.id: Email'
+05-22 15:46:18  INFO - Found Element :'By.id: Email'
+05-22 15:46:18  WARN - Trying to find element:'By.id: Email'
+05-22 15:46:18  INFO - Found Element :'By.id: Email'
+05-22 15:46:18  WARN - Trying to find element:'By.id: Email'
+05-22 15:46:18  INFO - Found Element :'By.id: Email'
+05-22 15:46:18  INFO - Trying to change value of:'[[ChromeDriver: chrome on WINDOWS (f482e8d3f420be540d2cdc5b36416006)] -> id: Email]'
+05-22 15:46:18  INFO - Changed value of:'[[ChromeDriver: chrome on WINDOWS (f482e8d3f420be540d2cdc5b36416006)] -> id: Email]' to:'[rtss59@gmail.com]'
+05-22 15:46:18  WARN - Trying to find element:'By.id: Password'
+05-22 15:46:18  INFO - Found Element :'By.id: Password'
+05-22 15:46:18  WARN - Trying to find element:'By.id: Password'
+05-22 15:46:18  INFO - Found Element :'By.id: Password'
+05-22 15:46:18  WARN - Trying to find element:'By.id: Password'
+05-22 15:46:19  INFO - Found Element :'By.id: Password'
+05-22 15:46:19  INFO - Trying to change value of:'[[ChromeDriver: chrome on WINDOWS (f482e8d3f420be540d2cdc5b36416006)] -> id: Password]'
+05-22 15:46:19  INFO - Changed value of:'[[ChromeDriver: chrome on WINDOWS (f482e8d3f420be540d2cdc5b36416006)] -> id: Password]' to:'[5489920]'
+05-22 15:46:19  WARN - Trying to find element:'By.id: ConfirmPassword'
+05-22 15:46:19  INFO - Found Element :'By.id: ConfirmPassword'
+05-22 15:46:19  WARN - Trying to find element:'By.id: ConfirmPassword'
+05-22 15:46:19  INFO - Found Element :'By.id: ConfirmPassword'
+05-22 15:46:19  WARN - Trying to find element:'By.id: ConfirmPassword'
+05-22 15:46:19  INFO - Found Element :'By.id: ConfirmPassword'
+05-22 15:46:19  INFO - Trying to change value of:'[[ChromeDriver: chrome on WINDOWS (f482e8d3f420be540d2cdc5b36416006)] -> id: ConfirmPassword]'
+05-22 15:46:19  INFO - Changed value of:'[[ChromeDriver: chrome on WINDOWS (f482e8d3f420be540d2cdc5b36416006)] -> id: ConfirmPassword]' to:'[5489920]'
+05-22 15:46:19  WARN - Trying to find element:'By.xpath: //button[contains(@class,'register')]'
+05-22 15:46:19  INFO - Found Element :'By.xpath: //button[contains(@class,'register')]'
+05-22 15:46:19  WARN - Trying to find element:'By.xpath: //button[contains(@class,'register')]'
+05-22 15:46:19  INFO - Found Element :'By.xpath: //button[contains(@class,'register')]'
+05-22 15:46:19  WARN - Trying to find element:'By.xpath: //button[contains(@class,'register')]'
+05-22 15:46:19  INFO - Found Element :'By.xpath: //button[contains(@class,'register')]'
+05-22 15:46:19  INFO - Trying to click on:'[[ChromeDriver: chrome on WINDOWS (f482e8d3f420be540d2cdc5b36416006)] -> xpath: //button[contains(@class,'register')]]'
+05-22 15:46:20  INFO - Clicked on:'[[ChromeDriver: chrome on WINDOWS (f482e8d3f420be540d2cdc5b36416006)] -> xpath: //button[contains(@class,'register')]]'
+05-22 15:46:20  WARN - Trying to find element:'By.xpath: //*[contains(@class,'result')][contains(text(),'completed')]'
+05-22 15:46:20  INFO - Found Element :'By.xpath: //*[contains(@class,'result')][contains(text(),'completed')]'
+05-22 15:46:21  WARN - Trying to find element:'By.xpath: //*[contains(@class,'result')][contains(text(),'completed')]'
+05-22 15:46:21  INFO - Found Element :'By.xpath: //*[contains(@class,'result')][contains(text(),'completed')]'
+05-22 15:46:21  WARN - Trying to find element:'By.xpath: //*[contains(@class,'result')][contains(text(),'completed')]'
+05-22 15:46:21  INFO - Found Element :'By.xpath: //*[contains(@class,'result')][contains(text(),'completed')]'
+05-22 15:46:22 DEBUG - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+05-22 15:46:22 DEBUG - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+05-22 15:46:22 DEBUG - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+05-22 15:46:22 DEBUG - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+05-22 15:46:22 DEBUG - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Ahmed%20Medhat/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+05-22 15:46:22 DEBUG - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+05-22 15:46:22 DEBUG - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+05-22 15:46:22 DEBUG - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+05-22 15:46:22 DEBUG - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+05-22 15:46:22 DEBUG - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Ahmed%20Medhat/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

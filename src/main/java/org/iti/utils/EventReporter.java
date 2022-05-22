@@ -15,53 +15,53 @@ public class EventReporter implements WebDriverEventListener {
 
     public void beforeNavigateTo(String url, WebDriver driver) {
         logger.info("Trying to Navigating to:'" + url + "'");
-        System.out.println("Before navigating to: '" + url + "'");
+//        System.out.println("Before navigating to: '" + url + "'");
     }
 
     public void afterNavigateTo(String url, WebDriver driver) {
         logger.info("Navigating to:'" + url + "'");
-        System.out.println("Navigated to:'" + url + "'");
+//        System.out.println("Navigated to:'" + url + "'");
     }
 
     public void beforeClickOn(WebElement element, WebDriver driver) {
         logger.info("Trying to click on:'" + element.toString() + "'");
-        System.out.println("Trying to click on: " + element.toString());
+//        System.out.println("Trying to click on: " + element.toString());
     }
 
     public void afterClickOn(WebElement element, WebDriver driver) {
         logger.info("Clicked on:'" + element.toString() + "'");
-        System.out.println("Clicked on: " + element.toString());
+//        System.out.println("Clicked on: " + element.toString());
     }
 
     public void beforeNavigateBack(WebDriver driver) {
         logger.warn("Navigating back to previous page");
-        System.out.println("Navigating back to previous page");
+//        System.out.println("Navigating back to previous page");
     }
 
     public void afterNavigateBack(WebDriver driver) {
         logger.warn("Navigated back to previous page");
-        System.out.println("Navigated back to previous page");
+//        System.out.println("Navigated back to previous page");
     }
 
     public void beforeNavigateForward(WebDriver driver) {
         logger.warn("Navigating forward to next page");
-        System.out.println("Navigating forward to next page");
+//        System.out.println("Navigating forward to next page");
     }
 
     public void afterNavigateForward(WebDriver driver) {
         logger.warn("Navigated forward to next page");
-        System.out.println("Navigated forward to next page");
+//        System.out.println("Navigated forward to next page");
     }
 
 
     public void beforeFindBy(By by, WebElement element, WebDriver driver) {
         logger.warn("Trying to find element:'" + by.toString() + "'");
-        System.out.println("Trying to find Element  " + by.toString());
+//        System.out.println("Trying to find Element  " + by.toString());
     }
 
     public void afterFindBy(By by, WebElement element, WebDriver driver) {
         logger.info("Found Element :'" + by.toString() + "'");
-        System.out.println("Found Element  " + by.toString());
+//        System.out.println("Found Element  " + by.toString());
     }
 
     public void beforeScript(String script, WebDriver driver) {
@@ -96,12 +96,12 @@ public class EventReporter implements WebDriverEventListener {
 
     public void beforeChangeValueOf(WebElement element, WebDriver driver, CharSequence[] keysToSend) {
         logger.info("Trying to change value of:'" + element.toString() + "'");
-        System.out.println("Value of the:" + element.toString() + " before any changes made");
+//        System.out.println("Value of the:" + element.toString() + " before any changes made");
     }
 
     public void afterChangeValueOf(WebElement element, WebDriver driver, CharSequence[] keysToSend) {
         logger.info("Changed value of:'" + element.toString() + "'" + " to:'" + Arrays.toString(keysToSend) + "'");
-        System.out.println("Element value changed to: " + element.toString());
+//        System.out.println("Element value changed to: " + element.toString());
     }
 
     public <X> void afterGetScreenshotAs(OutputType<X> arg0, X arg1) {

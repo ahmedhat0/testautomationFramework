@@ -1,4 +1,4 @@
-package org.iti.pages;
+package org.iti.actions;
 
 import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.By;
@@ -14,63 +14,55 @@ import java.time.Duration;
 
 import static org.iti.utils.Highlighter.highlightElement;
 
-public class BasePage extends Page {
+public class UiActions {
+    WebDriver driver;
 
-    public BasePage(WebDriver driver) {
-        super(driver);
+    public UiActions(WebDriver driver) {
+        this.driver = driver;
     }
 
-    @Override
     protected void selectItemInDropdownByVisibleText(By ByElement, String visibleText) {
         Select select = new Select(driver.findElement(ByElement));
         select.selectByVisibleText(visibleText);
     }
 
-    @Override
     protected void selectItemInDropdown(By ByElement, int index) {
         highlightElement(driver, ByElement);
         Select select = new Select(driver.findElement(ByElement));
         select.selectByIndex(index);
     }
 
-    @Override
     protected void selectItemInDropdown(By ByElement, String value) {
         highlightElement(driver, ByElement);
         Select select = new Select(driver.findElement(ByElement));
         select.selectByValue(value);
     }
 
-    @Override
     protected void clickOn(By ByElement) {
         highlightElement(driver, ByElement);
         driver.findElement(ByElement).click();
     }
 
-    @Override
     protected void sendKeys(By ByElement, String text) {
         highlightElement(driver, ByElement);
         driver.findElement(ByElement).sendKeys(text);
     }
 
-    @Override
     protected void clear(By ByElement) {
         highlightElement(driver, ByElement);
         driver.findElement(ByElement).clear();
     }
 
-    @Override
     protected String getText(By ByElement) {
         highlightElement(driver, ByElement);
         return driver.findElement(ByElement).getText();
     }
 
-    @Override
     protected WebElement getWebElement(By ByElement) {
         highlightElement(driver, ByElement);
         return driver.findElement(ByElement);
     }
 
-    @Override
     protected void mouseActions(@NotNull String actionNeeded, By ByElement) {
         highlightElement(driver, ByElement);
         Actions actions = new Actions(driver);
@@ -87,7 +79,6 @@ public class BasePage extends Page {
         }
     }
 
-    @Override
     protected boolean isElement(By ByElement, @NotNull String actionNeeded) {
         switch (actionNeeded.toLowerCase()) {
             case "enabled":
@@ -100,7 +91,6 @@ public class BasePage extends Page {
         return false;
     }
 
-    @Override
     protected void waitForElement(By ByElement, @NotNull String toBe, long timeOUTinMilliseconds) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(timeOUTinMilliseconds));
         switch (toBe.toLowerCase()) {
@@ -113,10 +103,18 @@ public class BasePage extends Page {
         }
     }
 
-    @Override
     protected void pressKey(By ByElement, String key) {
         highlightElement(driver, ByElement);
         driver.findElement(ByElement).sendKeys(Keys.valueOf(key));
+    }
+
+    public <NeededPage extends UiActions> NeededPage getInstance(Class<NeededPage> pageNeeded) {
+        try {
+            return pageNeeded.getDeclaredConstructor(WebDriver.class).newInstance(this.driver);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
 

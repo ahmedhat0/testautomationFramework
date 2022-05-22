@@ -1,8 +1,9 @@
 package org.iti.pages;
 
+import org.iti.actions.UiActions;
 import org.openqa.selenium.WebDriver;
 
-public class LoginPage extends BasePage {
+public class LoginPage extends UiActions {
 
     // * ********************************************************************************************************* * //
     // *                                          Login Page Elements

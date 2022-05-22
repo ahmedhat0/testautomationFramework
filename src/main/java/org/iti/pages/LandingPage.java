@@ -1,15 +1,12 @@
 package org.iti.pages;
 
+import org.iti.actions.UiActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class HomePage extends BasePage {
+public class LandingPage extends UiActions {
 
     protected String linkXpath_format = "//*[contains(@class,'%s')]";
-
-    // ************************************************************************************************************* //
-    // *                                          Home Page Elements
-    // ************************************************************************************************************* //
 
     private final By registerElement = By.xpath(String.format(linkXpath_format, "register"));
     private final By loginElement = By.xpath(String.format(linkXpath_format, "login"));
@@ -19,16 +16,12 @@ public class HomePage extends BasePage {
     // ************************************************************************************************************* //
     // ************************************************************************************************************* //
 
-    // ! ********************************************************************************************************* ! //
-    // !                                        Home Page Constructor
-    // ! ********************************************************************************************************* ! //
-    public HomePage(WebDriver driver) {
+    public LandingPage(WebDriver driver) {
         super(driver);
     }
 
-
     // ? ********************************************************************************************************* ? //
-    // ?                                          Home Page Methods
+    // ?                                        Home Page Methods
     // ? ********************************************************************************************************* ? //
 
     public LoginPage goToLoginPage() {

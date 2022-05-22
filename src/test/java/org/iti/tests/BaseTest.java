@@ -3,8 +3,7 @@ package org.iti.tests;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
-import org.iti.pages.BasePage;
-import org.iti.pages.Page;
+import org.iti.actions.UiActions;
 import org.iti.utils.EventReporter;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Point;
@@ -23,7 +22,7 @@ public class BaseTest {
 
 
     public  EventFiringWebDriver driver;
-    protected Page page;
+    protected UiActions page;
     protected SoftAssert softAssert;
     Logger logger = Logger.getLogger(BaseTest.class);
 
@@ -82,12 +81,9 @@ public class BaseTest {
         driver.manage().window().setPosition(new Point(900,0));
 
 
-        /*using IN tests*/
-        // TODO: 05/17/2022 htttttttttt
-
         logger.debug("Browser is opened");
 
-        page = new BasePage(driver);
+        page = new UiActions(driver);
     }
 
     @AfterTest

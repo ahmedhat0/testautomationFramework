@@ -1,6 +1,6 @@
 package org.iti.tests;
 
-import org.iti.pages.HomePage;
+import org.iti.pages.LandingPage;
 import org.iti.pages.RegisterPage;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -24,8 +24,8 @@ public class RegistrationTest extends BaseTest {
     public void testRegistration(String gender, String firstName, String lastName, String day, String month,
                                  String year, String email, String password) {
 
-        HomePage homePage = page.getInstance(HomePage.class);
-        RegisterPage registerPage = homePage.goToRegisterPage();
+        LandingPage landingPage = page.getInstance(LandingPage.class);
+        RegisterPage registerPage = landingPage.goToRegisterPage();
         registerPage.registerUser(gender, firstName, lastName, day, month, year, email, password);
         String status = registerPage.getRegistrationStatus();
 

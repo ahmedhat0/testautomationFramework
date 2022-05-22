@@ -1,9 +1,11 @@
 package org.iti.pages;
 
+import org.iti.actions.UiActions;
+import org.json.simple.parser.JSONParser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class RegisterPage extends BasePage {
+public class RegisterPage extends UiActions {
 
     // * ********************************************************************************************************* * //
     // *                                         Registration Page Elements
