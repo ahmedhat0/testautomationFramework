@@ -14,7 +14,7 @@ public class RegistrationTest extends BaseTest {
 
     @DataProvider(name = "excelDataProvider")
     public static Object[][] getData() throws IOException {
-        String TESTDATA_SHEET_PATH = "src/test/java/org/iti/testData/testdata.xlsx";
+        String TESTDATA_SHEET_PATH = "src/test/resources/testData/testdata.xlsx";
         String SHEET_NAME = "RegistrationData";
 
         return getExcelData(TESTDATA_SHEET_PATH, SHEET_NAME);

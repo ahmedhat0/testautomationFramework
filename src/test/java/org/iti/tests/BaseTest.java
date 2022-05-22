@@ -19,22 +19,10 @@ import java.io.File;
 import java.io.IOException;
 
 public class BaseTest {
-
-
     public  EventFiringWebDriver driver;
     protected UiActions page;
     protected SoftAssert softAssert;
     Logger logger = Logger.getLogger(BaseTest.class);
-
-    public void takeScreenshot(String testMethodName) {
-        System.out.println("Taking Screenshot ... ");
-        File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        try {
-            FileUtils.copyFile(scrFile, new File("screenshots/" + testMethodName + ".png"));
-        } catch (IOException e) {
-            e.getCause();
-        }
-    }
 
     /**
      * IMPORTANT:
@@ -43,19 +31,7 @@ public class BaseTest {
     @Parameters({"browser"})
     public void setUp(@Optional("chrome") String browser) {
 
-        /*
-         ! ********************************************************************* !
-         !                              IMPORTANT                                !
-         ? Parametrization of the browser is not working here                    !
-         ? it only works if run from the testng.xml file.                        !
-         ! if the program fetch for the browser from here will get null          !
-         ! so if its null use default @param chrome passed on the IF statement   !
-         ! ********************************************************************* !
-         */
-
-/*
         if (browser == null) browser = "chrome";
-*/
 
         switch (browser.toLowerCase()) {
             case "chrome":

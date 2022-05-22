@@ -1,9 +1,12 @@
 package org.iti.utils;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.iti.tests.BaseTest;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -11,11 +14,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class TestUtilities extends BaseTest {
-
-    public static long PAGE_LOAD_TIMEOUT = 20;
-    public static long IMPLICIT_WAIT = 10;
-
-    public static String TESTDATA_SHEET_PATH =  "src/test/resources/testData/testdata.xlsx";
 
     static FileInputStream sourceExcelIs = null;
 
@@ -48,6 +46,16 @@ public class TestUtilities extends BaseTest {
 
     public void switchToFrame(String frame) {
         driver.switchTo().frame(frame);
+    }
+
+    public void takeScreenshot(String testMethodName) {
+        System.out.println("Taking Screenshot ... ");
+        File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        try {
+            FileUtils.copyFile(scrFile, new File("screenshots/" + testMethodName + ".png"));
+        } catch (IOException e) {
+            e.getCause();
+        }
     }
 
 }
