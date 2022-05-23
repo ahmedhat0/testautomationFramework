@@ -31,6 +31,7 @@ public class BrowserActions {
                 driver = new EventFiringWebDriver(new EdgeDriver());
                 break;
         }
+
         driver.register(new EventReporter());
         driver.manage().window().setPosition(new Point(900, 0));
         driver.get("https://demo.nopcommerce.com/");
