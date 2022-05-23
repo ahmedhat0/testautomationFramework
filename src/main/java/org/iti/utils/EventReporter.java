@@ -30,7 +30,7 @@ public class EventReporter implements WebDriverEventListener {
 
     public void afterClickOn(WebElement element, WebDriver driver) {
         logger.info("Clicked on:'" + element.toString() + "'");
-//        System.out.println("Clicked on: " + element.toString());
+        System.out.println("Clicked on: " + element.toString());
     }
 
     public void beforeNavigateBack(WebDriver driver) {

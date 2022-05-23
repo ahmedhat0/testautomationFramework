@@ -9,11 +9,13 @@ public class LandingPage extends UiActions {
     public LandingPage(WebDriver driver) {
         super(driver);
     }
+    protected String linkXpath_format = "//*[contains(@class,'%s')]";
 
-    private final By registerBtn = By.xpath(ReadProperties.getProperties("locators.properties").getProperty("landingPage.registerBtn.xpath"));
-    private final By loginBtn = By.xpath(ReadProperties.getProperties("locators.properties").getProperty("landingPage.loginBtn.xpath"));
+    private  By registerElement = By.xpath(String.format(linkXpath_format, "ico-register"));
+    private final By loginElement = By.xpath(String.format(linkXpath_format, "login"));
+    private final By wishListElement = By.xpath(String.format(linkXpath_format, "wishlist"));
+    private final By cartElement = By.xpath(String.format(linkXpath_format, "cart"));
 
-//    protected String linkXpath_format = "//*[contains(@class,'%s')]";
 //    private final By wishListElement = By.xpath(String.format(linkXpath_format, "wishlist"));
 //    private final By cartElement = By.xpath(String.format(linkXpath_format, "cart"));
 
@@ -22,12 +24,12 @@ public class LandingPage extends UiActions {
     // ? ********************************************************************************************************* ? //
 
     public LoginPage goToLoginPage() {
-        clickOn(loginBtn);
+        clickOn(loginElement);
         return getInstance(LoginPage.class);
     }
 
     public RegisterPage goToRegisterPage() {
-        clickOn(registerBtn);
+        clickOn(registerElement);
         return getInstance(RegisterPage.class);
     }
 }

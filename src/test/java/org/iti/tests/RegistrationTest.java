@@ -3,12 +3,12 @@ package org.iti.tests;
 import org.iti.actions.BrowserActions;
 import org.iti.pages.LandingPage;
 import org.iti.pages.RegisterPage;
+import org.iti.utils.ExcelReader;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
 import java.io.IOException;
 
-import static org.iti.utils.TestUtilities.getExcelData;
 
 public class RegistrationTest {
 
@@ -18,8 +18,7 @@ public class RegistrationTest {
     public static Object[][] getData() throws IOException {
         String TESTDATA_SHEET_PATH = "src/test/resources/testData/testdata.xlsx";
         String SHEET_NAME = "RegistrationData";
-
-        return getExcelData(TESTDATA_SHEET_PATH, SHEET_NAME);
+        return ExcelReader.getExcelData(TESTDATA_SHEET_PATH,SHEET_NAME);
     }
 
     @BeforeTest
