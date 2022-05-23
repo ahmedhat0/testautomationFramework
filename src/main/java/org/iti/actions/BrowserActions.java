@@ -16,7 +16,6 @@ public class BrowserActions {
 
     public void initDriver(String browser) {
         if (browser == null) browser = "edge";
-
         switch (browser.toLowerCase()) {
             case "chrome":
                 WebDriverManager.chromedriver().setup();

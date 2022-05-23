@@ -9,12 +9,10 @@ public class LandingPage extends UiActions {
     public LandingPage(WebDriver driver) {
         super(driver);
     }
-    protected String linkXpath_format = "//*[contains(@class,'%s')]";
+//    protected String linkXpath_format = "//*[contains(@class,'%s')]";
 
-    private  By registerElement = By.xpath(String.format(linkXpath_format, "ico-register"));
-    private final By loginElement = By.xpath(String.format(linkXpath_format, "login"));
-    private final By wishListElement = By.xpath(String.format(linkXpath_format, "wishlist"));
-    private final By cartElement = By.xpath(String.format(linkXpath_format, "cart"));
+    private final By registerElement = By.xpath(ReadProperties.getProperties("locators").getProperty("landingPage.registerElement.xpath"));
+    private final By loginElement = By.xpath(ReadProperties.getProperties("locators").getProperty("landingPage.loginElement.xpath"));
 
 //    private final By wishListElement = By.xpath(String.format(linkXpath_format, "wishlist"));
 //    private final By cartElement = By.xpath(String.format(linkXpath_format, "cart"));

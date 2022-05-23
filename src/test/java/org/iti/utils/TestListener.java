@@ -1,5 +1,6 @@
 package org.iti.utils;
 
+import lombok.SneakyThrows;
 import org.iti.actions.BrowserActions;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -10,16 +11,12 @@ import java.io.PrintStream;
 
 public class TestListener extends BrowserActions implements ITestListener {
 
+    @SneakyThrows
     @Override
     public void onTestStart(ITestResult iTestResult) {
         PrintStream consoleFile;
-        try {
-            consoleFile = new PrintStream("./logs/TestListenerLog.txt");
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
+        consoleFile = new PrintStream("./logs/TestListenerLog.txt");
         System.setOut(consoleFile);
-
         System.out.println(iTestResult.getName() + " -> Test Started");
     }
 

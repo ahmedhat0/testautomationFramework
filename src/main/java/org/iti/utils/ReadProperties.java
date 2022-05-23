@@ -7,7 +7,7 @@ public class ReadProperties {
     public static Properties getProperties(String fileName) {
         Properties properties = new Properties();
         try {
-            properties.load(ReadProperties.class.getClassLoader().getResourceAsStream(fileName));
+            properties.load(ReadProperties.class.getClassLoader().getResourceAsStream(fileName+".properties"));
         } catch (Exception e) {
             e.printStackTrace();
         }
