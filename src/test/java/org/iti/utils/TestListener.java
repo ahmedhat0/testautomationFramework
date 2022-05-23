@@ -1,22 +1,20 @@
 package org.iti.utils;
 
-import org.iti.tests.BaseTest;
-
+import org.iti.actions.BrowserActions;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
 
-public class TestListener extends BaseTest implements ITestListener {
+public class TestListener extends BrowserActions implements ITestListener {
 
     @Override
     public void onTestStart(ITestResult iTestResult) {
         PrintStream consoleFile;
         try {
-            consoleFile = new PrintStream(new File("./TestListenerLog.txt"));
+            consoleFile = new PrintStream("./logs/TestListenerLog.txt");
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
@@ -42,9 +40,9 @@ public class TestListener extends BaseTest implements ITestListener {
 
     @Override
     public void onFinish(ITestContext iTestContext) {
-        System.out.println("======================================================");
-        System.out.println("|| Test Finished on : " + iTestContext.getEndDate()+"  ||");
-        System.out.println("======================================================");
+        System.out.println("===================================================");
+        System.out.println("||Test Finished on : " + iTestContext.getEndDate()+"||");
+        System.out.println("===================================================");
 
     }
 }

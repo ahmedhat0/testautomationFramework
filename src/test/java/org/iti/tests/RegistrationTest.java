@@ -1,16 +1,18 @@
 package org.iti.tests;
 
+import org.iti.actions.BrowserActions;
 import org.iti.pages.LandingPage;
 import org.iti.pages.RegisterPage;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.io.IOException;
 
 import static org.iti.utils.TestUtilities.getExcelData;
 
-public class RegistrationTest extends BaseTest {
+public class RegistrationTest {
+
+    BrowserActions baseTest = new BrowserActions();
 
     @DataProvider(name = "excelDataProvider")
     public static Object[][] getData() throws IOException {
@@ -20,11 +22,22 @@ public class RegistrationTest extends BaseTest {
         return getExcelData(TESTDATA_SHEET_PATH, SHEET_NAME);
     }
 
+    @BeforeTest
+    @Parameters({"browser"})
+    public void setUp(@Optional String browser){
+        baseTest.initDriver(browser);
+    }
+
+    @AfterTest
+    public void closeDriver(){
+        baseTest.closeDriver();
+    }
+
     @Test(dataProvider = "excelDataProvider")
     public void testRegistration(String gender, String firstName, String lastName, String day, String month,
                                  String year, String email, String password) {
 
-        LandingPage landingPage = page.getInstance(LandingPage.class);
+        LandingPage landingPage = baseTest.uiActions.getInstance(LandingPage.class);
         RegisterPage registerPage = landingPage.goToRegisterPage();
         registerPage.registerUser(gender, firstName, lastName, day, month, year, email, password);
         String status = registerPage.getRegistrationStatus();

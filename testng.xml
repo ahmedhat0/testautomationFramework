@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="My Test Suite" parallel="tests" thread-count="3">
+<suite name="My Test Suite" parallel="tests" thread-count="1">
     <!---
         < Execution From maven ? >
             1 . go to project folder
             2 . open cmd
             3 . mvn clean install
-
-            4 .
     -->
     <!---
         To Retry Failed TCs automatically  on run Time we should
-        implement which on org.iti.analyzer
+        implement which on org.iti.utils.analyzer
         then add <listeners> tag on xml contains
         <listener class-name = "package.MyTransformer"/>
 -->
@@ -26,13 +24,20 @@
     -->
     <listeners>
         <listener class-name="org.iti.utils.MyTransformer"/>
-        <listener class-name="org.iti.listeners.ExtentReportListener"/>
-        <listener class-name="org.iti.listeners.TestListener"/>
+        <listener class-name="org.iti.utils.ExtentReportListener"/>
+        <listener class-name="org.iti.utils.TestListener"/>
     </listeners>
 
 
     <test name="OnChrome" preserve-order="false">
         <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="org.iti.tests.RegistrationTest"/>
+        </classes>
+    </test>
+
+    <test name="OnFireFox" preserve-order="false">
+        <parameter name="browser" value="firefox"/>
         <classes>
             <class name="org.iti.tests.RegistrationTest"/>
         </classes>

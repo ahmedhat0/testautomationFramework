@@ -2,9 +2,10 @@
 
 This Package implements the Common Methods which Page Objects Use : 
 
-### Examples
+### _Examples_
+
 ```
-    protected abstract void selectItemInDropdownByVisibleText(By ByElement, String visibleText);
+    protected abstract void selectItemInDropdown(By ByElement, String value);
 ```
 ```
     protected abstract void selectItemInDropdown(By ByElement, int index);
@@ -16,7 +17,7 @@ This Package implements the Common Methods which Page Objects Use :
       etc ... 
 ```
 
-, Also Contains : ``getInstance `` method  Using JAVA Generics it takes any Class name By any type and create an instance of that class . 
+, Also Contains : ``getInstance`` method  Using JAVA Generics it takes any Class name By any type and create an instance of that class . 
 
 ```
     public <NeededPage extends UiActions> NeededPage getInstance(Class<NeededPage> pageNeeded) {

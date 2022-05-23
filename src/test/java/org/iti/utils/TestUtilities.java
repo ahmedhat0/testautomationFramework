@@ -4,7 +4,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.iti.tests.BaseTest;
+import org.iti.actions.BrowserActions;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
@@ -13,7 +13,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class TestUtilities extends BaseTest {
+public class TestUtilities extends BrowserActions {
 
     static FileInputStream sourceExcelIs = null;
 

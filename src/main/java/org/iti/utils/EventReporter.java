@@ -14,7 +14,7 @@ public class EventReporter implements WebDriverEventListener {
     Logger logger = Logger.getLogger(EventReporter.class);
 
     public void beforeNavigateTo(String url, WebDriver driver) {
-        logger.info("Trying to Navigating to:'" + url + "'");
+//        logger.info("Trying to Navigating to:'" + url + "'");
 //        System.out.println("Before navigating to: '" + url + "'");
     }
 
@@ -24,7 +24,7 @@ public class EventReporter implements WebDriverEventListener {
     }
 
     public void beforeClickOn(WebElement element, WebDriver driver) {
-        logger.info("Trying to click on:'" + element.toString() + "'");
+//        logger.info("Trying to click on:'" + element.toString() + "'");
 //        System.out.println("Trying to click on: " + element.toString());
     }
 
@@ -55,7 +55,7 @@ public class EventReporter implements WebDriverEventListener {
 
 
     public void beforeFindBy(By by, WebElement element, WebDriver driver) {
-        logger.warn("Trying to find element:'" + by.toString() + "'");
+//        logger.warn("Trying to find element:'" + by.toString() + "'");
 //        System.out.println("Trying to find Element  " + by.toString());
     }
 
@@ -95,7 +95,7 @@ public class EventReporter implements WebDriverEventListener {
     }
 
     public void beforeChangeValueOf(WebElement element, WebDriver driver, CharSequence[] keysToSend) {
-        logger.info("Trying to change value of:'" + element.toString() + "'");
+//        logger.info("Trying to change value of:'" + element.toString() + "'");
 //        System.out.println("Value of the:" + element.toString() + " before any changes made");
     }
 
