@@ -4,10 +4,8 @@
 This Class implements the initialization of the Webdriver and the actions that can be performed on the Webdriver Level.
 
 ```
-    
     initDriver()
     closeDriver()
-    
 ```
 
 
