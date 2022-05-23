@@ -32,8 +32,8 @@ public class BrowserActions {
                 break;
         }
         driver.register(new EventReporter());
-        driver.get("https://demo.nopcommerce.com/");
         driver.manage().window().setPosition(new Point(900, 0));
+        driver.get("https://demo.nopcommerce.com/");
         logger.debug("Browser is opened");
         uiActions = new UiActions(driver);
     }

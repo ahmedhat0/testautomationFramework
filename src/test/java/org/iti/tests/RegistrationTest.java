@@ -12,7 +12,7 @@ import static org.iti.utils.TestUtilities.getExcelData;
 
 public class RegistrationTest {
 
-    BrowserActions baseTest = new BrowserActions();
+    BrowserActions browserActions = new BrowserActions();
 
     @DataProvider(name = "excelDataProvider")
     public static Object[][] getData() throws IOException {
@@ -25,26 +25,24 @@ public class RegistrationTest {
     @BeforeTest
     @Parameters({"browser"})
     public void setUp(@Optional String browser){
-        baseTest.initDriver(browser);
+        browserActions.initDriver(browser);
     }
 
     @AfterTest
     public void closeDriver(){
-        baseTest.closeDriver();
+        browserActions.closeDriver();
     }
 
     @Test(dataProvider = "excelDataProvider")
     public void testRegistration(String gender, String firstName, String lastName, String day, String month,
                                  String year, String email, String password) {
 
-        LandingPage landingPage = baseTest.uiActions.getInstance(LandingPage.class);
+        LandingPage landingPage = browserActions.uiActions.getInstance(LandingPage.class);
         RegisterPage registerPage = landingPage.goToRegisterPage();
         registerPage.registerUser(gender, firstName, lastName, day, month, year, email, password);
         String status = registerPage.getRegistrationStatus();
 
         Assert.assertEquals(status, "Your registration completed", "Register Error !");
-
     }
-
 
 }
