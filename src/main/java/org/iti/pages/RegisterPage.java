@@ -5,6 +5,9 @@ import org.iti.utils.ReadProperties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import static org.iti.actions.UiActions.elementToBe.clickable;
+import static org.iti.actions.UiActions.elementToBe.visible;
+
 public class RegisterPage {
 
     // * ********************************************************************************************************* * //
@@ -41,26 +44,26 @@ public class RegisterPage {
 
     public void registerUser(String gender, String firstname, String lastname, String day, String month, String year, String email, String password) {
 
-        if (gender.equals("male")) uiActions.clickOn(maleRdBtn);
-        else uiActions.clickOn(femaleRdBtn);
+        if (gender.equals("male")) uiActions.clickOn(maleRdBtn,clickable,3000);
+        else uiActions.clickOn(femaleRdBtn,clickable,3000);
 
-        uiActions.sendKeys(firstNameBx, firstname);
-        uiActions.sendKeys(lastNameBx, lastname);
+        uiActions.sendKeys(firstNameBx, firstname,clickable,3000);
+        uiActions.sendKeys(lastNameBx, lastname,clickable,3000);
 
-        uiActions.selectItemInDropdown(dayOfBirth, day);
-        uiActions.selectItemInDropdown(monthOfBirth, month);
-        uiActions.selectItemInDropdown(yearOfBirth, year);
+        uiActions.selectItemInDropdown(dayOfBirth, day,clickable,3000);
+        uiActions.selectItemInDropdown(monthOfBirth, month,clickable,3000);
+        uiActions.selectItemInDropdown(yearOfBirth, year,clickable,3000);
 
-        uiActions.sendKeys(emailBx, email);
+        uiActions.sendKeys(emailBx, email,clickable,3000);
 
-        uiActions.sendKeys(passwordBx, password);
-        uiActions.sendKeys(confirmPasswordBx, password);
+        uiActions.sendKeys(passwordBx, password,clickable,3000);
+        uiActions.sendKeys(confirmPasswordBx, password,clickable,3000);
 
-        uiActions.clickOn(registerBtn);
+        uiActions.clickOn(registerBtn,clickable,3000);
     }
 
     public String getRegistrationStatus() {
-        return uiActions.getText(successMsg);
+        return uiActions.getText(successMsg,visible,3000);
     }
 
 }

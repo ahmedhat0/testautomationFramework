@@ -60,25 +60,10 @@ public class BrowserActions {
                     return driver;
             }
         } else {
-            switch (browser.toLowerCase()) {
-                case "chrome":
-                    WebDriverManager.chromedriver().setup();
-                    driver = new ChromeDriver();
-                    return driver;
-                case "firefox":
-                    WebDriverManager.firefoxdriver().setup();
-                    driver = new FirefoxDriver();
-                    return driver;
-                case "edge":
-                    WebDriverManager.edgedriver().setup();
-                    driver = new EdgeDriver();
-                    return driver;
-            }
-            return null;
+            return initDriver(browser);
         }
         return null;
     }
-
 
     public void navigateTo(String url) {
         driver.manage().window().setPosition(new Point(900, 0));

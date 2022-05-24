@@ -17,7 +17,7 @@ public class RegistrationTest {
     @BeforeTest
     @Parameters({"browser"})
     public void setUp(@Optional String browser) {
-        driver = browserActions.initDriver(browser);
+        driver = browserActions.initDriver(browser,false);
         browserActions.navigateTo(url);
     }
 
@@ -27,8 +27,14 @@ public class RegistrationTest {
     }
 
     @Test(dataProvider = "registrationProvider", dataProviderClass = ProviderClass.class)
-    public void testRegistration(String gender, String firstName, String lastName, String day, String month,
-                                 String year, String email, String password) {
+    public void testRegistration(String gender,
+                                 String firstName,
+                                 String lastName,
+                                 String day,
+                                 String month,
+                                 String year,
+                                 String email,
+                                 String password) {
 
         LandingPage landingPage = new LandingPage(driver);
         RegisterPage registerPage = new RegisterPage(driver);
