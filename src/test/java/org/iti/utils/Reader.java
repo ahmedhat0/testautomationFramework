@@ -30,7 +30,6 @@ public class Reader {
         String[][] arrayExcelData = new String[totalNumberOfRows][totalNumberOfCols];
         for (int r = 0; r < totalNumberOfRows; r++) {
             System.out.println(totalNumberOfRows + ",,,,,,,,,,,,,," + totalNumberOfCols);
-
             for (int c = 0; c < totalNumberOfCols; c++) {
                 System.out.println(r + "," + c);
                 XSSFRow row = sheet.getRow(r);

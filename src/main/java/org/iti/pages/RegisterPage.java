@@ -5,7 +5,7 @@ import org.iti.utils.ReadProperties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class RegisterPage extends UiActions {
+public class RegisterPage {
 
     // * ********************************************************************************************************* * //
     // *                                         Registration Page Elements
@@ -27,50 +27,40 @@ public class RegisterPage extends UiActions {
     private final By confirmPasswordBx = By.id(ReadProperties.getProperties("locators").getProperty("registrationPage.confirmPasswordBx.id"));
     private final By registerBtn = By.xpath(ReadProperties.getProperties("locators").getProperty("registrationPage.registerBtn.xpath"));
 
-    // * ********************************************************************************************************* * //
-    // * ********************************************************************************************************* * //
-
-    // ! ********************************************************************************************************* ! //
-    // !                                        Registration Page Constructor
-    // ! ********************************************************************************************************* ! //
+    WebDriver driver;
+    UiActions uiActions;
 
     public RegisterPage(WebDriver driver) {
-        super(driver);
+        this.driver = driver;
+        uiActions = new UiActions(driver);
     }
 
     // ? ********************************************************************************************************* ? //
     // ?                                        Registration Page Methods
     // ? ********************************************************************************************************* ? //
 
-    public void registerUser(String gender,
-                             String firstname,
-                             String lastname,
-                             String day,
-                             String month,
-                             String year,
-                             String email,
-                             String password) {
+    public void registerUser(String gender, String firstname, String lastname, String day, String month, String year, String email, String password) {
 
-        if (gender.equals("male")) clickOn(maleRdBtn);
-        else clickOn(femaleRdBtn);
+        if (gender.equals("male")) uiActions.clickOn(maleRdBtn);
+        else uiActions.clickOn(femaleRdBtn);
 
-        sendKeys(firstNameBx, firstname);
-        sendKeys(lastNameBx, lastname);
+        uiActions.sendKeys(firstNameBx, firstname);
+        uiActions.sendKeys(lastNameBx, lastname);
 
-        selectItemInDropdown(dayOfBirth, day);
-        selectItemInDropdown(monthOfBirth, month);
-        selectItemInDropdown(yearOfBirth, year);
+        uiActions.selectItemInDropdown(dayOfBirth, day);
+        uiActions.selectItemInDropdown(monthOfBirth, month);
+        uiActions.selectItemInDropdown(yearOfBirth, year);
 
-        sendKeys(emailBx, email);
+        uiActions.sendKeys(emailBx, email);
 
-        sendKeys(passwordBx, password);
-        sendKeys(confirmPasswordBx, password);
+        uiActions.sendKeys(passwordBx, password);
+        uiActions.sendKeys(confirmPasswordBx, password);
 
-        clickOn(registerBtn);
+        uiActions.clickOn(registerBtn);
     }
 
     public String getRegistrationStatus() {
-        return getText(successMsg);
+        return uiActions.getText(successMsg);
     }
 
 }

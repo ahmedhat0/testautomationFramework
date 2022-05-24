@@ -32,18 +32,18 @@ public class UiActions {
         select.selectByIndex(index);
     }
 
-    protected void selectItemInDropdown(By ByElement, String value) {
+    public void selectItemInDropdown(By ByElement, String value) {
         highlightElement(driver, ByElement);
         Select select = new Select(driver.findElement(ByElement));
         select.selectByValue(value);
     }
 
-    protected void clickOn(By ByElement) {
+    public void clickOn(By ByElement) {
         highlightElement(driver, ByElement);
         driver.findElement(ByElement).click();
     }
 
-    protected void sendKeys(By ByElement, String text) {
+    public void sendKeys(By ByElement, String text) {
         highlightElement(driver, ByElement);
         driver.findElement(ByElement).sendKeys(text);
     }
@@ -53,7 +53,7 @@ public class UiActions {
         driver.findElement(ByElement).clear();
     }
 
-    protected String getText(By ByElement) {
+    public String getText(By ByElement) {
         highlightElement(driver, ByElement);
         return driver.findElement(ByElement).getText();
     }
@@ -108,14 +108,14 @@ public class UiActions {
         driver.findElement(ByElement).sendKeys(Keys.valueOf(key));
     }
 
-    public <NeededPage extends UiActions> NeededPage getInstance(Class<NeededPage> pageNeeded) {
+    /*public <NeededPage extends UiActions> NeededPage getInstance(Class<NeededPage> pageNeeded) {
         try {
             return pageNeeded.getDeclaredConstructor(WebDriver.class).newInstance(this.driver);
         } catch (Exception e) {
             e.printStackTrace();
         }
         return null;
-    }
+    }*/
 
 
 }
