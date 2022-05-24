@@ -15,12 +15,12 @@ import static org.testng.Assert.assertEquals;
 public class RegistrationTest {
     WebDriver driver;
     BrowserActions browserActions = new BrowserActions();
-
+    String url = "https://demo.nopcommerce.com/";
     @BeforeTest
     @Parameters({"browser"})
     public void setUp(@Optional String browser) {
         driver = browserActions.initDriver(browser);
-        browserActions.getUrl();
+        browserActions.navigateTo(url);
     }
 
     @AfterTest
