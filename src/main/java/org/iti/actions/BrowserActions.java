@@ -80,9 +80,9 @@ public class BrowserActions {
     }
 
 
-    public void navigateTo(String AUT_url) {
+    public void navigateTo(String url) {
         driver.manage().window().setPosition(new Point(900, 0));
-        driver.get(AUT_url);
+        driver.get(url);
         logger.debug("Browser is opened");
     }
 

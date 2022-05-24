@@ -30,17 +30,17 @@
 
 
     <test name="OnChrome" preserve-order="false">
-        <parameter name="browser" value="chrome"/>
+<!--        <parameter name="browser" value="chrome"/>-->
         <classes>
             <class name="org.iti.tests.RegistrationTest"/>
         </classes>
     </test>
 
-    <test name="OnFireFox" preserve-order="false">
-        <parameter name="browser" value="firefox"/>
-        <classes>
-            <class name="org.iti.tests.RegistrationTest"/>
-        </classes>
-    </test>
+<!--    <test name="OnFireFox" preserve-order="false">-->
+<!--        <parameter name="browser" value="firefox"/>-->
+<!--        <classes>-->
+<!--            <class name="org.iti.tests.RegistrationTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 </suite>
