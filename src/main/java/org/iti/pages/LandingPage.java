@@ -5,7 +5,7 @@ import org.iti.utils.ReadProperties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import static org.iti.actions.UiActions.elementToBe.clickable;
+import static org.iti.actions.UiActions.element.CLICKABLE;
 
 
 public class LandingPage {
@@ -25,12 +25,12 @@ public class LandingPage {
     // ? ********************************************************************************************************* ? //
 
     public LoginPage goToLoginPage() {
-        uiActions.clickOn(loginElement, clickable, 3000);
+        uiActions.clickOn(loginElement, CLICKABLE, 3000);
         return new LoginPage(driver);
     }
 
     public RegisterPage goToRegisterPage() {
-        uiActions.clickOn(registerElement, clickable, 3000);
+        uiActions.clickOn(registerElement, CLICKABLE, 3000);
         return new RegisterPage(driver);
     }
 }

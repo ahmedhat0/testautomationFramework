@@ -12,66 +12,70 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class BrowserActions {
-    public WebDriver driver;
+    public static ThreadLocal<WebDriver> mapper = new ThreadLocal<>();
     Logger logger = Logger.getLogger(BrowserActions.class);
 
     public WebDriver initDriver(String browser) {
-        if (browser == null) browser = "chrome";
-
-        switch (browser.toLowerCase()) {
-            case "chrome":
-                WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver();
-                return driver;
-            case "firefox":
-                WebDriverManager.firefoxdriver().setup();
-                driver = new FirefoxDriver();
-                return driver;
-            case "edge":
-                WebDriverManager.edgedriver().setup();
-                driver = new EdgeDriver();
-                return driver;
-        }
-        return null;
+        return initDriver(browser, headless.FALSE);
     }
 
-    public WebDriver initDriver(String browser, boolean setHeadless) {
-        if (browser == null) browser = "chrome";
-
-        if (setHeadless) {
-            switch (browser.toLowerCase()) {
+    public WebDriver initDriver(String browserName, headless mode) {
+        if (browserName == null) browserName = "chrome";
+        if (mode == headless.TRUE) {
+            switch (browserName.toLowerCase()) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     ChromeOptions options = new ChromeOptions();
                     options.setHeadless(true);
-                    driver = new ChromeDriver(options);
-                    return driver;
+                    mapper.set(new ChromeDriver(options));
+                    return getDriver();
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
                     FirefoxOptions options1 = new FirefoxOptions();
                     options1.setHeadless(true);
-                    driver = new FirefoxDriver(options1);
-                    return driver;
+                    mapper.set(new FirefoxDriver(options1));
+                    return getDriver();
                 case "edge":
                     WebDriverManager.edgedriver().setup();
                     EdgeOptions options2 = new EdgeOptions();
                     options2.setHeadless(true);
-                    driver = new EdgeDriver(options2);
-                    return driver;
+                    mapper.set(new EdgeDriver(options2));
+                    return getDriver();
             }
         } else {
-            return initDriver(browser);
+            switch (browserName.toLowerCase()) {
+                case "chrome":
+                    WebDriverManager.chromedriver().setup();
+                    mapper.set(new ChromeDriver());
+                    return getDriver();
+                case "firefox":
+                    WebDriverManager.firefoxdriver().setup();
+                    mapper.set(new FirefoxDriver());
+                    return getDriver();
+                case "edge":
+                    WebDriverManager.edgedriver().setup();
+                    mapper.set(new EdgeDriver());
+                    return getDriver();
+            }
         }
         return null;
     }
 
+    public static synchronized WebDriver getDriver() {
+        return mapper.get();
+    }
+
     public void navigateTo(String url) {
-        driver.manage().window().setPosition(new Point(900, 0));
-        driver.get(url);
+        getDriver().manage().window().setPosition(new Point(900, 0));
+        getDriver().get(url);
         logger.debug("Browser is opened");
     }
 
     public void closeDriver() {
-        driver.quit();
+        getDriver().quit();
+    }
+
+    public enum headless {
+        TRUE, FALSE
     }
 }

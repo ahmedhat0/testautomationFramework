@@ -5,8 +5,8 @@ import org.iti.utils.ReadProperties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import static org.iti.actions.UiActions.elementToBe.clickable;
-import static org.iti.actions.UiActions.elementToBe.visible;
+import static org.iti.actions.UiActions.element.CLICKABLE;
+import static org.iti.actions.UiActions.element.VISIBLE;
 
 public class RegisterPage {
 
@@ -44,26 +44,26 @@ public class RegisterPage {
 
     public void registerUser(String gender, String firstname, String lastname, String day, String month, String year, String email, String password) {
 
-        if (gender.equals("male")) uiActions.clickOn(maleRdBtn,clickable,3000);
-        else uiActions.clickOn(femaleRdBtn,clickable,3000);
+        if (gender.equals("male")) uiActions.clickOn(maleRdBtn, CLICKABLE,3000);
+        else uiActions.clickOn(femaleRdBtn, CLICKABLE,3000);
 
-        uiActions.sendKeys(firstNameBx, firstname,clickable,3000);
-        uiActions.sendKeys(lastNameBx, lastname,clickable,3000);
+        uiActions.sendKeys(firstNameBx, firstname, CLICKABLE,3000);
+        uiActions.sendKeys(lastNameBx, lastname, CLICKABLE,3000);
 
-        uiActions.selectItemInDropdown(dayOfBirth, day,clickable,3000);
-        uiActions.selectItemInDropdown(monthOfBirth, month,clickable,3000);
-        uiActions.selectItemInDropdown(yearOfBirth, year,clickable,3000);
+        uiActions.selectItemInDropdown(dayOfBirth, day, CLICKABLE,3000);
+        uiActions.selectItemInDropdown(monthOfBirth, month, CLICKABLE,3000);
+        uiActions.selectItemInDropdown(yearOfBirth, year, CLICKABLE,3000);
 
-        uiActions.sendKeys(emailBx, email,clickable,3000);
+        uiActions.sendKeys(emailBx, email, CLICKABLE,3000);
 
-        uiActions.sendKeys(passwordBx, password,clickable,3000);
-        uiActions.sendKeys(confirmPasswordBx, password,clickable,3000);
+        uiActions.sendKeys(passwordBx, password, CLICKABLE,3000);
+        uiActions.sendKeys(confirmPasswordBx, password, CLICKABLE,3000);
 
-        uiActions.clickOn(registerBtn,clickable,3000);
+        uiActions.clickOn(registerBtn, CLICKABLE,3000);
     }
 
     public String getRegistrationStatus() {
-        return uiActions.getText(successMsg,visible,3000);
+        return uiActions.getText(successMsg, VISIBLE,3000);
     }
 
 }

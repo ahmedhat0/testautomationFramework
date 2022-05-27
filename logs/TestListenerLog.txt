@@ -1,6 +1,20 @@
-testFirst -> Test Started
-testFirst -> Test Passed
+testRegistration -> Test Started
+testRegistration -> Test Passed
+testRegistration -> Test Passed
 ===================================================
-||Test Finished on : Tue May 24 19:04:18 EET 2022||
+||Test Finished on : Fri May 27 17:26:32 EET 2022||
 ===================================================
+testRegistration -> Test Passed
+===================================================
+||Test Finished on : Fri May 27 17:26:32 EET 2022||
+===================================================
+===================================================
+||Test Finished on : Fri May 27 17:26:33 EET 2022||
+===================================================
+
+===============================================
+My Test Suite
+Total tests run: 3, Passes: 3, Failures: 0, Skips: 0
+===============================================
+
 Creating test Report , using Extent Report  .... 

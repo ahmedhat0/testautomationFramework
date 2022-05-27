@@ -6,7 +6,6 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import java.io.FileNotFoundException;
 import java.io.PrintStream;
 
 public class TestListener extends BrowserActions implements ITestListener {
@@ -38,7 +37,7 @@ public class TestListener extends BrowserActions implements ITestListener {
     @Override
     public void onFinish(ITestContext iTestContext) {
         System.out.println("===================================================");
-        System.out.println("||Test Finished on : " + iTestContext.getEndDate()+"||");
+        System.out.println("||Test Finished on : " + iTestContext.getEndDate() + "||");
         System.out.println("===================================================");
 
     }

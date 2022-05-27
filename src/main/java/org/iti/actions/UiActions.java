@@ -1,5 +1,6 @@
 package org.iti.actions;
 
+import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+import static org.iti.actions.UiActions.element.VISIBLE;
 import static org.iti.utils.Highlighter.highlightElement;
 
 public class UiActions {
@@ -19,19 +21,31 @@ public class UiActions {
         this.driver = driver;
     }
 
-    protected WebElement getWebElement(By ByElement, elementToBe toBe, int timeOut) {
+    protected WebElement getWebElement(By ByElement, @NotNull element toBe, int timeOut) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(timeOut));
         switch (toBe) {
-            case visible:
-                wait.until(ExpectedConditions.visibilityOfElementLocated(ByElement));
+            case VISIBLE:
+                try {
+                    wait.until(ExpectedConditions.visibilityOfElementLocated(ByElement));
+                } catch (Exception e) {
+                    System.out.println("Element " + ByElement.toString() + " is not visible");
+                }
                 highlightElement(driver, ByElement);
                 return driver.findElement(ByElement);
-            case clickable:
-                wait.until(ExpectedConditions.elementToBeClickable(ByElement));
+            case CLICKABLE:
+                try {
+                    wait.until(ExpectedConditions.elementToBeClickable(ByElement));
+                } catch (Exception e) {
+                    System.out.println("Element " + ByElement.toString() + " is not clickable");
+                }
                 highlightElement(driver, ByElement);
                 return driver.findElement(ByElement);
-            case enabled:
-                wait.until(ExpectedConditions.elementToBeSelected(ByElement));
+            case ENABLED:
+                try {
+                    wait.until(ExpectedConditions.elementToBeSelected(ByElement));
+                } catch (Exception e) {
+                    System.out.println("Element " + ByElement.toString() + " is not enabled");
+                }
                 highlightElement(driver, ByElement);
                 return driver.findElement(ByElement);
             default:
@@ -39,74 +53,60 @@ public class UiActions {
         }
     }
 
-    public void clickOn(By ByElement, elementToBe toBe, int timeOut) {
+    public void clickOn(By ByElement, element toBe, int timeOut) {
         getWebElement(ByElement, toBe, timeOut).click();
     }
 
-    public void sendKeys(By ByElement, String text, elementToBe toBe, int timeOut) {
+    public void sendKeys(By ByElement, String text, element toBe, int timeOut) {
         getWebElement(ByElement, toBe, timeOut).sendKeys(text);
     }
 
-    public void clearAndSendKeys(By ByElement, String text, elementToBe toBe, int timeOut) {
+    public void clearAndSendKeys(By ByElement, String text, element toBe, int timeOut) {
         getWebElement(ByElement, toBe, timeOut).clear();
         sendKeys(ByElement, text, toBe, timeOut);
     }
 
-    public String getText(By ByElement, elementToBe toBe, int timeOut) {
+    public String getText(By ByElement, element toBe, int timeOut) {
         return getWebElement(ByElement, toBe, timeOut).getText();
     }
 
-    protected void selectItemInDropdown(By ByElement, elementToBe toBe, int timeOut, int index) {
+    protected void selectItemInDropdown(By ByElement, element toBe, int timeOut, int index) {
         Select select = new Select(getWebElement(ByElement, toBe, timeOut));
         select.selectByIndex(index);
     }
 
-    public void selectItemInDropdown(By ByElement, String value, elementToBe toBe, int timeOut) {
+    public void selectItemInDropdown(By ByElement, String value, element toBe, int timeOut) {
         Select select = new Select(getWebElement(ByElement, toBe, timeOut));
         select.selectByValue(value);
     }
 
-    protected void selectItemInDropdownByVisibleText(By ByElement, elementToBe toBe, int timeOut, String visibleText) {
+    protected void selectItemInDropdownByVisibleText(By ByElement, element toBe, int timeOut, String visibleText) {
         Select select = new Select(getWebElement(ByElement, toBe, timeOut));
         select.selectByVisibleText(visibleText);
     }
 
-    protected void mouseActions(mouseActions action, By ByElement, elementToBe toBe, int timeOut) {
+    protected void mouseActions(mouse action, By ByElement, element toBe, int timeOut) {
         highlightElement(driver, ByElement);
         Actions actions = new Actions(driver);
         switch (action) {
-            case hover:
+            case HOVER:
                 actions.moveToElement(getWebElement(ByElement, toBe, timeOut)).build().perform();
                 break;
-            case doubleclick:
+            case DOUBLECLICK:
                 actions.doubleClick(getWebElement(ByElement, toBe, timeOut)).build().perform();
                 break;
-            case rightclick:
+            case RIGHTCLICK:
                 actions.contextClick(getWebElement(ByElement, toBe, timeOut)).build().perform();
                 break;
         }
     }
 
 
-    public enum elementToBe {
-        visible,
-        clickable,
-        enabled
+    public enum element {
+        VISIBLE, CLICKABLE, ENABLED
     }
 
-    public enum mouseActions {
-        hover,
-        doubleclick,
-        rightclick
+    public enum mouse {
+        HOVER, DOUBLECLICK, RIGHTCLICK
     }
-
-    /*public <NeededPage extends UiActions> NeededPage getInstance(Class<NeededPage> pageNeeded) {
-        try {
-            return pageNeeded.getDeclaredConstructor(WebDriver.class).newInstance(this.driver);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return null;
-    }*/
-
 }
