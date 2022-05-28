@@ -44,26 +44,26 @@ public class RegisterPage {
 
     public void registerUser(String gender, String firstname, String lastname, String day, String month, String year, String email, String password) {
 
-        if (gender.equals("male")) uiActions.clickOn(maleRdBtn, CLICKABLE,3000);
-        else uiActions.clickOn(femaleRdBtn, CLICKABLE,3000);
+        if (gender.equals("male")) uiActions.clickOn(maleRdBtn, CLICKABLE, 3000);
+        else uiActions.clickOn(femaleRdBtn, CLICKABLE, 3000);
 
-        uiActions.sendKeys(firstNameBx, firstname, CLICKABLE,3000);
-        uiActions.sendKeys(lastNameBx, lastname, CLICKABLE,3000);
+        uiActions.sendKeys(firstNameBx, firstname, CLICKABLE, 3000);
+        uiActions.sendKeys(lastNameBx, lastname, CLICKABLE, 3000);
 
-        uiActions.selectItemInDropdown(dayOfBirth, day, CLICKABLE,3000);
-        uiActions.selectItemInDropdown(monthOfBirth, month, CLICKABLE,3000);
-        uiActions.selectItemInDropdown(yearOfBirth, year, CLICKABLE,3000);
+        uiActions.selectItemInDropdown(dayOfBirth, day, CLICKABLE, 3000);
+        uiActions.selectItemInDropdown(monthOfBirth, month, CLICKABLE, 3000);
+        uiActions.selectItemInDropdown(yearOfBirth, year, CLICKABLE, 3000);
 
-        uiActions.sendKeys(emailBx, email, CLICKABLE,3000);
+        uiActions.sendKeys(emailBx, email, CLICKABLE, 3000);
 
-        uiActions.sendKeys(passwordBx, password, CLICKABLE,3000);
-        uiActions.sendKeys(confirmPasswordBx, password, CLICKABLE,3000);
+        uiActions.sendKeys(passwordBx, password, CLICKABLE, 3000);
+        uiActions.sendKeys(confirmPasswordBx, password, CLICKABLE, 3000);
 
-        uiActions.clickOn(registerBtn, CLICKABLE,3000);
+        uiActions.clickOn(registerBtn, CLICKABLE, 3000);
     }
 
     public String getRegistrationStatus() {
-        return uiActions.getText(successMsg, VISIBLE,3000);
+        return uiActions.getText(successMsg, VISIBLE, 3000);
     }
 
 }
