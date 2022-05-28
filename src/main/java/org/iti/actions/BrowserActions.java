@@ -46,6 +46,7 @@ public class BrowserActions {
             switch (browserName.toLowerCase()) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
+
                     mapper.set(new ChromeDriver());
                     return getDriver();
                 case "firefox":
