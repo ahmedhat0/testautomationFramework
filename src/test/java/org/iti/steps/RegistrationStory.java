@@ -17,27 +17,27 @@ public class RegistrationStory {
     private RegisterPage registrationPage;
     private LandingPage landingPage;
 
-    @Given("I am on the home page")
+    @Given("^I am on the home page$")
     public void i_am_on_the_home_page() {
-        driver = browserActions.initDriver("chrome");
+        driver = browserActions.initDriver("firefox");
         registrationPage = new RegisterPage(driver);
         landingPage = new LandingPage(driver);
         browserActions.navigateTo("https://demo.nopcommerce.com/");
     }
 
-    @When("I click on the register link")
+    @When("^I click on the register link$")
     public void i_click_on_the_register_link() {
         landingPage.goToRegisterPage();
 
     }
 
-    @When("I fill in the registration form")
+    @When("^I fill in the registration form$")
     public void i_fill_in_the_registration_form() {
         registrationPage.registerUser("male", "ahmed", "medhat", "1", "10", "1990", "ahmed.medhat@cucumber.test", "159951");
     }
 
 
-    @Then("I should see the registration success message")
+    @Then("^I should see the registration success message$")
     public void i_should_see_the_registration_success_message() {
         assertEquals(registrationPage.getRegistrationStatus(), "Your registration completed");
         browserActions.closeDriver();

@@ -1,4 +1,4 @@
-Feature: User Registration Story
+Feature: Registration Story
 
   Scenario: User can register
     Given I am on the home page
