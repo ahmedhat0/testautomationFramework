@@ -19,7 +19,7 @@ public class UiActions {
     SelfHealingDriver driver;
 
     public UiActions(SelfHealingDriver driver) {
-        this.driver = driver;
+        this.driver = driver ;
     }
 
     protected WebElement getWebElement(By ByElement, @NotNull element toBe, int timeOut) {
