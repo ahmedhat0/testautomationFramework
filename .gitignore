@@ -36,3 +36,4 @@ build/
 
 ### Mac OS ###
 !/screenshots/
+/test-output/
