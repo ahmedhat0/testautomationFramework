@@ -31,8 +31,12 @@ public class LandingPage {
 
     }
 
-    public RegisterPage goToRegisterPage() throws InterruptedException {
-        Thread.sleep(10000);
+    public RegisterPage goToRegisterPage() {
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         uiActions.clickOn(registerElement, CLICKABLE, 3000);
         return new RegisterPage(driver);
     }

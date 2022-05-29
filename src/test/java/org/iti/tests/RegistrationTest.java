@@ -1,6 +1,10 @@
 package org.iti.tests;
 
 import com.epam.healenium.SelfHealingDriver;
+import io.qameta.allure.Description;
+import io.qameta.allure.Link;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.iti.actions.BrowserActions;
 import org.iti.actions.BrowserActions.headless;
 import org.iti.pages.LandingPage;
@@ -30,7 +34,17 @@ public class RegistrationTest {
     }
 
     @Test(dataProvider = "registrationProvider", dataProviderClass = ProviderClass.class)
-    public void testRegistration(String gender, String firstName, String lastName, String day, String month, String year, String email, String password) throws InterruptedException {
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Verify that user can register successfully")
+    @Link(name = "My Linkedin", url = "https://www.linkedin.com/in/amedhat/")
+    public void testRegistration(String gender,
+                                 String firstName,
+                                 String lastName,
+                                 String day,
+                                 String month,
+                                 String year,
+                                 String email,
+                                 String password) {
 
         landingPage = new LandingPage(driver);
         registerPage = new RegisterPage(driver);
