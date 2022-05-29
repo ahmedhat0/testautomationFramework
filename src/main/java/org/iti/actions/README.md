@@ -25,16 +25,3 @@ This Class implements the Common Methods which Page Objects Use :
 ```
       etc ... 
 ```
-
-, Also Contains : ``getInstance`` method  Using JAVA Generics it takes any Class name By any type and create an instance of that class . 
-
-```
-    public <NeededPage extends UiActions> NeededPage getInstance(Class<NeededPage> pageNeeded) {
-        try {
-            return pageNeeded.getDeclaredConstructor(WebDriver.class).newInstance(this.driver);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
-```
