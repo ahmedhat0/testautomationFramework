@@ -1,5 +1,6 @@
 package org.iti.pages;
 
+import com.epam.healenium.SelfHealingDriver;
 import org.iti.actions.UiActions;
 import org.iti.utils.ReadProperties;
 import org.openqa.selenium.By;
@@ -12,10 +13,10 @@ public class LandingPage {
     private final By registerElement = By.xpath(ReadProperties.getProperties("locators").getProperty("landingPage.registerElement.xpath"));
     private final By loginElement = By.xpath(ReadProperties.getProperties("locators").getProperty("landingPage.loginElement.xpath"));
 
-    WebDriver driver;
+    SelfHealingDriver driver;
     UiActions uiActions;
 
-    public LandingPage(WebDriver driver) {
+    public LandingPage(SelfHealingDriver driver) {
         this.driver = driver;
         uiActions = new UiActions(driver);
     }
@@ -27,9 +28,11 @@ public class LandingPage {
     public LoginPage goToLoginPage() {
         uiActions.clickOn(loginElement, CLICKABLE, 3000);
         return new LoginPage(driver);
+
     }
 
-    public RegisterPage goToRegisterPage() {
+    public RegisterPage goToRegisterPage() throws InterruptedException {
+        Thread.sleep(10000);
         uiActions.clickOn(registerElement, CLICKABLE, 3000);
         return new RegisterPage(driver);
     }

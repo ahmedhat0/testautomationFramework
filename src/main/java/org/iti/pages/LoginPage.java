@@ -1,14 +1,14 @@
 package org.iti.pages;
 
+import com.epam.healenium.SelfHealingDriver;
 import org.iti.actions.UiActions;
-import org.openqa.selenium.WebDriver;
 
 public class LoginPage {
-    WebDriver driver;
+    SelfHealingDriver driver;
     UiActions uiActions;
 
-    public LoginPage(WebDriver driver) {
-        this.driver=driver;
+    public LoginPage(SelfHealingDriver driver) {
+        this.driver = driver;
         uiActions = new UiActions(driver);
     }
 

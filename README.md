@@ -3,6 +3,7 @@ Using POM
 
 #### in Sequence To Configure Healenium
 
+1. [X]  **_[Docker must be installed on the machine](http://localhost:7878/healenium/report/0cdcb909-73c2-4e74-a7f2-d46c06929a8f)_**
 ```
 cd db
 ```

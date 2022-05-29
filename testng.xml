@@ -14,7 +14,7 @@
             <class name="org.iti.tests.RegistrationTest"/>
         </classes>
     </test>
-
+<!--
     <test name="OnFireFox" preserve-order="false">
         <parameter name="browser" value="firefox"/>
         <classes>
@@ -27,7 +27,7 @@
         <classes>
             <class name="org.iti.tests.RegistrationTest"/>
         </classes>
-    </test>
+    </test>-->
 </suite>
 
 

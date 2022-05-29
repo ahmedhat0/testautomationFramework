@@ -16,7 +16,7 @@ public class RegistrationStory {
     BrowserActions browserActions = new BrowserActions();
     private RegisterPage registrationPage;
     private LandingPage landingPage;
-
+/*
     @Given("^I am on the home page$")
     public void i_am_on_the_home_page() {
         driver = browserActions.initDriver("firefox");
@@ -41,6 +41,6 @@ public class RegistrationStory {
     public void i_should_see_the_registration_success_message() {
         assertEquals(registrationPage.getRegistrationStatus(), "Your registration completed");
         browserActions.closeDriver();
-    }
+    }*/
 }
 

@@ -1,5 +1,6 @@
 package org.iti.actions;
 
+import com.epam.healenium.SelfHealingDriver;
 import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,9 +16,9 @@ import static org.iti.actions.UiActions.element.VISIBLE;
 import static org.iti.utils.Highlighter.highlightElement;
 
 public class UiActions {
-    WebDriver driver;
+    SelfHealingDriver driver;
 
-    public UiActions(WebDriver driver) {
+    public UiActions(SelfHealingDriver driver) {
         this.driver = driver;
     }
 

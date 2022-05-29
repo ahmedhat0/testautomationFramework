@@ -1,9 +1,9 @@
 package org.iti.pages;
 
+import com.epam.healenium.SelfHealingDriver;
 import org.iti.actions.UiActions;
 import org.iti.utils.ReadProperties;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 import static org.iti.actions.UiActions.element.CLICKABLE;
 import static org.iti.actions.UiActions.element.VISIBLE;
@@ -30,10 +30,10 @@ public class RegisterPage {
     private final By confirmPasswordBx = By.id(ReadProperties.getProperties("locators").getProperty("registrationPage.confirmPasswordBx.id"));
     private final By registerBtn = By.xpath(ReadProperties.getProperties("locators").getProperty("registrationPage.registerBtn.xpath"));
 
-    WebDriver driver;
+    SelfHealingDriver driver;
     UiActions uiActions;
 
-    public RegisterPage(WebDriver driver) {
+    public RegisterPage(SelfHealingDriver driver) {
         this.driver = driver;
         uiActions = new UiActions(driver);
     }
@@ -50,9 +50,9 @@ public class RegisterPage {
         uiActions.sendKeys(firstNameBx, firstname, CLICKABLE, 3000);
         uiActions.sendKeys(lastNameBx, lastname, CLICKABLE, 3000);
 
-        uiActions.selectItemInDropdown(dayOfBirth, day, CLICKABLE, 3000);
-        uiActions.selectItemInDropdown(monthOfBirth, month, CLICKABLE, 3000);
-        uiActions.selectItemInDropdown(yearOfBirth, year, CLICKABLE, 3000);
+//        uiActions.selectItemInDropdown(dayOfBirth, day, CLICKABLE, 3000);
+//        uiActions.selectItemInDropdown(monthOfBirth, month, CLICKABLE, 3000);
+//        uiActions.selectItemInDropdown(yearOfBirth, year, CLICKABLE, 3000);
 
         uiActions.sendKeys(emailBx, email, CLICKABLE, 3000);
 
