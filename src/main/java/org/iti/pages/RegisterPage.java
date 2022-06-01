@@ -6,9 +6,6 @@ import org.iti.actions.UiActions.element;
 import org.iti.utils.ReadProperties;
 import org.openqa.selenium.By;
 
-import static org.iti.actions.UiActions.element.CLICKABLE;
-import static org.iti.actions.UiActions.element.VISIBLE;
-
 public class RegisterPage {
 
     // * ********************************************************************************************************* * //
@@ -42,25 +39,27 @@ public class RegisterPage {
     // ?                                        Registration Page Methods
     // ? ********************************************************************************************************* ? //
 
-    public void registerUser(String gender, String firstname, String lastname, String day, String month, String year, String email, String password) {
+    public void registerUser(String gender,
+                             String firstname,
+                             String lastname,
+                             String day,
+                             String month,
+                             String year,
+                             String email,
+                             String password) {
 
         if (gender.equals("male")) uiActions.clickOn(maleRdBtn, element.CLICKABLE, 3000);
         else uiActions.clickOn(femaleRdBtn, element.CLICKABLE, 3000);
-
         uiActions.sendKeys(firstNameBx, firstname, element.CLICKABLE, 3000);
         uiActions.sendKeys(lastNameBx, lastname, element.CLICKABLE, 3000);
-
         /*
         uiActions.selectItemInDropdown(dayOfBirth, day, CLICKABLE, 3000);
         uiActions.selectItemInDropdown(monthOfBirth, month, CLICKABLE, 3000);
         uiActions.selectItemInDropdown(yearOfBirth, year, CLICKABLE, 3000);
 */
-
         uiActions.sendKeys(emailBx, email, element.CLICKABLE, 3000);
-
         uiActions.sendKeys(passwordBx, password, element.CLICKABLE, 3000);
         uiActions.sendKeys(confirmPasswordBx, password, element.CLICKABLE, 3000);
-
         uiActions.clickOn(registerBtn, element.CLICKABLE, 3000);
     }
 

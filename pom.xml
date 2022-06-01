@@ -182,14 +182,14 @@
         <profile>
             <id>parallel</id>
             <activation>
-                <activeByDefault>true</activeByDefault>
+                <activeByDefault>false</activeByDefault>
                 <property>
                     <name>environment</name>
                     <value>parallel</value>
                 </property>
             </activation>
             <properties>
-                <testNGFile>testng1.xml</testNGFile>
+                <testNGFile>parallel.xml</testNGFile>
             </properties>
         </profile>
 

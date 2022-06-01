@@ -10,6 +10,7 @@ import org.iti.pages.LandingPage;
 import org.iti.pages.LoginPage;
 import org.iti.pages.MyAccount;
 import org.iti.utils.ProviderClass;
+import org.iti.utils.RetryFailed;
 import org.testng.annotations.*;
 
 import static org.testng.Assert.assertTrue;
@@ -33,9 +34,13 @@ public class LoginTest {
         browserActions.closeDriver();
     }
 
-    @Test(dataProvider = "loginProvider", dataProviderClass = ProviderClass.class)
+    @Test(dataProvider = "loginProvider",
+            dataProviderClass = ProviderClass.class,
+            retryAnalyzer = RetryFailed.class)
+
     @Severity(SeverityLevel.CRITICAL)
     @Description("Verify that user can login successfully")
+
     public void testLogin(String email, String password) {
 
         landingPage = new LandingPage(driver);
