@@ -3,7 +3,7 @@ package org.iti.actions;
 import com.epam.healenium.SelfHealingDriver;
 import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -12,18 +12,18 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-import static org.iti.actions.UiActions.element.VISIBLE;
 import static org.iti.utils.Highlighter.highlightElement;
 
 public class UiActions {
     SelfHealingDriver driver;
 
     public UiActions(SelfHealingDriver driver) {
-        this.driver = driver ;
+        this.driver = driver;
     }
 
-    protected WebElement getWebElement(By ByElement, @NotNull element toBe, int timeOut) {
+    public WebElement getWebElement(By ByElement, @NotNull element toBe, int timeOut) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(timeOut));
+        JavascriptExecutor js = (JavascriptExecutor) driver;
         switch (toBe) {
             case VISIBLE:
                 try {
@@ -31,6 +31,7 @@ public class UiActions {
                 } catch (Exception e) {
                     System.out.println("Element " + ByElement.toString() + " is not visible");
                 }
+                js.executeScript("arguments[0].scrollIntoView();", driver.findElement(ByElement));
                 highlightElement(driver, ByElement);
                 return driver.findElement(ByElement);
             case CLICKABLE:
@@ -39,6 +40,7 @@ public class UiActions {
                 } catch (Exception e) {
                     System.out.println("Element " + ByElement.toString() + " is not clickable");
                 }
+                js.executeScript("arguments[0].scrollIntoView();", driver.findElement(ByElement));
                 highlightElement(driver, ByElement);
                 return driver.findElement(ByElement);
             case ENABLED:
@@ -47,6 +49,7 @@ public class UiActions {
                 } catch (Exception e) {
                     System.out.println("Element " + ByElement.toString() + " is not enabled");
                 }
+                js.executeScript("arguments[0].scrollIntoView();", driver.findElement(ByElement));
                 highlightElement(driver, ByElement);
                 return driver.findElement(ByElement);
             default:
@@ -71,7 +74,7 @@ public class UiActions {
         return getWebElement(ByElement, toBe, timeOut).getText();
     }
 
-    protected void selectItemInDropdown(By ByElement, element toBe, int timeOut, int index) {
+    public void selectItemInDropdown(By ByElement, element toBe, int timeOut, int index) {
         Select select = new Select(getWebElement(ByElement, toBe, timeOut));
         select.selectByIndex(index);
     }
@@ -81,12 +84,12 @@ public class UiActions {
         select.selectByValue(value);
     }
 
-    protected void selectItemInDropdownByVisibleText(By ByElement, element toBe, int timeOut, String visibleText) {
+    public void selectItemInDropdownByVisibleText(By ByElement, element toBe, int timeOut, String visibleText) {
         Select select = new Select(getWebElement(ByElement, toBe, timeOut));
         select.selectByVisibleText(visibleText);
     }
 
-    protected void mouseActions(mouse action, By ByElement, element toBe, int timeOut) {
+    public void mouseActions(mouse action, By ByElement, element toBe, int timeOut) {
         highlightElement(driver, ByElement);
         Actions actions = new Actions(driver);
         switch (action) {
@@ -102,6 +105,14 @@ public class UiActions {
         }
     }
 
+    public boolean isElementPresent(By ByElement, element toBe, int timeOut) {
+        try {
+            getWebElement(ByElement, toBe, timeOut);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
 
     public enum element {
         VISIBLE, CLICKABLE, ENABLED

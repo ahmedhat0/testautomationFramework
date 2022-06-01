@@ -27,11 +27,11 @@ public class Reader {
         int totalNumberOfRows = (sheet.getLastRowNum() + 1);
         int totalNumberOfCols = sheet.getRow(0).getLastCellNum();
 
-        String[][] arrayExcelData = new String[totalNumberOfRows][totalNumberOfCols];
-        for (int r = 0; r < totalNumberOfRows; r++) {
+        String[][] arrayExcelData = new String[totalNumberOfRows-1][totalNumberOfCols];
+        for (int r = 1; r < totalNumberOfRows; r++) {
             for (int c = 0; c < totalNumberOfCols; c++) {
                 XSSFRow row = sheet.getRow(r);
-                arrayExcelData[r][c] = row.getCell(c).toString();
+                arrayExcelData[r-1][c] = row.getCell(c).toString();
             }
         }
         workbook.close();

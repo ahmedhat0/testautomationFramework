@@ -4,7 +4,6 @@ import com.epam.healenium.SelfHealingDriver;
 import org.iti.actions.UiActions;
 import org.iti.utils.ReadProperties;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 import static org.iti.actions.UiActions.element.CLICKABLE;
 
@@ -21,9 +20,6 @@ public class LandingPage {
         uiActions = new UiActions(driver);
     }
 
-    // ? ********************************************************************************************************* ? //
-    // ?                                        Home Page Methods
-    // ? ********************************************************************************************************* ? //
 
     public LoginPage goToLoginPage() {
         uiActions.clickOn(loginElement, CLICKABLE, 3000);

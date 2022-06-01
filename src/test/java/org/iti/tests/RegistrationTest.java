@@ -1,6 +1,7 @@
 package org.iti.tests;
 
 import com.epam.healenium.SelfHealingDriver;
+import com.epam.healenium.annotation.DisableHealing;
 import io.qameta.allure.Description;
 import io.qameta.allure.Link;
 import io.qameta.allure.Severity;
@@ -21,14 +22,14 @@ public class RegistrationTest {
     BrowserActions browserActions = new BrowserActions();
     String url = "https://demo.nopcommerce.com/";
 
-    @BeforeTest
+    @BeforeClass
     @Parameters({"browser"})
     public void setUp(@Optional String browser) {
         driver = browserActions.initDriver(browser, headless.FALSE);
         browserActions.navigateTo(url);
     }
 
-    @AfterTest
+    @AfterClass
     public void closeDriver() {
         browserActions.closeDriver();
     }
@@ -37,6 +38,7 @@ public class RegistrationTest {
     @Severity(SeverityLevel.CRITICAL)
     @Description("Verify that user can register successfully")
     @Link(name = "My Linkedin", url = "https://www.linkedin.com/in/amedhat/")
+    @DisableHealing
     public void testRegistration(String gender,
                                  String firstName,
                                  String lastName,
@@ -47,9 +49,8 @@ public class RegistrationTest {
                                  String password) {
 
         landingPage = new LandingPage(driver);
-        registerPage = new RegisterPage(driver);
 
-        landingPage.goToRegisterPage();
+        registerPage = landingPage.goToRegisterPage();
         registerPage.registerUser(gender, firstName, lastName, day, month, year, email, password);
         assertEquals(registerPage.getRegistrationStatus(), "Your registration completed");
     }

@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.iti</groupId>
-    <artifactId>POM</artifactId>
+    <artifactId>automation</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -12,49 +12,6 @@
         <maven.compiler.target>8</maven.compiler.target>
         <aspectj.version>1.8.10</aspectj.version>
     </properties>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.0</version>
-                <configuration>
-                    <argLine>
-                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-                    </argLine>
-                </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.aspectj</groupId>
-                        <artifactId>aspectjweaver</artifactId>
-                        <version>${aspectj.version}</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
-            <plugin>
-                <groupId>com.epam.healenium</groupId>
-                <artifactId>hlm-report-mvn</artifactId>
-                <version>1.1</version>
-                <executions>
-                    <execution>
-                        <id>hlmReport</id>
-                        <phase>compile</phase>
-                        <goals>
-                            <goal>initReport</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>hlmReportB</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>buildReport</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
 
     <dependencies>
         <dependency>
@@ -175,5 +132,80 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.0</version>
+                <configuration>
+                    <argLine>
+                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                    </argLine>
+                    <suiteXmlFiles>${testNGFile}</suiteXmlFiles>
+                </configuration>
+
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>${aspectj.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>com.epam.healenium</groupId>
+                <artifactId>hlm-report-mvn</artifactId>
+                <version>1.1</version>
+                <executions>
+                    <execution>
+                        <id>hlmReport</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>initReport</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>hlmReportB</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>buildReport</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>parallel</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+                <property>
+                    <name>environment</name>
+                    <value>parallel</value>
+                </property>
+            </activation>
+            <properties>
+                <testNGFile>testng1.xml</testNGFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>default</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+                <property>
+                    <name>environment</name>
+                    <value>default</value>
+                </property>
+            </activation>
+            <properties>
+                <testNGFile>testng.xml</testNGFile>
+            </properties>
+        </profile>
+    </profiles>
 
 </project>

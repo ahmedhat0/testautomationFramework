@@ -2,6 +2,7 @@ package org.iti.pages;
 
 import com.epam.healenium.SelfHealingDriver;
 import org.iti.actions.UiActions;
+import org.iti.actions.UiActions.element;
 import org.iti.utils.ReadProperties;
 import org.openqa.selenium.By;
 
@@ -25,7 +26,6 @@ public class RegisterPage {
     private final By monthOfBirth = By.name(ReadProperties.getProperties("locators").getProperty("registrationPage.monthOfBirth.name"));
     private final By yearOfBirth = By.name(ReadProperties.getProperties("locators").getProperty("registrationPage.yearOfBirth.name"));
     private final By emailBx = By.id(ReadProperties.getProperties("locators").getProperty("registrationPage.emailBx.id"));
-    private final By newsLetterCheck = By.id("Newsletter");
     private final By passwordBx = By.id(ReadProperties.getProperties("locators").getProperty("registrationPage.passwordBx.id"));
     private final By confirmPasswordBx = By.id(ReadProperties.getProperties("locators").getProperty("registrationPage.confirmPasswordBx.id"));
     private final By registerBtn = By.xpath(ReadProperties.getProperties("locators").getProperty("registrationPage.registerBtn.xpath"));
@@ -44,26 +44,28 @@ public class RegisterPage {
 
     public void registerUser(String gender, String firstname, String lastname, String day, String month, String year, String email, String password) {
 
-        if (gender.equals("male")) uiActions.clickOn(maleRdBtn, CLICKABLE, 3000);
-        else uiActions.clickOn(femaleRdBtn, CLICKABLE, 3000);
+        if (gender.equals("male")) uiActions.clickOn(maleRdBtn, element.CLICKABLE, 3000);
+        else uiActions.clickOn(femaleRdBtn, element.CLICKABLE, 3000);
 
-        uiActions.sendKeys(firstNameBx, firstname, CLICKABLE, 3000);
-        uiActions.sendKeys(lastNameBx, lastname, CLICKABLE, 3000);
+        uiActions.sendKeys(firstNameBx, firstname, element.CLICKABLE, 3000);
+        uiActions.sendKeys(lastNameBx, lastname, element.CLICKABLE, 3000);
 
-//        uiActions.selectItemInDropdown(dayOfBirth, day, CLICKABLE, 3000);
-//        uiActions.selectItemInDropdown(monthOfBirth, month, CLICKABLE, 3000);
-//        uiActions.selectItemInDropdown(yearOfBirth, year, CLICKABLE, 3000);
+        /*
+        uiActions.selectItemInDropdown(dayOfBirth, day, CLICKABLE, 3000);
+        uiActions.selectItemInDropdown(monthOfBirth, month, CLICKABLE, 3000);
+        uiActions.selectItemInDropdown(yearOfBirth, year, CLICKABLE, 3000);
+*/
 
-        uiActions.sendKeys(emailBx, email, CLICKABLE, 3000);
+        uiActions.sendKeys(emailBx, email, element.CLICKABLE, 3000);
 
-        uiActions.sendKeys(passwordBx, password, CLICKABLE, 3000);
-        uiActions.sendKeys(confirmPasswordBx, password, CLICKABLE, 3000);
+        uiActions.sendKeys(passwordBx, password, element.CLICKABLE, 3000);
+        uiActions.sendKeys(confirmPasswordBx, password, element.CLICKABLE, 3000);
 
-        uiActions.clickOn(registerBtn, CLICKABLE, 3000);
+        uiActions.clickOn(registerBtn, element.CLICKABLE, 3000);
     }
 
     public String getRegistrationStatus() {
-        return uiActions.getText(successMsg, VISIBLE, 3000);
+        return uiActions.getText(successMsg, element.VISIBLE, 3000);
     }
 
 }
