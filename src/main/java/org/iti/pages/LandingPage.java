@@ -28,6 +28,11 @@ public class LandingPage {
     }
 
     public RegisterPage goToRegisterPage() {
+
+       /**
+        ** This Sleep for a purpose of Healenium to make sure we have time to manual change the locator
+        ** EVEN ITS NOT RECOMMENDED BUT ITS HERE FOR A PURPOSE :)
+         */
         try {
             Thread.sleep(10000);
         } catch (InterruptedException e) {

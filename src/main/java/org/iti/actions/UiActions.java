@@ -24,14 +24,16 @@ public class UiActions {
     public WebElement getWebElement(By ByElement, @NotNull element toBe, int timeOut) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(timeOut));
         JavascriptExecutor js = (JavascriptExecutor) driver;
+
         switch (toBe) {
+
             case VISIBLE:
                 try {
                     wait.until(ExpectedConditions.visibilityOfElementLocated(ByElement));
                 } catch (Exception e) {
                     System.out.println("Element " + ByElement.toString() + " is not visible");
                 }
-                js.executeScript("arguments[0].scrolltop();", driver.findElement(ByElement));
+                js.executeScript("arguments[0].scrollIntoView();", driver.findElement(ByElement));
                 highlightElement(driver, ByElement);
                 return driver.findElement(ByElement);
             case CLICKABLE:
