@@ -31,7 +31,7 @@ public class UiActions {
                 } catch (Exception e) {
                     System.out.println("Element " + ByElement.toString() + " is not visible");
                 }
-                js.executeScript("arguments[0].scrollIntoView();", driver.findElement(ByElement));
+                js.executeScript("arguments[0].scrolltop();", driver.findElement(ByElement));
                 highlightElement(driver, ByElement);
                 return driver.findElement(ByElement);
             case CLICKABLE:

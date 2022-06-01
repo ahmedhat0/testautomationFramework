@@ -15,7 +15,7 @@ public class RetryFailed implements IAnnotationTransformer, IRetryAnalyzer {
 
     @Override
     public boolean retry(ITestResult result) {
-        if (count < maxTry) {
+        if (count <= maxTry) {
             count++;
             return true;
         }
