@@ -37,3 +37,6 @@ build/
 ### Mac OS ###
 !/screenshots/
 /test-output/
+!/selfUse.xml
+!/allure-results/*.json
+!/selfUse.xml

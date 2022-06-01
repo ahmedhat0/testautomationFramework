@@ -1,7 +1,6 @@
 package org.iti.tests;
 
 import com.epam.healenium.SelfHealingDriver;
-import com.epam.healenium.annotation.DisableHealing;
 import io.qameta.allure.Description;
 import io.qameta.allure.Link;
 import io.qameta.allure.Severity;
@@ -38,7 +37,7 @@ public class RegistrationTest {
     @Severity(SeverityLevel.CRITICAL)
     @Description("Verify that user can register successfully")
     @Link(name = "My Linkedin", url = "https://www.linkedin.com/in/amedhat/")
-    @DisableHealing
+//    @DisableHealing
     public void testRegistration(String gender,
                                  String firstName,
                                  String lastName,
